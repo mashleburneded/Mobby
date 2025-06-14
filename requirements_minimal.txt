@@ -1,0 +1,40 @@
+# requirements_minimal.txt - Core Dependencies Only (Conflict-Free)
+# Use this to avoid dependency conflicts with existing packages
+
+# ===== CORE TELEGRAM BOT =====
+python-telegram-bot>=20.0,<22.0
+APScheduler>=3.10.0,<4.0
+pytz>=2023.3
+
+# ===== AI PROVIDERS =====
+groq>=0.8.0
+openai>=1.12.0
+google-generativeai>=0.4.0
+anthropic>=0.20.0
+
+# ===== SECURITY & ENCRYPTION (Compatible versions) =====
+cryptography>=41.0.0
+# Skip python-dotenv to avoid ggshield conflict
+
+# ===== WEB & API (Compatible versions) =====
+requests>=2.31.0
+aiohttp>=3.9.0
+httpx>=0.25.0
+
+# ===== DATA PROCESSING =====
+numpy>=1.24.0
+pandas>=2.0.0
+textblob>=0.17.0
+
+# ===== CRYPTO APIs =====
+pycoingecko>=3.1.0
+web3>=6.15.0
+
+# ===== DATABASE =====
+peewee>=3.16.0
+
+# ===== UTILITIES (Minimal set) =====
+python-dateutil>=2.8.0
+pyyaml>=6.0
+click>=8.1.0
+tqdm>=4.65.0

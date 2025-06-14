@@ -1,0 +1,115 @@
+# requirements.txt - Möbius AI Assistant - FIXED VERSION
+# Removed non-existent packages and updated for Python 3.8+ compatibility
+
+# ===== CORE TELEGRAM BOT DEPENDENCIES =====
+python-telegram-bot[job-queue]>=20.0,<22.0  # Core bot framework (compatible with Python 3.8+)
+APScheduler>=3.10.0                          # Advanced job scheduling for daily summaries
+pytz>=2023.3                                 # Timezone handling for global users
+tzlocal>=5.0                                 # Local timezone detection
+
+# ===== AI PROVIDERS & LANGUAGE MODELS =====
+groq>=0.8.0                                  # Groq AI API integration
+openai>=1.12.0                               # OpenAI GPT models
+google-generativeai>=0.4.0                   # Google Gemini models
+anthropic>=0.20.0                            # Anthropic Claude models
+
+# ===== SECURITY & ENCRYPTION =====
+cryptography>=41.0.0                         # Message encryption and security
+python-dotenv>=1.0.0                         # Environment variable management
+passlib>=1.7.4                               # Password hashing
+bcrypt>=4.0.0                                # Secure password hashing
+
+# ===== WEB & API COMMUNICATION =====
+requests>=2.31.0                             # HTTP requests for APIs
+aiohttp>=3.9.0                               # Async HTTP for better performance
+httpx>=0.25.0                                # Modern async HTTP client
+websockets>=12.0                             # Real-time data streaming
+certifi>=2023.7.22                           # SSL certificate verification
+
+# ===== BLOCKCHAIN & CRYPTO INTEGRATION =====
+web3>=6.15.0                                 # Ethereum blockchain interaction
+eth-abi>=4.2.0                               # Ethereum ABI encoding/decoding
+eth-account>=0.10.0                          # Ethereum account management
+eth-hash>=0.5.0                              # Ethereum hash utilities
+eth-keyfile>=0.6.0                           # Ethereum keyfile handling
+eth-keys>=0.4.0                              # Ethereum key management
+eth-rlp>=0.3.0                               # Ethereum RLP encoding
+eth-typing>=3.5.0                            # Ethereum type definitions
+eth-utils>=2.3.0                             # Ethereum utilities
+hexbytes>=0.3.0                              # Hex byte handling
+rlp>=3.0.0                                   # RLP encoding/decoding
+pycoingecko>=3.1.0                           # CoinGecko API for price data
+ccxt>=4.2.0                                  # Cryptocurrency exchange APIs
+yfinance>=0.2.18                             # Yahoo Finance for traditional markets
+
+# ===== EXCHANGE APIS FOR LIVE TRADING (WORKING PACKAGES ONLY) =====
+python-binance>=1.0.19                       # Binance exchange API
+# Note: bybit, hyperliquid-python-sdk, paradex-python, woox-python are not available or unstable
+# These will be implemented as custom API wrappers when needed
+
+# ===== DATA ANALYSIS & MACHINE LEARNING =====
+numpy>=1.24.0                                # Numerical computing foundation
+pandas>=2.0.0                                # Data manipulation and analysis
+scipy>=1.10.0                                # Scientific computing
+scikit-learn>=1.3.0                          # Machine learning algorithms
+ta>=0.10.0                                   # Technical analysis indicators
+joblib>=1.3.0                                # Parallel computing for sklearn
+threadpoolctl>=3.1.0                         # Thread pool control
+
+# ===== VISUALIZATION & REPORTING =====
+plotly>=5.15.0                               # Interactive charts and graphs
+matplotlib>=3.7.0                            # Static plotting
+pillow>=10.0.0                               # Image processing
+reportlab>=4.0.0                             # PDF report generation
+openpyxl>=3.1.0                              # Excel file handling
+
+# ===== NATURAL LANGUAGE PROCESSING =====
+nltk>=3.8.0                                  # Natural language toolkit
+textblob>=0.17.0                             # Sentiment analysis and NLP
+click>=8.1.0                                 # Command line interface
+tqdm>=4.65.0                                 # Progress bars
+regex>=2023.10.0                             # Regular expressions
+
+# ===== SOCIAL MEDIA & NEWS INTEGRATION =====
+tweepy>=4.14.0                               # Twitter API integration
+oauthlib>=3.2.0                              # OAuth authentication
+requests-oauthlib>=1.3.0                     # OAuth for requests
+
+# ===== DATABASE & STORAGE =====
+sqlalchemy>=2.0.0                            # Database ORM
+peewee>=3.16.0                               # Lightweight ORM for user data
+alembic>=1.12.0                              # Database migrations
+
+# ===== ASYNC & PERFORMANCE =====
+aiodns>=3.1.0                                # Async DNS resolution
+pycares>=4.3.0                               # C-Ares DNS resolver
+aiosignal>=1.3.0                             # Async signal handling
+frozenlist>=1.4.0                            # Frozen list implementation
+multidict>=6.0.0                             # Multi-value dictionary
+
+# ===== UTILITY LIBRARIES =====
+python-dateutil>=2.8.0                       # Date/time utilities
+six>=1.16.0                                  # Python 2/3 compatibility
+urllib3>=2.0.0                               # HTTP library
+charset-normalizer>=3.2.0                    # Character encoding detection
+idna>=3.4                                    # Internationalized domain names
+attrs>=23.1.0                                # Classes without boilerplate
+typing-extensions>=4.7.0                     # Typing extensions for older Python
+
+# ===== DEVELOPMENT & TESTING =====
+pytest>=7.4.0                                # Testing framework
+pytest-asyncio>=0.21.0                       # Async testing support
+black>=23.7.0                                # Code formatting
+flake8>=6.0.0                                # Code linting
+mypy>=1.5.0                                  # Type checking
+
+# ===== CALENDAR & PRODUCTIVITY =====
+icalendar>=5.0.0                             # Calendar file handling
+python-calendar>=1.0.0                       # Calendar utilities
+
+# ===== ADDITIONAL UTILITIES =====
+pyyaml>=6.0                                  # YAML file handling
+toml>=0.10.0                                 # TOML file handling
+markdown>=3.4.0                              # Markdown processing
+beautifulsoup4>=4.12.0                       # HTML parsing
+lxml>=4.9.0                                  # XML processing

@@ -1,0 +1,30 @@
+# requirements-minimal.txt - Essential dependencies for basic functionality
+# Use this for quick setup or when you want core features only
+
+# Core bot functionality
+python-telegram-bot[job-queue]>=22.1
+APScheduler>=3.11.0
+pytz>=2025.2
+
+# AI providers (choose one or more)
+groq>=0.9.0
+openai>=1.14.0
+google-generativeai>=0.5.0
+anthropic>=0.25.0
+
+# Security and utilities
+cryptography>=45.0.3
+python-dotenv>=1.0.0
+requests>=2.32.3
+beautifulsoup4>=4.13.4
+
+# Data analysis basics
+numpy>=2.2.6
+pandas>=2.3.0
+
+# Crypto APIs
+pycoingecko>=3.2.0
+web3>=7.12.0
+
+# Install with: pip install -r requirements-minimal.txt
+# Then upgrade to full features with: pip install -r requirements.txt

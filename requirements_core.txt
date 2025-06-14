@@ -1,0 +1,26 @@
+# Core dependencies required to run the bot
+python-telegram-bot>=20.0
+pytz>=2023.3
+requests>=2.31.0
+aiohttp>=3.8.0
+python-dotenv>=1.0.0
+cryptography>=41.0.0
+asyncio-mqtt>=0.13.0
+schedule>=1.2.0
+sqlite3  # Built into Python
+logging  # Built into Python
+datetime  # Built into Python
+re  # Built into Python
+asyncio  # Built into Python
+json  # Built into Python
+os  # Built into Python
+sys  # Built into Python
+time  # Built into Python
+hashlib  # Built into Python
+base64  # Built into Python
+uuid  # Built into Python
+threading  # Built into Python
+collections  # Built into Python
+functools  # Built into Python
+typing  # Built into Python
+pathlib  # Built into Python

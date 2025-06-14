@@ -1,0 +1,16 @@
+{
+    "ACTIVE_AI_PROVIDER": "groq",
+    "AI_API_KEYS": {
+        "groq": "",
+        "openai": "",
+        "gemini": "",
+        "anthropic": ""
+    },
+    "CRYPTO_API_KEYS": {
+        "arkham": "",
+        "nansen": ""
+    },
+    "TIMEZONE": "UTC",
+    "SUMMARY_TIME": "23:00",
+    "PAUSED": false
+}

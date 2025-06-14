@@ -1,0 +1,377 @@
+{
+  "test_summary": {
+    "total_tests": 33,
+    "passed_tests": 29,
+    "failed_tests": 4,
+    "success_rate": "87.9%",
+    "total_time": "5.09s",
+    "timestamp": "2025-06-12T04:50:27.412909"
+  },
+  "category_results": {
+    "MCP Infrastructure": {
+      "mcp_client_init": {
+        "passed": true,
+        "time": "0.000s",
+        "details": "MCP client initialization"
+      },
+      "server_connectivity": {
+        "passed": true,
+        "details": "4/4 servers responding",
+        "servers_connected": 4,
+        "servers_tested": 4
+      },
+      "tool_validation": {
+        "passed": true,
+        "details": "4/4 tools working",
+        "tools_passed": 4,
+        "tools_tested": 4
+      }
+    },
+    "Security & Authentication": {
+      "input_sanitization": {
+        "passed": true,
+        "details": "Handled 5/5 malicious inputs safely",
+        "security_level": "high"
+      },
+      "rate_limiting": {
+        "passed": false,
+        "details": "20/20 requests succeeded in 0.00s",
+        "request_time": "0.00s",
+        "rate_limited": false
+      },
+      "authentication": {
+        "passed": true,
+        "details": "User authentication system functional",
+        "invalid_user_handled": true,
+        "valid_user_handled": true
+      }
+    },
+    "Natural Language Processing": {
+      "intent_recognition": {
+        "passed": false,
+        "details": "0/7 intents correctly identified",
+        "accuracy_rate": "0.0%",
+        "threshold": "70%"
+      },
+      "entity_extraction": {
+        "passed": false,
+        "details": "0/3 entity extractions successful",
+        "accuracy_rate": "0.0%"
+      },
+      "context_management": {
+        "passed": true,
+        "details": "Conversation context maintained across messages",
+        "context_preserved": true
+      }
+    },
+    "Background Processing": {
+      "job_submission": {
+        "passed": true,
+        "details": "Background job submitted with ID: 12345_market_analysis_1749703822.324795",
+        "job_id": "12345_market_analysis_1749703822.324795"
+      },
+      "background_rate_limiting": {
+        "passed": true,
+        "details": "10/15 jobs accepted (rate limiting active)",
+        "jobs_accepted": 10,
+        "rate_limited": true
+      },
+      "job_status_tracking": {
+        "passed": true,
+        "details": "Job status retrieved: completed",
+        "status": {
+          "job_id": "12345_market_analysis_1749703822.324795",
+          "status": "completed",
+          "created_at": "2025-06-12T04:50:22.324803",
+          "started_at": "2025-06-12T04:50:22.325347",
+          "completed_at": "2025-06-12T04:50:22.325533",
+          "result": {
+            "success": true,
+            "type": "market_analysis",
+            "data": {
+              "market_data": {
+                "success": true,
+                "data": {
+                  "BTC": {
+                    "price": 43250.5,
+                    "change_24h": 2.3
+                  },
+                  "ETH": {
+                    "price": 2650.75,
+                    "change_24h": -1.2
+                  },
+                  "SOL": {
+                    "price": 98.45,
+                    "change_24h": 5.7
+                  }
+                },
+                "timestamp": "2025-06-12T04:50:22.325388"
+              },
+              "defi_data": {
+                "success": true,
+                "data": {
+                  "top_protocols": [
+                    {
+                      "name": "Uniswap",
+                      "tvl": "4.2B",
+                      "change_24h": 1.5
+                    },
+                    {
+                      "name": "Aave",
+                      "tvl": "3.8B",
+                      "change_24h": -0.8
+                    },
+                    {
+                      "name": "Compound",
+                      "tvl": "2.1B",
+                      "change_24h": 2.1
+                    }
+                  ]
+                }
+              },
+              "ai_analysis": {
+                "success": false,
+                "error": "<QueryType.MARKET_RESEARCH: 'market_research'>",
+                "fallback_response": "I apologize, but I'm experiencing technical difficulties. Please try again."
+              }
+            }
+          },
+          "error": null
+        }
+      }
+    },
+    "Real-Time Streaming": {
+      "streaming_init": {
+        "passed": true,
+        "details": "Streaming infrastructure initialized",
+        "running": true
+      },
+      "price_alert_subscription": {
+        "passed": true,
+        "details": "Price alert subscription created: price_12345_1749703824.327157",
+        "subscription_id": "price_12345_1749703824.327157",
+        "alert_system_active": true
+      },
+      "concurrent_streaming": {
+        "passed": true,
+        "details": "5/5 concurrent subscriptions created",
+        "subscriptions_created": 5
+      }
+    },
+    "AI Orchestration": {
+      "ai_orchestrator_init": {
+        "passed": true,
+        "details": "AI orchestrator initialized successfully"
+      },
+      "query_classification": {
+        "passed": true,
+        "details": "4/4 queries classified",
+        "classifications": [
+          "QueryType.GENERAL_CHAT",
+          "QueryType.MARKET_RESEARCH",
+          "QueryType.TECHNICAL_ANALYSIS",
+          "QueryType.SOCIAL_SENTIMENT"
+        ]
+      },
+      "enhanced_response": {
+        "passed": true,
+        "details": "Enhanced AI response generated",
+        "response_length": 226,
+        "model_used": "gpt-4-turbo",
+        "context_sources": [
+          "market_data",
+          "defi_data",
+          "web_data"
+        ]
+      }
+    },
+    "Blockchain Integration": {
+      "multi_chain_support": {
+        "passed": true,
+        "details": "5/5 chains responding",
+        "chains_working": 5,
+        "supported_chains": [
+          "ethereum",
+          "polygon",
+          "arbitrum",
+          "optimism",
+          "base"
+        ]
+      },
+      "cross_chain_analysis": {
+        "passed": true,
+        "details": "Cross-chain tracking functional",
+        "total_chains": 15,
+        "bridge_volume": "$2.8B"
+      },
+      "wallet_analysis": {
+        "passed": true,
+        "details": "Wallet analysis functional",
+        "test_address": "0x1234567890123456789012345678901234567890",
+        "response_type": "success"
+      }
+    },
+    "Performance & Scalability": {
+      "response_time": {
+        "passed": true,
+        "details": "Average response time: 0.000s",
+        "average_time": "0.000s",
+        "max_time": "0.000s"
+      },
+      "concurrent_load": {
+        "passed": true,
+        "details": "50/50 requests successful in 0.00s",
+        "success_rate": "100.0%",
+        "throughput": "74104.3 req/s"
+      },
+      "memory_usage": {
+        "passed": true,
+        "details": "Memory increase: 0.0MB",
+        "memory_before": "132.9MB",
+        "memory_after": "132.9MB"
+      }
+    },
+    "Error Handling & Recovery": {
+      "error_handling": {
+        "passed": false,
+        "details": "2/3 error scenarios handled gracefully",
+        "graceful_degradation": false
+      },
+      "timeout_handling": {
+        "passed": true,
+        "details": "Request completed in 0.00s (under timeout)",
+        "response_time": "0.00s"
+      },
+      "error_recovery": {
+        "passed": true,
+        "details": "System recovered after error",
+        "recovery_successful": true
+      }
+    },
+    "Concurrent Operations": {
+      "mixed_concurrent_ops": {
+        "passed": true,
+        "details": "4/4 concurrent operations successful",
+        "total_time": "0.00s",
+        "operations_successful": 4
+      },
+      "resource_contention": {
+        "passed": true,
+        "details": "10/10 users served successfully",
+        "contention_time": "0.00s",
+        "users_served": 10
+      }
+    },
+    "Memory & Resource Management": {
+      "memory_leak_detection": {
+        "passed": true,
+        "details": "Memory increase after 200 operations: 0.0MB",
+        "initial_memory": "132.9MB",
+        "final_memory": "132.9MB",
+        "memory_increase": "0.0MB"
+      },
+      "connection_pool": {
+        "passed": true,
+        "details": "100/100 connections successful",
+        "connection_time": "0.00s",
+        "connections_per_second": "139022.3"
+      }
+    },
+    "Integration & End-to-End": {
+      "user_journey": {
+        "passed": true,
+        "details": "5/5 journey steps successful",
+        "journey_responses": [
+          {
+            "step": "greeting",
+            "success": true,
+            "intent": "general_query",
+            "response_type": "ai_enhanced"
+          },
+          {
+            "step": "price_query",
+            "success": true,
+            "intent": "general_query",
+            "response_type": "ai_enhanced"
+          },
+          {
+            "step": "market_analysis",
+            "success": true,
+            "intent": "general_query",
+            "response_type": "ai_enhanced"
+          },
+          {
+            "step": "portfolio_query",
+            "success": true,
+            "intent": "general_query",
+            "response_type": "ai_enhanced"
+          },
+          {
+            "step": "help_request",
+            "success": true,
+            "intent": "general_query",
+            "response_type": "ai_enhanced"
+          }
+        ],
+        "completion_rate": "100.0%"
+      },
+      "multi_component_integration": {
+        "passed": true,
+        "details": "3/4 components integrated successfully",
+        "integration_time": "0.00s",
+        "components_status": {
+          "background_processor": false,
+          "nlp_processor": true,
+          "ai_orchestrator": true,
+          "blockchain_client": true
+        }
+      }
+    }
+  },
+  "performance_metrics": {
+    "response_times": {
+      "average": "0.000s",
+      "maximum": "0.000s",
+      "all_times": [
+        "0.000s",
+        "0.000s",
+        "0.000s",
+        "0.000s",
+        "0.000s",
+        "0.000s",
+        "0.000s",
+        "0.000s",
+        "0.000s",
+        "0.000s"
+      ]
+    },
+    "concurrent_load": {
+      "total_requests": 50,
+      "successful_responses": 50,
+      "total_time": "0.00s",
+      "requests_per_second": "74104.3"
+    },
+    "memory_usage": {
+      "before": "132.9MB",
+      "after": "132.9MB",
+      "increase": "0.0MB"
+    }
+  },
+  "security_audit": [
+    {
+      "test": "input_sanitization",
+      "timestamp": "2025-06-12T04:50:22.322121",
+      "result": "passed"
+    }
+  ],
+  "system_info": {
+    "python_version": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:45:31) [GCC 13.3.0]",
+    "platform": "linux",
+    "cpu_count": 4,
+    "memory_total": "15.6GB",
+    "memory_available": "12.7GB",
+    "process_memory": "132.9MB",
+    "process_cpu_percent": "0.0%",
+    "test_timestamp": "2025-06-12T04:50:27.413238"
+  }
+}
