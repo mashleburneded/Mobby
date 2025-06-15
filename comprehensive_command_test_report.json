@@ -1,0 +1,894 @@
+{
+  "test_summary": {
+    "total_tests": 89,
+    "passed_tests": 63,
+    "failed_tests": 26,
+    "success_rate": "70.8%",
+    "total_time": "1.97s",
+    "timestamp": "2025-06-12T05:18:27.455058",
+    "avg_response_time": "0.086s"
+  },
+  "category_results": {
+    "Basic Commands": {
+      "command_start": {
+        "passed": true,
+        "details": "Command /start processed",
+        "response_time": "1.312s",
+        "fast_response": true
+      },
+      "command_help": {
+        "passed": true,
+        "details": "Command /help processed",
+        "response_time": "0.022s",
+        "fast_response": true
+      },
+      "command_price_BTC": {
+        "passed": true,
+        "details": "Command /price BTC processed",
+        "response_time": "0.022s",
+        "fast_response": true
+      },
+      "command_portfolio": {
+        "passed": true,
+        "details": "Command /portfolio processed",
+        "response_time": "0.021s",
+        "fast_response": true
+      },
+      "command_alerts": {
+        "passed": true,
+        "details": "Command /alerts processed",
+        "response_time": "0.021s",
+        "fast_response": true
+      },
+      "command_research_ETH": {
+        "passed": true,
+        "details": "Command /research ETH processed",
+        "response_time": "0.022s",
+        "fast_response": true
+      },
+      "command_news": {
+        "passed": true,
+        "details": "Command /news processed",
+        "response_time": "0.021s",
+        "fast_response": true
+      },
+      "command_settings": {
+        "passed": true,
+        "details": "Command /settings processed",
+        "response_time": "0.023s",
+        "fast_response": true
+      },
+      "command_stats": {
+        "passed": true,
+        "details": "Command /stats processed",
+        "response_time": "0.022s",
+        "fast_response": true
+      },
+      "command_about": {
+        "passed": true,
+        "details": "Command /about processed",
+        "response_time": "0.022s",
+        "fast_response": true
+      }
+    },
+    "Natural Language Processing": {
+      "nlp_766": {
+        "passed": true,
+        "details": "Natural language query processed: What's the price of Bitcoin?...",
+        "response_time": "0.022s",
+        "query": "What's the price of Bitcoin?",
+        "understood": true
+      },
+      "nlp_158": {
+        "passed": true,
+        "details": "Natural language query processed: Show me Ethereum analysis...",
+        "response_time": "0.022s",
+        "query": "Show me Ethereum analysis",
+        "understood": true
+      },
+      "nlp_485": {
+        "passed": true,
+        "details": "Natural language query processed: How is the crypto market doing...",
+        "response_time": "0.022s",
+        "query": "How is the crypto market doing?",
+        "understood": true
+      },
+      "nlp_259": {
+        "passed": true,
+        "details": "Natural language query processed: I want to check my portfolio...",
+        "response_time": "0.022s",
+        "query": "I want to check my portfolio",
+        "understood": true
+      },
+      "nlp_450": {
+        "passed": true,
+        "details": "Natural language query processed: Set an alert for SOL at $100...",
+        "response_time": "0.022s",
+        "query": "Set an alert for SOL at $100",
+        "understood": true
+      },
+      "nlp_748": {
+        "passed": true,
+        "details": "Natural language query processed: What's happening with DeFi?...",
+        "response_time": "0.022s",
+        "query": "What's happening with DeFi?",
+        "understood": true
+      },
+      "nlp_122": {
+        "passed": true,
+        "details": "Natural language query processed: Tell me about the latest crypt...",
+        "response_time": "0.022s",
+        "query": "Tell me about the latest crypto news",
+        "understood": true
+      },
+      "nlp_794": {
+        "passed": true,
+        "details": "Natural language query processed: Help me understand blockchain...",
+        "response_time": "0.021s",
+        "query": "Help me understand blockchain",
+        "understood": true
+      },
+      "nlp_330": {
+        "passed": true,
+        "details": "Natural language query processed: What are the best altcoins?...",
+        "response_time": "0.022s",
+        "query": "What are the best altcoins?",
+        "understood": true
+      },
+      "nlp_764": {
+        "passed": true,
+        "details": "Natural language query processed: Explain smart contracts...",
+        "response_time": "0.023s",
+        "query": "Explain smart contracts",
+        "understood": true
+      }
+    },
+    "Intent Recognition": {
+      "intent_price_query": {
+        "passed": false,
+        "details": "Intent recognition for: What's Bitcoin's price?",
+        "expected_intent": "price_query",
+        "detected_intent": "general_query",
+        "response_time": "0.004s",
+        "confidence": 0.0
+      },
+      "intent_market_analysis": {
+        "passed": false,
+        "details": "Intent recognition for: Show me market analysis",
+        "expected_intent": "market_analysis",
+        "detected_intent": "general_query",
+        "response_time": "0.000s",
+        "confidence": 0.0
+      },
+      "intent_alert_creation": {
+        "passed": false,
+        "details": "Intent recognition for: Set price alert",
+        "expected_intent": "alert_creation",
+        "detected_intent": "general_query",
+        "response_time": "0.000s",
+        "confidence": 0.0
+      },
+      "intent_portfolio_query": {
+        "passed": false,
+        "details": "Intent recognition for: Check my portfolio",
+        "expected_intent": "portfolio_query",
+        "detected_intent": "general_query",
+        "response_time": "0.000s",
+        "confidence": 0.0
+      },
+      "intent_news_query": {
+        "passed": false,
+        "details": "Intent recognition for: Latest crypto news",
+        "expected_intent": "news_query",
+        "detected_intent": "general_query",
+        "response_time": "0.000s",
+        "confidence": 0.0
+      },
+      "intent_help_request": {
+        "passed": false,
+        "details": "Intent recognition for: Help me",
+        "expected_intent": "help_request",
+        "detected_intent": "general_query",
+        "response_time": "0.000s",
+        "confidence": 0.0
+      },
+      "intent_greeting": {
+        "passed": false,
+        "details": "Intent recognition for: Hello",
+        "expected_intent": "greeting",
+        "detected_intent": "general_query",
+        "response_time": "0.000s",
+        "confidence": 0.0
+      },
+      "intent_research_query": {
+        "passed": false,
+        "details": "Intent recognition for: Research Ethereum",
+        "expected_intent": "research_query",
+        "detected_intent": "general_query",
+        "response_time": "0.000s",
+        "confidence": 0.0
+      },
+      "intent_defi_query": {
+        "passed": false,
+        "details": "Intent recognition for: DeFi protocols",
+        "expected_intent": "defi_query",
+        "detected_intent": "general_query",
+        "response_time": "0.000s",
+        "confidence": 0.0
+      },
+      "intent_wallet_analysis": {
+        "passed": false,
+        "details": "Intent recognition for: Wallet analysis",
+        "expected_intent": "wallet_analysis",
+        "detected_intent": "general_query",
+        "response_time": "0.000s",
+        "confidence": 0.0
+      }
+    },
+    "Entity Extraction": {
+      "entity_605": {
+        "passed": false,
+        "error": "'bool' object is not iterable",
+        "query": "Check BTC and ETH prices"
+      },
+      "entity_380": {
+        "passed": false,
+        "error": "'bool' object is not iterable",
+        "query": "Set alert for SOL at $100"
+      },
+      "entity_951": {
+        "passed": false,
+        "error": "'bool' object is not iterable",
+        "query": "Analyze wallet 0x1234567890123456789012345678901234567890"
+      },
+      "entity_144": {
+        "passed": false,
+        "error": "'bool' object is not iterable",
+        "query": "What about $5000 investment in LINK?"
+      },
+      "entity_31": {
+        "passed": false,
+        "error": "'bool' object is not iterable",
+        "query": "Compare Bitcoin vs Ethereum"
+      },
+      "entity_644": {
+        "passed": false,
+        "error": "'bool' object is not iterable",
+        "query": "Show me top 10 cryptocurrencies"
+      },
+      "entity_668": {
+        "passed": false,
+        "error": "'bool' object is not iterable",
+        "query": "DeFi yield farming on Polygon"
+      },
+      "entity_464": {
+        "passed": false,
+        "error": "'bool' object is not iterable",
+        "query": "NFT marketplace on Solana"
+      }
+    },
+    "Context Management": {
+      "context_context_setup": {
+        "passed": true,
+        "details": "Context test 1: I'm interested in Bitcoin",
+        "message": "I'm interested in Bitcoin",
+        "response_time": "0.000s",
+        "context_maintained": true,
+        "step": 1
+      },
+      "context_context_reference": {
+        "passed": true,
+        "details": "Context test 2: What's its current price?",
+        "message": "What's its current price?",
+        "response_time": "0.000s",
+        "context_maintained": true,
+        "step": 2
+      },
+      "context_context_switch": {
+        "passed": true,
+        "details": "Context test 3: How about Ethereum?",
+        "message": "How about Ethereum?",
+        "response_time": "0.000s",
+        "context_maintained": true,
+        "step": 3
+      },
+      "context_context_comparison": {
+        "passed": true,
+        "details": "Context test 4: Compare them both",
+        "message": "Compare them both",
+        "response_time": "0.000s",
+        "context_maintained": true,
+        "step": 4
+      },
+      "context_context_memory": {
+        "passed": true,
+        "details": "Context test 5: Set an alert for the first one",
+        "message": "Set an alert for the first one",
+        "response_time": "0.000s",
+        "context_maintained": true,
+        "step": 5
+      }
+    },
+    "Command Variations": {
+      "variation_group_1": {
+        "passed": true,
+        "details": "Command variation group 1",
+        "successful_variations": 5,
+        "total_variations": 5,
+        "success_rate": "100.0%",
+        "variations": [
+          {
+            "variation": "/price BTC",
+            "success": true,
+            "response_time": 0.022313356399536133
+          },
+          {
+            "variation": "Bitcoin price",
+            "success": true,
+            "response_time": 0.02289724349975586
+          },
+          {
+            "variation": "What's BTC worth?",
+            "success": true,
+            "response_time": 0.022429704666137695
+          },
+          {
+            "variation": "BTC value",
+            "success": true,
+            "response_time": 0.023078441619873047
+          },
+          {
+            "variation": "How much is Bitcoin?",
+            "success": true,
+            "response_time": 0.022768259048461914
+          }
+        ]
+      },
+      "variation_group_2": {
+        "passed": true,
+        "details": "Command variation group 2",
+        "successful_variations": 5,
+        "total_variations": 5,
+        "success_rate": "100.0%",
+        "variations": [
+          {
+            "variation": "/help",
+            "success": true,
+            "response_time": 0.021532297134399414
+          },
+          {
+            "variation": "help me",
+            "success": true,
+            "response_time": 0.02203059196472168
+          },
+          {
+            "variation": "I need help",
+            "success": true,
+            "response_time": 0.022536516189575195
+          },
+          {
+            "variation": "what can you do?",
+            "success": true,
+            "response_time": 0.022746801376342773
+          },
+          {
+            "variation": "commands",
+            "success": true,
+            "response_time": 0.022091388702392578
+          }
+        ]
+      },
+      "variation_group_3": {
+        "passed": true,
+        "details": "Command variation group 3",
+        "successful_variations": 5,
+        "total_variations": 5,
+        "success_rate": "100.0%",
+        "variations": [
+          {
+            "variation": "/portfolio",
+            "success": true,
+            "response_time": 0.0001251697540283203
+          },
+          {
+            "variation": "show portfolio",
+            "success": true,
+            "response_time": 9.012222290039062e-05
+          },
+          {
+            "variation": "my holdings",
+            "success": true,
+            "response_time": 7.724761962890625e-05
+          },
+          {
+            "variation": "check my coins",
+            "success": true,
+            "response_time": 7.462501525878906e-05
+          },
+          {
+            "variation": "portfolio status",
+            "success": true,
+            "response_time": 7.367134094238281e-05
+          }
+        ]
+      },
+      "variation_group_4": {
+        "passed": true,
+        "details": "Command variation group 4",
+        "successful_variations": 5,
+        "total_variations": 5,
+        "success_rate": "100.0%",
+        "variations": [
+          {
+            "variation": "/news",
+            "success": true,
+            "response_time": 7.009506225585938e-05
+          },
+          {
+            "variation": "crypto news",
+            "success": true,
+            "response_time": 7.152557373046875e-05
+          },
+          {
+            "variation": "latest news",
+            "success": true,
+            "response_time": 0.0002834796905517578
+          },
+          {
+            "variation": "what's happening?",
+            "success": true,
+            "response_time": 6.628036499023438e-05
+          },
+          {
+            "variation": "market updates",
+            "success": true,
+            "response_time": 9.775161743164062e-05
+          }
+        ]
+      },
+      "variation_group_5": {
+        "passed": true,
+        "details": "Command variation group 5",
+        "successful_variations": 5,
+        "total_variations": 5,
+        "success_rate": "100.0%",
+        "variations": [
+          {
+            "variation": "/research ETH",
+            "success": true,
+            "response_time": 6.413459777832031e-05
+          },
+          {
+            "variation": "analyze Ethereum",
+            "success": true,
+            "response_time": 6.246566772460938e-05
+          },
+          {
+            "variation": "ETH analysis",
+            "success": true,
+            "response_time": 4.792213439941406e-05
+          },
+          {
+            "variation": "research Ethereum",
+            "success": true,
+            "response_time": 4.792213439941406e-05
+          },
+          {
+            "variation": "tell me about ETH",
+            "success": true,
+            "response_time": 4.863739013671875e-05
+          }
+        ]
+      }
+    },
+    "Error Handling": {
+      "error_case_1": {
+        "passed": true,
+        "details": "Error handling test: invalid command xyz...",
+        "error_case": "invalid command xyz",
+        "response_time": "0.000s",
+        "graceful_handling": true
+      },
+      "error_case_2": {
+        "passed": true,
+        "details": "Error handling test: /price INVALIDCOIN...",
+        "error_case": "/price INVALIDCOIN",
+        "response_time": "0.000s",
+        "graceful_handling": true
+      },
+      "error_case_3": {
+        "passed": true,
+        "details": "Error handling test: set alert for 999999999999...",
+        "error_case": "set alert for 999999999999",
+        "response_time": "0.000s",
+        "graceful_handling": true
+      },
+      "error_case_4": {
+        "passed": true,
+        "details": "Error handling test: analyze wallet invalid_address...",
+        "error_case": "analyze wallet invalid_address",
+        "response_time": "0.000s",
+        "graceful_handling": true
+      },
+      "error_case_5": {
+        "passed": true,
+        "details": "Error handling test: research nonexistent_protocol...",
+        "error_case": "research nonexistent_protocol",
+        "response_time": "0.000s",
+        "graceful_handling": true
+      },
+      "error_case_6": {
+        "passed": true,
+        "details": "Error handling test: ...",
+        "error_case": "",
+        "response_time": "0.000s",
+        "graceful_handling": true
+      },
+      "error_case_7": {
+        "passed": true,
+        "details": "Error handling test: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...",
+        "error_case": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "response_time": "0.000s",
+        "graceful_handling": true
+      },
+      "error_case_8": {
+        "passed": true,
+        "details": "Error handling test: \ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80...",
+        "error_case": "\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80",
+        "response_time": "0.000s",
+        "graceful_handling": true
+      },
+      "error_case_9": {
+        "passed": true,
+        "details": "Error handling test: /price...",
+        "error_case": "/price",
+        "response_time": "0.000s",
+        "graceful_handling": true
+      },
+      "error_case_10": {
+        "passed": true,
+        "details": "Error handling test: show me the price of...",
+        "error_case": "show me the price of",
+        "response_time": "0.000s",
+        "graceful_handling": true
+      }
+    },
+    "Response Quality": {
+      "quality_informative": {
+        "passed": true,
+        "details": "Response quality for: What's Bitcoin?",
+        "query": "What's Bitcoin?",
+        "expected_tone": "informative",
+        "quality_score": "0.75",
+        "quality_metrics": {
+          "has_content": false,
+          "not_too_long": true,
+          "fast_response": true,
+          "no_errors": true
+        },
+        "response_time": "0.000s"
+      },
+      "quality_helpful": {
+        "passed": true,
+        "details": "Response quality for: How do I buy crypto?",
+        "query": "How do I buy crypto?",
+        "expected_tone": "helpful",
+        "quality_score": "0.75",
+        "quality_metrics": {
+          "has_content": false,
+          "not_too_long": true,
+          "fast_response": true,
+          "no_errors": true
+        },
+        "response_time": "0.000s"
+      },
+      "quality_balanced": {
+        "passed": true,
+        "details": "Response quality for: Is crypto safe?",
+        "query": "Is crypto safe?",
+        "expected_tone": "balanced",
+        "quality_score": "0.75",
+        "quality_metrics": {
+          "has_content": false,
+          "not_too_long": true,
+          "fast_response": true,
+          "no_errors": true
+        },
+        "response_time": "0.000s"
+      },
+      "quality_objective": {
+        "passed": true,
+        "details": "Response quality for: What's the best coin?",
+        "query": "What's the best coin?",
+        "expected_tone": "objective",
+        "quality_score": "0.75",
+        "quality_metrics": {
+          "has_content": false,
+          "not_too_long": true,
+          "fast_response": true,
+          "no_errors": true
+        },
+        "response_time": "0.000s"
+      },
+      "quality_cautious": {
+        "passed": true,
+        "details": "Response quality for: Should I invest now?",
+        "query": "Should I invest now?",
+        "expected_tone": "cautious",
+        "quality_score": "0.75",
+        "quality_metrics": {
+          "has_content": false,
+          "not_too_long": true,
+          "fast_response": true,
+          "no_errors": true
+        },
+        "response_time": "0.000s"
+      },
+      "quality_educational": {
+        "passed": true,
+        "details": "Response quality for: Explain DeFi",
+        "query": "Explain DeFi",
+        "expected_tone": "educational",
+        "quality_score": "0.75",
+        "quality_metrics": {
+          "has_content": false,
+          "not_too_long": true,
+          "fast_response": true,
+          "no_errors": true
+        },
+        "response_time": "0.000s"
+      },
+      "quality_factual": {
+        "passed": true,
+        "details": "Response quality for: Market crash?",
+        "query": "Market crash?",
+        "expected_tone": "factual",
+        "quality_score": "0.75",
+        "quality_metrics": {
+          "has_content": false,
+          "not_too_long": true,
+          "fast_response": true,
+          "no_errors": true
+        },
+        "response_time": "0.000s"
+      },
+      "quality_professional": {
+        "passed": true,
+        "details": "Response quality for: Moon when?",
+        "query": "Moon when?",
+        "expected_tone": "professional",
+        "quality_score": "0.75",
+        "quality_metrics": {
+          "has_content": false,
+          "not_too_long": true,
+          "fast_response": true,
+          "no_errors": true
+        },
+        "response_time": "0.000s"
+      }
+    },
+    "Performance & Speed": {
+      "rapid_fire_requests": {
+        "passed": true,
+        "details": "Rapid-fire request handling",
+        "successful_requests": 5,
+        "total_requests": 5,
+        "total_time": "0.000s",
+        "avg_time_per_request": "0.000s"
+      },
+      "concurrent_requests": {
+        "passed": true,
+        "details": "Concurrent request handling",
+        "successful_requests": 5,
+        "total_requests": 5,
+        "total_time": "0.000s",
+        "concurrency_efficient": true
+      }
+    },
+    "Advanced Features": {
+      "advanced_alert_creation": {
+        "passed": false,
+        "details": "Advanced feature: alert_creation",
+        "query": "Set alert BTC above $50000",
+        "response_time": "0.000s",
+        "feature_functional": false,
+        "response_length": 4
+      },
+      "advanced_wallet_analysis": {
+        "passed": false,
+        "details": "Advanced feature: wallet_analysis",
+        "query": "Analyze wallet 0x1234567890123456789012345678901234567890",
+        "response_time": "0.000s",
+        "feature_functional": false,
+        "response_length": 4
+      },
+      "advanced_comparison_analysis": {
+        "passed": false,
+        "details": "Advanced feature: comparison_analysis",
+        "query": "Compare BTC vs ETH performance",
+        "response_time": "0.000s",
+        "feature_functional": false,
+        "response_length": 4
+      },
+      "advanced_defi_analysis": {
+        "passed": false,
+        "details": "Advanced feature: defi_analysis",
+        "query": "Show me DeFi yield opportunities",
+        "response_time": "0.000s",
+        "feature_functional": false,
+        "response_length": 4
+      },
+      "advanced_event_research": {
+        "passed": false,
+        "details": "Advanced feature: event_research",
+        "query": "Research upcoming crypto events",
+        "response_time": "0.000s",
+        "feature_functional": false,
+        "response_length": 4
+      },
+      "advanced_portfolio_advice": {
+        "passed": false,
+        "details": "Advanced feature: portfolio_advice",
+        "query": "Portfolio optimization suggestions",
+        "response_time": "0.000s",
+        "feature_functional": false,
+        "response_length": 4
+      },
+      "advanced_bridge_analysis": {
+        "passed": false,
+        "details": "Advanced feature: bridge_analysis",
+        "query": "Cross-chain bridge analysis",
+        "response_time": "0.000s",
+        "feature_functional": false,
+        "response_length": 4
+      },
+      "advanced_nft_analysis": {
+        "passed": false,
+        "details": "Advanced feature: nft_analysis",
+        "query": "NFT market trends",
+        "response_time": "0.000s",
+        "feature_functional": false,
+        "response_length": 4
+      }
+    },
+    "Multi-turn Conversations": {
+      "conversation_price_inquiry_flow": {
+        "passed": true,
+        "details": "Multi-turn conversation: price_inquiry_flow",
+        "successful_turns": 5,
+        "total_turns": 5,
+        "success_rate": "100.0%",
+        "avg_turn_time": "0.000s",
+        "conversation_flow": true
+      },
+      "conversation_research_flow": {
+        "passed": true,
+        "details": "Multi-turn conversation: research_flow",
+        "successful_turns": 5,
+        "total_turns": 5,
+        "success_rate": "100.0%",
+        "avg_turn_time": "0.000s",
+        "conversation_flow": true
+      },
+      "conversation_portfolio_flow": {
+        "passed": true,
+        "details": "Multi-turn conversation: portfolio_flow",
+        "successful_turns": 5,
+        "total_turns": 5,
+        "success_rate": "100.0%",
+        "avg_turn_time": "0.000s",
+        "conversation_flow": true
+      }
+    },
+    "Edge Cases": {
+      "edge_lowercase_command": {
+        "passed": true,
+        "details": "Edge case: lowercase_command",
+        "query": "price btc",
+        "response_time": "0.000s",
+        "handled_gracefully": true
+      },
+      "edge_uppercase_command": {
+        "passed": true,
+        "details": "Edge case: uppercase_command",
+        "query": "PRICE BTC",
+        "response_time": "0.000s",
+        "handled_gracefully": true
+      },
+      "edge_whitespace_command": {
+        "passed": true,
+        "details": "Edge case: whitespace_command",
+        "query": "  /price BTC  ",
+        "response_time": "0.000s",
+        "handled_gracefully": true
+      },
+      "edge_multiple_symbols": {
+        "passed": true,
+        "details": "Edge case: multiple_symbols",
+        "query": "/price BTC ETH SOL",
+        "response_time": "0.000s",
+        "handled_gracefully": true
+      },
+      "edge_verbose_query": {
+        "passed": true,
+        "details": "Edge case: verbose_query",
+        "query": "price of bitcoin in usd",
+        "response_time": "0.000s",
+        "handled_gracefully": true
+      },
+      "edge_informal_query": {
+        "passed": true,
+        "details": "Edge case: informal_query",
+        "query": "btc price pls",
+        "response_time": "0.000s",
+        "handled_gracefully": true
+      },
+      "edge_emoji_query": {
+        "passed": true,
+        "details": "Edge case: emoji_query",
+        "query": "\ud83d\ude80 moon when? \ud83d\ude80",
+        "response_time": "0.000s",
+        "handled_gracefully": true
+      },
+      "edge_natural_question": {
+        "passed": true,
+        "details": "Edge case: natural_question",
+        "query": "What's the price of Bitcoin right now?",
+        "response_time": "0.000s",
+        "handled_gracefully": true
+      },
+      "edge_urgent_query": {
+        "passed": true,
+        "details": "Edge case: urgent_query",
+        "query": "I need BTC price ASAP",
+        "response_time": "0.000s",
+        "handled_gracefully": true
+      },
+      "edge_polite_query": {
+        "passed": true,
+        "details": "Edge case: polite_query",
+        "query": "Can you tell me Bitcoin's current value?",
+        "response_time": "0.000s",
+        "handled_gracefully": true
+      }
+    }
+  },
+  "response_times": {
+    "basic_commands": {
+      "/start": 1.3123750686645508,
+      "/help": 0.021721601486206055,
+      "/price BTC": 0.021763324737548828,
+      "/portfolio": 0.021266460418701172,
+      "/alerts": 0.02124333381652832,
+      "/research ETH": 0.02160167694091797,
+      "/news": 0.021292448043823242,
+      "/settings": 0.023174524307250977,
+      "/stats": 0.02243947982788086,
+      "/about": 0.021811723709106445
+    },
+    "natural_language": {
+      "What's the price of Bitcoin?": 0.021655797958374023,
+      "Show me Ethereum analysis": 0.021888017654418945,
+      "How is the crypto market doing?": 0.02174544334411621,
+      "I want to check my portfolio": 0.02205944061279297,
+      "Set an alert for SOL at $100": 0.021883010864257812,
+      "What's happening with DeFi?": 0.0217740535736084,
+      "Tell me about the latest crypto news": 0.02214646339416504,
+      "Help me understand blockchain": 0.021489620208740234,
+      "What are the best altcoins?": 0.021958589553833008,
+      "Explain smart contracts": 0.022897958755493164
+    }
+  },
+  "performance_metrics": {
+    "avg_response_time": "0.086s",
+    "min_response_time": "0.021s",
+    "max_response_time": "1.312s",
+    "total_responses": 20,
+    "fast_responses": 19,
+    "slow_responses": 0
+  },
+  "recommendations": [
+    "Significant improvements needed before production.",
+    "Excellent response times!"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "timestamp": 1749775506.4660363,
+  "total_tests": 20,
+  "passed": 0,
+  "failed": 20,
+  "success_rate": 0.0,
+  "detailed_results": [
+    {
+      "name": "Help Command",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Menu Command",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "DeFiLlama Command",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Arkham Command",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Memory Status",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "AI Providers",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Switch AI Provider",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Bitcoin Price Query",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Portfolio Request",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Price Alert Setup",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "DeFi Question",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Trading Advice",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "DeFi Protocol TVL Query",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Trading Volume Query",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Multi-part Crypto Query",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Portfolio Analysis",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Market Trend Analysis",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Yield Farming Query",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Wallet Security",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    },
+    {
+      "name": "Error Handling Test",
+      "status": "FAIL",
+      "result": {
+        "success": false,
+        "error": "No module named 'telegram'"
+      }
+    }
+  ],
+  "categories": {
+    "command_routing": 4,
+    "intent_recognition": 5,
+    "complex_queries": 8
+  }
+}

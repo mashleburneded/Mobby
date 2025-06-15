@@ -1,0 +1,383 @@
+{
+  "timestamp": "2025-06-14T22:09:26.901531",
+  "overall_success_rate": 45.962732919254655,
+  "total_tests": 161,
+  "total_successful": 74,
+  "bugs_found": [
+    "Error with edge case '': name 're' is not defined",
+    "Error with edge case '   ': name 're' is not defined",
+    "Error with edge case '\n\t\r': name 're' is not defined",
+    "Error with edge case 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa': name 're' is not defined",
+    "Error with edge case 'What is Bitcoin? What is Bitcoin? What is Bitcoin? What is Bitcoin? What is Bitcoin? What is Bitcoin': name 're' is not defined",
+    "Error with edge case '!@#$%^&*()_+{}|:<>?': name 're' is not defined",
+    "Error with edge case '\ud83d\ude80\ud83c\udf19\ud83d\udc8e\ud83d\ude4c\ud83d\udcc8\ud83d\udcc9\ud83d\udcb0': name 're' is not defined",
+    "Error with edge case 'Bitcoin \ud83d\udcb0 to the \ud83c\udf19!': name 're' is not defined",
+    "Error with edge case '\u00bfQu\u00e9 es Bitcoin?': name 're' is not defined",
+    "Error with edge case 'Qu'est-ce que Bitcoin?': name 're' is not defined",
+    "Error with edge case 'Was ist Bitcoin?': name 're' is not defined",
+    "Error with edge case '\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u3068\u306f\u4f55\u3067\u3059\u304b\uff1f': name 're' is not defined",
+    "Error with edge case ''; DROP TABLE users; --': name 're' is not defined",
+    "Error with edge case '1' OR '1'='1': name 're' is not defined",
+    "Error with edge case 'UNION SELECT * FROM passwords': name 're' is not defined",
+    "Error with edge case '<script>alert('xss')</script>': name 're' is not defined",
+    "Error with edge case 'javascript:alert('xss')': name 're' is not defined",
+    "Error with edge case '<img src=x onerror=alert('xss')>': name 're' is not defined",
+    "Error with edge case '; rm -rf /': name 're' is not defined",
+    "Error with edge case '| cat /etc/passwd': name 're' is not defined",
+    "Error with edge case '&& shutdown -h now': name 're' is not defined",
+    "Error with edge case 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA': name 're' is not defined",
+    "Error with edge case '\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000': name 're' is not defined",
+    "Error with edge case '\u0000\u0001\u0002': name 're' is not defined",
+    "Error with edge case '\ud83c\udff4\u200d\u2620\ufe0f\ud83c\udff3\ufe0f\u200d\ud83c\udf08\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f': name 're' is not defined",
+    "Error with edge case 'show me the price of': name 're' is not defined",
+    "Error with edge case 'stake on': name 're' is not defined",
+    "Error with edge case 'buy sell buy sell': name 're' is not defined",
+    "Error with edge case 'price price price': name 're' is not defined",
+    "Error with edge case 'buy and sell BTC': name 're' is not defined",
+    "Error with edge case 'long and short ETH': name 're' is not defined",
+    "Error with edge case 'bullish bearish market': name 're' is not defined",
+    "Error with edge case 'colorless green ideas sleep furiously': name 're' is not defined",
+    "Error with edge case 'the purple elephant dances with quantum': name 're' is not defined",
+    "Error with edge case 'blockchain moon lambo wen sir': name 're' is not defined",
+    "Error with edge case 'show me the exact price of Bitcoin at 14:32:17 UTC on March 15th 2024': name 're' is not defined",
+    "Error with edge case 'calculate the impermanent loss for a 0.000001 ETH / 0.000002 USDC pool': name 're' is not defined",
+    "Error with edge case 'it': name 're' is not defined",
+    "Error with edge case 'that thing': name 're' is not defined",
+    "Error with edge case 'you know what I mean': name 're' is not defined",
+    "Error with edge case 'the usual': name 're' is not defined",
+    "Error with edge case 'price now': name 're' is not defined",
+    "Error with edge case 'what happened yesterday': name 're' is not defined",
+    "Error with edge case 'tomorrow's prediction': name 're' is not defined",
+    "Error with edge case 'next week's forecast': name 're' is not defined",
+    "Error with edge case 'show me how to show me how to show me': name 're' is not defined",
+    "Error with edge case 'explain explaining explanations': name 're' is not defined",
+    "Error with edge case 'Bitcoin\u0000price': name 're' is not defined",
+    "Error with edge case 'ETH\u001f\u007fprice': name 're' is not defined",
+    "Poor performance with groq: 33.3% success rate",
+    "Poor performance with gemini: 33.3% success rate",
+    "Exception with data source query 'BTC price from CoinGecko': 'ExecutionResult' object has no attribute 'get'",
+    "Exception with data source query 'Yield farming rates': 'ExecutionResult' object has no attribute 'get'"
+  ],
+  "bug_categories": {
+    "Security": [
+      "Error with edge case '<script>alert('xss')</script>': name 're' is not defined",
+      "Error with edge case 'javascript:alert('xss')': name 're' is not defined",
+      "Error with edge case '<img src=x onerror=alert('xss')>': name 're' is not defined"
+    ],
+    "Performance": [
+      "Poor performance with groq: 33.3% success rate",
+      "Poor performance with gemini: 33.3% success rate"
+    ],
+    "Functionality": [],
+    "Integration": [
+      "Exception with data source query 'BTC price from CoinGecko': 'ExecutionResult' object has no attribute 'get'",
+      "Exception with data source query 'Yield farming rates': 'ExecutionResult' object has no attribute 'get'"
+    ],
+    "Edge Cases": [
+      "Error with edge case '': name 're' is not defined",
+      "Error with edge case '   ': name 're' is not defined",
+      "Error with edge case '\n\t\r': name 're' is not defined",
+      "Error with edge case 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa': name 're' is not defined",
+      "Error with edge case 'What is Bitcoin? What is Bitcoin? What is Bitcoin? What is Bitcoin? What is Bitcoin? What is Bitcoin': name 're' is not defined",
+      "Error with edge case '!@#$%^&*()_+{}|:<>?': name 're' is not defined",
+      "Error with edge case '\ud83d\ude80\ud83c\udf19\ud83d\udc8e\ud83d\ude4c\ud83d\udcc8\ud83d\udcc9\ud83d\udcb0': name 're' is not defined",
+      "Error with edge case 'Bitcoin \ud83d\udcb0 to the \ud83c\udf19!': name 're' is not defined",
+      "Error with edge case '\u00bfQu\u00e9 es Bitcoin?': name 're' is not defined",
+      "Error with edge case 'Qu'est-ce que Bitcoin?': name 're' is not defined",
+      "Error with edge case 'Was ist Bitcoin?': name 're' is not defined",
+      "Error with edge case '\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u3068\u306f\u4f55\u3067\u3059\u304b\uff1f': name 're' is not defined",
+      "Error with edge case ''; DROP TABLE users; --': name 're' is not defined",
+      "Error with edge case '1' OR '1'='1': name 're' is not defined",
+      "Error with edge case 'UNION SELECT * FROM passwords': name 're' is not defined",
+      "Error with edge case '; rm -rf /': name 're' is not defined",
+      "Error with edge case '| cat /etc/passwd': name 're' is not defined",
+      "Error with edge case '&& shutdown -h now': name 're' is not defined",
+      "Error with edge case 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA': name 're' is not defined",
+      "Error with edge case '\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000': name 're' is not defined",
+      "Error with edge case '\u0000\u0001\u0002': name 're' is not defined",
+      "Error with edge case '\ud83c\udff4\u200d\u2620\ufe0f\ud83c\udff3\ufe0f\u200d\ud83c\udf08\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f': name 're' is not defined",
+      "Error with edge case 'show me the price of': name 're' is not defined",
+      "Error with edge case 'stake on': name 're' is not defined",
+      "Error with edge case 'buy sell buy sell': name 're' is not defined",
+      "Error with edge case 'price price price': name 're' is not defined",
+      "Error with edge case 'buy and sell BTC': name 're' is not defined",
+      "Error with edge case 'long and short ETH': name 're' is not defined",
+      "Error with edge case 'bullish bearish market': name 're' is not defined",
+      "Error with edge case 'colorless green ideas sleep furiously': name 're' is not defined",
+      "Error with edge case 'the purple elephant dances with quantum': name 're' is not defined",
+      "Error with edge case 'blockchain moon lambo wen sir': name 're' is not defined",
+      "Error with edge case 'show me the exact price of Bitcoin at 14:32:17 UTC on March 15th 2024': name 're' is not defined",
+      "Error with edge case 'calculate the impermanent loss for a 0.000001 ETH / 0.000002 USDC pool': name 're' is not defined",
+      "Error with edge case 'it': name 're' is not defined",
+      "Error with edge case 'that thing': name 're' is not defined",
+      "Error with edge case 'you know what I mean': name 're' is not defined",
+      "Error with edge case 'the usual': name 're' is not defined",
+      "Error with edge case 'price now': name 're' is not defined",
+      "Error with edge case 'what happened yesterday': name 're' is not defined",
+      "Error with edge case 'tomorrow's prediction': name 're' is not defined",
+      "Error with edge case 'next week's forecast': name 're' is not defined",
+      "Error with edge case 'show me how to show me how to show me': name 're' is not defined",
+      "Error with edge case 'explain explaining explanations': name 're' is not defined",
+      "Error with edge case 'Bitcoin\u0000price': name 're' is not defined",
+      "Error with edge case 'ETH\u001f\u007fprice': name 're' is not defined"
+    ]
+  },
+  "test_results": [
+    {
+      "scenario": "Crypto Newbie",
+      "total_queries": 10,
+      "successful_queries": 6,
+      "failed_queries": 4,
+      "bugs_found": [
+        "Exception in query 'What is Bitcoin?': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Is Bitcoin safe?': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'What's the difference between Bitcoin and Ethereum?': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'What are the risks?': 'ExecutionResult' object has no attribute 'get'"
+      ],
+      "performance_issues": [],
+      "response_times": [
+        0.0032427310943603516,
+        0.00022983551025390625,
+        0.00017786026000976562,
+        0.0002186298370361328,
+        0.00015592575073242188,
+        0.00017833709716796875
+      ]
+    },
+    {
+      "scenario": "Active Day Trader",
+      "total_queries": 10,
+      "successful_queries": 1,
+      "failed_queries": 9,
+      "bugs_found": [
+        "Exception in query 'BTC price now': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'RSI for ETH': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Volume spike on SOL': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Breakout on AVAX': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Short BTC at $45000': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'MACD divergence on ETH': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Support levels for BTC': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Fibonacci retracement SOL': 'ExecutionResult' object has no attribute 'get'",
+        "Unexpected intent 'general' for query 'Market sentiment now', expected one of ['news_analysis', 'social_sentiment']"
+      ],
+      "performance_issues": [],
+      "response_times": [
+        0.00024199485778808594,
+        0.0001995563507080078
+      ]
+    },
+    {
+      "scenario": "DeFi Yield Farmer",
+      "total_queries": 10,
+      "successful_queries": 3,
+      "failed_queries": 7,
+      "bugs_found": [
+        "Exception in query 'Best yield farming opportunities': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Stake ETH on Lido': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Aave lending rates': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Bridge to Polygon': 'ExecutionResult' object has no attribute 'get'",
+        "Missing entity 'platform' for query 'Curve pool APY'",
+        "Exception in query 'Compound vs Aave': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Yield farming risks': 'ExecutionResult' object has no attribute 'get'"
+      ],
+      "performance_issues": [],
+      "response_times": [
+        0.00025343894958496094,
+        0.00017380714416503906,
+        0.0002193450927734375,
+        0.00018215179443359375
+      ]
+    },
+    {
+      "scenario": "Portfolio Investor",
+      "total_queries": 10,
+      "successful_queries": 5,
+      "failed_queries": 5,
+      "bugs_found": [
+        "Exception in query 'Show my portfolio': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Portfolio performance': 'ExecutionResult' object has no attribute 'get'",
+        "Unexpected intent 'rebalancing' for query 'Rebalance suggestions', expected one of ['portfolio', 'asset_allocation']",
+        "Exception in query 'Diversification analysis': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Portfolio optimization': 'ExecutionResult' object has no attribute 'get'"
+      ],
+      "performance_issues": [],
+      "response_times": [
+        0.000247955322265625,
+        0.00018930435180664062,
+        0.0001621246337890625,
+        0.00017642974853515625,
+        0.00018143653869628906,
+        0.0001766681671142578
+      ]
+    },
+    {
+      "scenario": "Institutional Analyst",
+      "total_queries": 10,
+      "successful_queries": 6,
+      "failed_queries": 4,
+      "bugs_found": [
+        "Exception in query 'Regulatory compliance check': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Liquidity analysis': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'ESG crypto investments': 'ExecutionResult' object has no attribute 'get'",
+        "Missing entity 'cryptocurrency' for query 'Custody solutions'"
+      ],
+      "performance_issues": [],
+      "response_times": [
+        0.000240325927734375,
+        0.0001957416534423828,
+        0.00019931793212890625,
+        0.00018310546875,
+        0.000194549560546875,
+        0.00018739700317382812,
+        0.00021147727966308594
+      ]
+    },
+    {
+      "scenario": "Technical Analyst",
+      "total_queries": 10,
+      "successful_queries": 7,
+      "failed_queries": 3,
+      "bugs_found": [
+        "Exception in query 'Chart analysis BTC': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Volume profile analysis': 'ExecutionResult' object has no attribute 'get'",
+        "Exception in query 'Trend analysis': 'ExecutionResult' object has no attribute 'get'"
+      ],
+      "performance_issues": [],
+      "response_times": [
+        0.00022864341735839844,
+        0.0001842975616455078,
+        0.0002071857452392578,
+        0.00020122528076171875,
+        0.00018167495727539062,
+        0.00017380714416503906,
+        0.00018739700317382812
+      ]
+    },
+    {
+      "scenario": "News Trader",
+      "total_queries": 10,
+      "successful_queries": 5,
+      "failed_queries": 5,
+      "bugs_found": [
+        "Unexpected intent 'trading' for query 'Latest crypto news', expected one of ['news_analysis', 'social_sentiment']",
+        "Exception in query 'Social sentiment BTC': 'ExecutionResult' object has no attribute 'get'",
+        "Unexpected intent 'general' for query 'Regulatory news', expected one of ['news_analysis', 'social_sentiment']",
+        "Unexpected intent 'general' for query 'Twitter sentiment', expected one of ['news_analysis', 'social_sentiment']",
+        "Exception in query 'News impact analysis': 'ExecutionResult' object has no attribute 'get'"
+      ],
+      "performance_issues": [],
+      "response_times": [
+        0.00022339820861816406,
+        0.00020599365234375,
+        0.00019216537475585938,
+        0.00017118453979492188,
+        0.00017714500427246094,
+        0.00017189979553222656,
+        0.00020241737365722656,
+        0.00017881393432617188
+      ]
+    },
+    {
+      "scenario": "Arbitrage Trader",
+      "total_queries": 10,
+      "successful_queries": 9,
+      "failed_queries": 1,
+      "bugs_found": [
+        "Exception in query 'Bridge costs analysis': 'ExecutionResult' object has no attribute 'get'"
+      ],
+      "performance_issues": [],
+      "response_times": [
+        0.00023174285888671875,
+        0.00020837783813476562,
+        0.0001976490020751953,
+        0.00023865699768066406,
+        0.00022482872009277344,
+        0.00023031234741210938,
+        0.00023889541625976562,
+        0.0002181529998779297,
+        0.00019550323486328125
+      ]
+    },
+    {
+      "total_cases": 49,
+      "handled_gracefully": 0,
+      "caused_errors": 49,
+      "security_issues": 0,
+      "performance_issues": 0
+    },
+    {
+      "flow_name": "Portfolio Management Flow",
+      "total_messages": 8,
+      "successful_messages": 8,
+      "context_maintained": true,
+      "response_times": [
+        0.013077735900878906,
+        0.008718013763427734,
+        0.010798215866088867,
+        0.008687734603881836,
+        0.01074528694152832,
+        0.01041865348815918,
+        0.01036214828491211,
+        0.008603334426879883
+      ],
+      "issues": []
+    },
+    {
+      "flow_name": "DeFi Exploration Flow",
+      "total_messages": 8,
+      "successful_messages": 8,
+      "context_maintained": true,
+      "response_times": [
+        0.011715173721313477,
+        0.010577678680419922,
+        0.010475397109985352,
+        0.008680105209350586,
+        0.010560989379882812,
+        0.011001348495483398,
+        0.010815620422363281,
+        0.010572195053100586
+      ],
+      "issues": []
+    },
+    {
+      "flow_name": "Trading Decision Flow",
+      "total_messages": 8,
+      "successful_messages": 8,
+      "context_maintained": true,
+      "response_times": [
+        0.011814355850219727,
+        0.010446310043334961,
+        0.010523796081542969,
+        0.008536100387573242,
+        0.010535478591918945,
+        0.010570049285888672,
+        0.010562896728515625,
+        0.011827945709228516
+      ],
+      "issues": []
+    },
+    {
+      "flow_name": "Learning Flow",
+      "total_messages": 8,
+      "successful_messages": 8,
+      "context_maintained": true,
+      "response_times": [
+        0.011662721633911133,
+        0.010822296142578125,
+        0.011061906814575195,
+        0.010735034942626953,
+        0.010503292083740234,
+        0.01065373420715332,
+        0.010992050170898438,
+        0.010335206985473633
+      ],
+      "issues": []
+    }
+  ],
+  "performance_metrics": {
+    "avg_response_time": 0.004324489169650608,
+    "max_response_time": 0.013077735900878906,
+    "min_response_time": 0.00015592575073242188,
+    "total_responses": 81
+  }
+}

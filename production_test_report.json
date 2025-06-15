@@ -1,0 +1,249 @@
+{
+  "test_summary": {
+    "total_tests": 36,
+    "passed_tests": 27,
+    "failed_tests": 9,
+    "success_rate": 75.0,
+    "duration_seconds": 12.344078302383423,
+    "timestamp": "2025-06-12T23:53:12.793010"
+  },
+  "component_results": {
+    "cache_manager": {
+      "cache_basic_operations": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Basic operations working correctly",
+        "timestamp": "2025-06-12T23:53:00.448150"
+      },
+      "cache_lru_eviction": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "LRU eviction working correctly",
+        "timestamp": "2025-06-12T23:53:00.449281"
+      },
+      "cache_ttl_expiration": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "TTL expiration working correctly",
+        "timestamp": "2025-06-12T23:53:01.951053"
+      },
+      "cache_predictive_loading": {
+        "status": "\u274c FAIL",
+        "success": false,
+        "message": "Should have predictions based on patterns",
+        "timestamp": "2025-06-12T23:53:01.951224"
+      },
+      "cache_performance": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Performance: 12225.9 ops/sec",
+        "timestamp": "2025-06-12T23:53:02.114858"
+      },
+      "cache_tag_invalidation": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Tag invalidation working correctly",
+        "timestamp": "2025-06-12T23:53:02.115471"
+      }
+    },
+    "circuit_breaker": {
+      "circuit_breaker_normal": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Normal operation working correctly",
+        "timestamp": "2025-06-12T23:53:02.115762"
+      },
+      "circuit_breaker_failure": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Failure detection working correctly",
+        "timestamp": "2025-06-12T23:53:02.115964"
+      },
+      "circuit_breaker_recovery": {
+        "status": "\u274c FAIL",
+        "success": false,
+        "message": "Circuit breaker 'test_service' is OPEN",
+        "timestamp": "2025-06-12T23:53:04.618784"
+      },
+      "circuit_breaker_timeout": {
+        "status": "\u274c FAIL",
+        "success": false,
+        "message": "Should indicate timeout",
+        "timestamp": "2025-06-12T23:53:04.618872"
+      }
+    },
+    "rate_limiter": {
+      "rate_limiter_token_bucket": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Token bucket working correctly",
+        "timestamp": "2025-06-12T23:53:04.619137"
+      },
+      "rate_limiter_sliding_window": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Sliding window working correctly",
+        "timestamp": "2025-06-12T23:53:04.619308"
+      },
+      "rate_limiter_enforcement": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Rate limit enforcement working correctly",
+        "timestamp": "2025-06-12T23:53:04.619397"
+      },
+      "rate_limiter_burst": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Burst handling working correctly",
+        "timestamp": "2025-06-12T23:53:04.619533"
+      }
+    },
+    "health_monitor": {
+      "health_monitor_registration": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Service registration working correctly",
+        "timestamp": "2025-06-12T23:53:04.619665"
+      },
+      "health_monitor_checks": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Health checks working correctly",
+        "timestamp": "2025-06-12T23:53:06.621779"
+      },
+      "health_monitor_failure_detection": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Failure detection working correctly",
+        "timestamp": "2025-06-12T23:53:09.625095"
+      },
+      "health_monitor_recovery": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Recovery detection logic present",
+        "timestamp": "2025-06-12T23:53:09.625152"
+      }
+    },
+    "metrics_collector": {
+      "metrics_definition": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Metric definition working correctly",
+        "timestamp": "2025-06-12T23:53:09.625306"
+      },
+      "metrics_recording": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Metric recording working correctly",
+        "timestamp": "2025-06-12T23:53:09.625444"
+      },
+      "metrics_aggregation": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Metric aggregation working correctly",
+        "timestamp": "2025-06-12T23:53:09.625717"
+      },
+      "metrics_export": {
+        "status": "\u274c FAIL",
+        "success": false,
+        "message": "Object of type datetime is not JSON serializable",
+        "timestamp": "2025-06-12T23:53:09.626003"
+      }
+    },
+    "security_manager": {
+      "security_input_validation": {
+        "status": "\u274c FAIL",
+        "success": false,
+        "message": "'>=' not supported between instances of 'ThreatLevel' and 'ThreatLevel'",
+        "timestamp": "2025-06-12T23:53:09.626601"
+      },
+      "security_threat_detection": {
+        "status": "\u274c FAIL",
+        "success": false,
+        "message": "'>' not supported between instances of 'ThreatLevel' and 'ThreatLevel'",
+        "timestamp": "2025-06-12T23:53:09.626692"
+      },
+      "security_access_control": {
+        "status": "\u274c FAIL",
+        "success": false,
+        "message": "'>=' not supported between instances of 'ThreatLevel' and 'ThreatLevel'",
+        "timestamp": "2025-06-12T23:53:09.626763"
+      },
+      "security_audit_logging": {
+        "status": "\u274c FAIL",
+        "success": false,
+        "message": "'>' not supported between instances of 'ThreatLevel' and 'ThreatLevel'",
+        "timestamp": "2025-06-12T23:53:09.626821"
+      }
+    },
+    "performance_optimizer": {
+      "performance_connection_pooling": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Connection pooling working correctly",
+        "timestamp": "2025-06-12T23:53:09.627084"
+      },
+      "performance_memory_optimization": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Memory optimization working correctly",
+        "timestamp": "2025-06-12T23:53:09.633305"
+      },
+      "performance_async_optimization": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Async optimization working correctly",
+        "timestamp": "2025-06-12T23:53:09.733598"
+      },
+      "performance_monitoring": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Performance monitoring working correctly",
+        "timestamp": "2025-06-12T23:53:11.735692"
+      }
+    },
+    "integration": {
+      "integration_cache_circuit_breaker": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Cache + Circuit Breaker integration working",
+        "timestamp": "2025-06-12T23:53:11.736059"
+      },
+      "integration_security_rate_limiter": {
+        "status": "\u274c FAIL",
+        "success": false,
+        "message": "'>' not supported between instances of 'ThreatLevel' and 'ThreatLevel'",
+        "timestamp": "2025-06-12T23:53:11.736271"
+      },
+      "integration_monitoring": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Monitoring integration working",
+        "timestamp": "2025-06-12T23:53:12.737355"
+      },
+      "stress_high_load_cache": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "High load cache: 10506.6 ops/sec",
+        "timestamp": "2025-06-12T23:53:12.785213"
+      },
+      "stress_concurrent_rate_limiting": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Concurrent rate limiting: 100/250 allowed",
+        "timestamp": "2025-06-12T23:53:12.789315"
+      },
+      "stress_circuit_breaker_load": {
+        "status": "\u2705 PASS",
+        "success": true,
+        "message": "Circuit breaker under load: 66/100 successful",
+        "timestamp": "2025-06-12T23:53:12.791226"
+      }
+    }
+  },
+  "production_readiness": {
+    "overall_status": "NEEDS_ATTENTION",
+    "critical_failures": 9,
+    "recommendation": "Fix issues before deployment"
+  }
+}

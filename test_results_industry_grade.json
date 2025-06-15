@@ -1,0 +1,104 @@
+{
+  "summary": {
+    "total_tests": 19,
+    "passed_tests": 9,
+    "failed_tests": 10,
+    "success_rate": 47.368421052631575,
+    "total_time": 7.620092868804932,
+    "timestamp": "2025-06-12T02:14:01.889546"
+  },
+  "performance": {
+    "memory_usage_mb": 50.5546875,
+    "cpu_percent": 0.0,
+    "execution_time": 7.620092868804932,
+    "concurrent_total_time": 0.006963968276977539,
+    "concurrent_avg_response": 4.1046142578125e-05,
+    "memory_peak": 0.05080890655517578,
+    "memory_increase": 0.0
+  },
+  "detailed_results": {
+    "Security": [
+      [
+        "API Key Security",
+        true,
+        "All security checks passed"
+      ],
+      [
+        "Encryption Security",
+        false,
+        "Encryption test failed: Incorrect padding"
+      ],
+      [
+        "Input Validation",
+        true,
+        "All injection attempts handled safely"
+      ]
+    ],
+    "Performance": [
+      [
+        "API Rate Limiting",
+        false,
+        "Rate limiting test failed: invalid decimal literal (user_db.py, line 109)"
+      ],
+      [
+        "Concurrent Operations",
+        true,
+        "50 requests in 0.01s"
+      ],
+      [
+        "Memory Usage",
+        true,
+        "Memory increase: 0.00MB"
+      ]
+    ],
+    "Integration": [
+      [
+        "AI Provider Fallbacks",
+        false,
+        "AI fallback test failed: invalid decimal literal (user_db.py, line 109)"
+      ],
+      [
+        "DeFiLlama Integration",
+        true,
+        "API integration working"
+      ],
+      [
+        "Gas Price Integration",
+        true,
+        "Gas monitoring working"
+      ]
+    ],
+    "DataIntegrity": [
+      [
+        "Configuration Validation",
+        true,
+        "Configuration validation passed"
+      ],
+      [
+        "Database Operations",
+        true,
+        "All database tests passed"
+      ]
+    ],
+    "EdgeCase": [
+      [
+        "Extreme Inputs",
+        false,
+        "Extreme input test failed: Should handle empty inputs gracefully"
+      ],
+      [
+        "Network Failures",
+        true,
+        "Network failure handling working"
+      ],
+      [
+        "Resource Exhaustion",
+        false,
+        "Resource exhaustion test failed: invalid decimal literal (user_db.py, line 109)"
+      ]
+    ]
+  },
+  "recommendations": [
+    "\ud83d\udea8 CRITICAL: Success rate below 80%. Immediate attention required."
+  ]
+}

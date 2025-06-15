@@ -1,0 +1,113 @@
+# requirements_compatible.txt - Compatible with existing environment packages
+# Resolves conflicts with ggshield, paradex-py, and realtime packages
+
+# ===== CORE TELEGRAM BOT DEPENDENCIES =====
+python-telegram-bot[job-queue]>=20.0,<22.0
+APScheduler>=3.10.0,<4.0
+pytz>=2023.3
+
+# ===== AI PROVIDERS & LANGUAGE MODELS =====
+groq>=0.8.0
+openai>=1.12.0
+google-generativeai>=0.4.0
+anthropic>=0.20.0
+
+# ===== SECURITY & ENCRYPTION (Compatible with ggshield) =====
+cryptography>=41.0.0
+python-dotenv~=0.21.0                        # Compatible with ggshield 1.39.0
+passlib>=1.7.4
+bcrypt>=4.0.0
+
+# ===== WEB & API COMMUNICATION (Compatible with paradex-py) =====
+requests>=2.31.0
+aiohttp>=3.9.0
+httpx>=0.25.0
+websockets>=12.0,<13.0                       # Compatible with paradex-py 0.4.4
+certifi>=2023.7.22
+
+# ===== CHARACTER ENCODING (Compatible with ggshield) =====
+charset-normalizer~=3.1.0                    # Compatible with ggshield 1.39.0
+
+# ===== TYPING EXTENSIONS (Compatible with realtime) =====
+typing-extensions>=4.13.2,<5.0.0             # Compatible with realtime 2.4.3
+
+# ===== BLOCKCHAIN & CRYPTO INTEGRATION =====
+web3>=6.15.0
+eth-abi>=4.2.0
+eth-account>=0.10.0
+eth-hash>=0.5.0
+eth-keyfile>=0.6.0
+eth-keys>=0.4.0
+eth-rlp>=0.3.0
+eth-typing>=3.5.0
+eth-utils>=2.3.0
+hexbytes>=0.3.0
+rlp>=3.0.0
+pycoingecko>=3.1.0
+ccxt>=4.2.0
+yfinance>=0.2.18
+
+# ===== EXCHANGE APIS (Using correct package names) =====
+python-binance>=1.0.19
+# paradex-py is already installed (0.4.4)
+# Note: Using existing paradex-py instead of non-existent paradex-python
+
+# ===== DATA ANALYSIS & MACHINE LEARNING =====
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+ta>=0.10.0
+joblib>=1.3.0
+threadpoolctl>=3.1.0
+
+# ===== MARSHMALLOW (Compatible with paradex-py) =====
+marshmallow-dataclass>=8.6.1,<9.0.0          # Compatible with paradex-py
+
+# ===== VISUALIZATION & REPORTING =====
+plotly>=5.15.0
+matplotlib>=3.7.0
+pillow>=10.0.0
+reportlab>=4.0.0
+openpyxl>=3.1.0
+
+# ===== NATURAL LANGUAGE PROCESSING =====
+nltk>=3.8.0
+textblob>=0.17.0
+click>=8.1.0
+tqdm>=4.65.0
+regex>=2023.10.0
+
+# ===== SOCIAL MEDIA & NEWS INTEGRATION =====
+tweepy>=4.14.0
+oauthlib>=3.2.0
+requests-oauthlib>=1.3.0
+
+# ===== DATABASE & STORAGE =====
+sqlalchemy>=2.0.0
+peewee>=3.16.0
+alembic>=1.12.0
+
+# ===== ASYNC & PERFORMANCE =====
+aiodns>=3.1.0
+pycares>=4.3.0
+aiosignal>=1.3.0
+frozenlist>=1.4.0
+multidict>=6.0.0
+
+# ===== UTILITY LIBRARIES =====
+python-dateutil>=2.8.0
+six>=1.16.0
+urllib3>=2.0.0
+idna>=3.4
+attrs>=23.1.0
+
+# ===== CALENDAR & PRODUCTIVITY =====
+icalendar>=5.0.0
+
+# ===== ADDITIONAL UTILITIES =====
+pyyaml>=6.0
+toml>=0.10.0
+markdown>=3.4.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0

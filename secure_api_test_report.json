@@ -1,0 +1,184 @@
+{
+  "test_summary": {
+    "total_tests": 17,
+    "passed_tests": 14,
+    "failed_tests": 3,
+    "success_rate": "82.4%",
+    "total_time": "8.04s",
+    "timestamp": "2025-06-12T05:01:32.273266"
+  },
+  "category_results": {
+    "Environment Configuration": {
+      "env_variables": {
+        "passed": true,
+        "details": "5/5 required variables present",
+        "present_vars": [
+          "TELEGRAM_BOT_TOKEN",
+          "TELEGRAM_CHAT_ID",
+          "BOT_MASTER_ENCRYPTION_KEY",
+          "GROQ_API_KEY",
+          "GEMINI_API_KEY"
+        ],
+        "missing_vars": []
+      },
+      "config_module": {
+        "passed": true,
+        "details": "Config module loaded and accessible",
+        "config_functional": true,
+        "telegram_token_present": true
+      },
+      "security_keys": {
+        "passed": true,
+        "details": "Encryption key format validation",
+        "key_present": true,
+        "key_length_valid": true
+      }
+    },
+    "AI Provider APIs": {
+      "groq_api": {
+        "passed": false,
+        "error": "Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"
+      },
+      "gemini_api": {
+        "passed": false,
+        "error": "404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      }
+    },
+    "Blockchain & Web3 APIs": {
+      "ethereum_rpc": {
+        "passed": true,
+        "details": "Ethereum RPC connection successful, block: 26968098",
+        "connected": true,
+        "latest_block": 26968098,
+        "rpc_endpoint": "https://base-sepolia...Pm7FRnMoo1"
+      },
+      "coingecko_api": {
+        "passed": true,
+        "details": "CoinGecko API working, BTC price: $107743",
+        "api_accessible": true,
+        "btc_price": 107743
+      }
+    },
+    "Telegram Bot API": {
+      "telegram_bot": {
+        "passed": true,
+        "details": "Telegram bot active: @mobiusminibot",
+        "bot_active": true,
+        "bot_username": "mobiusminibot",
+        "token_format": "7707778639...Foa8"
+      }
+    },
+    "Google Gemini API": {
+      "gemini_detailed": {
+        "passed": false,
+        "details": "Gemini models working: []",
+        "working_models": [],
+        "total_models_tested": 2,
+        "api_key_valid": false
+      }
+    },
+    "Groq API": {
+      "groq_detailed": {
+        "passed": true,
+        "details": "Groq models working: ['llama3-8b-8192', 'llama3-70b-8192', 'gemma2-9b-it']",
+        "working_models": [
+          "llama3-8b-8192",
+          "llama3-70b-8192",
+          "gemma2-9b-it"
+        ],
+        "total_models_tested": 3,
+        "api_key_valid": true
+      }
+    },
+    "Security & Encryption": {
+      "encryption_key": {
+        "passed": true,
+        "details": "Encryption key format validation",
+        "key_length_valid": true,
+        "key_format": "oSEpYy1K...oQg="
+      },
+      "env_security": {
+        "passed": true,
+        "details": "16 secure environment variables configured",
+        "sensitive_vars_count": 17,
+        "secure_vars_count": 16
+      }
+    },
+    "Database Operations": {
+      "database_operations": {
+        "passed": true,
+        "details": "Database read/write operations successful",
+        "write_successful": true,
+        "read_successful": true,
+        "data_integrity": true
+      }
+    },
+    "Cross-Chain Integration": {
+      "cross_chain_support": {
+        "passed": true,
+        "details": "Cross-chain analytics supports 5 chains",
+        "supported_chains_count": 5,
+        "minimum_chains_met": true
+      }
+    },
+    "Performance Under Load": {
+      "api_performance": {
+        "passed": true,
+        "details": "Average API response time: 0.220s",
+        "avg_response_time": "0.220s",
+        "successful_apis": 2,
+        "total_apis_tested": 2
+      }
+    },
+    "Error Handling": {
+      "api_error_handling": {
+        "passed": true,
+        "details": "API error handling: 2/2 scenarios handled",
+        "errors_handled": 2,
+        "total_scenarios": 2,
+        "graceful_degradation": true
+      }
+    },
+    "End-to-End Integration": {
+      "e2e_integration": {
+        "passed": true,
+        "details": "End-to-end integration: 3/4 steps successful",
+        "workflow_steps": [
+          {
+            "step": "Environment",
+            "status": true
+          },
+          {
+            "step": "Database",
+            "status": true
+          },
+          {
+            "step": "AI Provider",
+            "status": false
+          },
+          {
+            "step": "Telegram API",
+            "status": true
+          }
+        ],
+        "successful_steps": 3,
+        "integration_ready": true
+      }
+    }
+  },
+  "api_status": {
+    "groq": "error",
+    "gemini": "error",
+    "ethereum_rpc": "working",
+    "coingecko": "working",
+    "telegram": "working",
+    "gemini_detailed": "error",
+    "groq_detailed": "working"
+  },
+  "environment_info": {
+    "python_version": "3.12.11",
+    "platform": "linux",
+    "config_loaded": true,
+    "env_vars_count": 77
+  }
+}

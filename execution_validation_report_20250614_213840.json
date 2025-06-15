@@ -1,0 +1,4629 @@
+{
+  "timestamp": "2025-06-14T21:38:40.957971",
+  "summary": {
+    "total_tests": 50,
+    "passed_tests": 50,
+    "failed_tests": 0,
+    "success_rate": 100.0
+  },
+  "category_breakdown": {
+    "price": {
+      "total": 15,
+      "passed": 15,
+      "success_rate": 100.0
+    },
+    "portfolio": {
+      "total": 10,
+      "passed": 10,
+      "success_rate": 100.0
+    },
+    "research": {
+      "total": 10,
+      "passed": 10,
+      "success_rate": 100.0
+    },
+    "yield": {
+      "total": 8,
+      "passed": 8,
+      "success_rate": 100.0
+    },
+    "alert": {
+      "total": 7,
+      "passed": 7,
+      "success_rate": 100.0
+    }
+  },
+  "detailed_results": [
+    {
+      "input": "What's the price of Bitcoin?",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price",
+        "get_market_data"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 2.3815696239471436,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'BTC', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'BTC'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:21.466878",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105168.95,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "BTC",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105168.89264206,
+              "change_24h": -0.47311528291302263,
+              "volume_24h": 809911029.256353,
+              "market_cap": 2090547247938.8687,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "BTC"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "BTC",
+            "price": 105168.95,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "BTC",
+            "price": 105168.89264206,
+            "change_24h": -0.47311528291302263,
+            "volume_24h": 809911029.256353,
+            "market_cap": 2090547247938.8687,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Show me BTC price",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 1.2503130435943604,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'BTC', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'BTC'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:22.717257",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105168.95,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "BTC",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105168.89264206,
+              "change_24h": -0.47311528291302263,
+              "volume_24h": 809911029.256353,
+              "market_cap": 2090547247938.8687,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "BTC"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "BTC",
+            "price": 105168.95,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "BTC",
+            "price": 105168.89264206,
+            "change_24h": -0.47311528291302263,
+            "volume_24h": 809911029.256353,
+            "market_cap": 2090547247938.8687,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "How much is Ethereum worth?",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.6858088970184326,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'ETH', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'ETH'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:23.403143",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "ETH",
+              "price": 2518.21,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "ETH",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "ETH",
+              "price": 2518.26184082344,
+              "change_24h": -1.4667151093400912,
+              "volume_24h": 570877755.352814,
+              "market_cap": 304007513394.09076,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "ETH"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "ETH",
+            "price": 2518.21,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "ETH",
+            "price": 2518.26184082344,
+            "change_24h": -1.4667151093400912,
+            "volume_24h": 570877755.352814,
+            "market_cap": 304007513394.09076,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Check Solana value",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.5832898616790771,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'SOL', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'SOL'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:23.986485",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "SOL",
+              "price": 143.96,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "SOL",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "SOL",
+              "price": 143.973603723602,
+              "change_24h": -2.16617078294264,
+              "volume_24h": 133763626.544563,
+              "market_cap": 86815578016.75528,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "SOL"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "SOL",
+            "price": 143.96,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "SOL",
+            "price": 143.973603723602,
+            "change_24h": -2.16617078294264,
+            "volume_24h": 133763626.544563,
+            "market_cap": 86815578016.75528,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Bitcoin price please",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.8200321197509766,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'BTC', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'BTC'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:24.806573",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105168.95,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "BTC",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105168.89264206,
+              "change_24h": -0.47311528291302263,
+              "volume_24h": 809911029.256353,
+              "market_cap": 2090547247938.8687,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "BTC"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "BTC",
+            "price": 105168.95,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "BTC",
+            "price": 105168.89264206,
+            "change_24h": -0.47311528291302263,
+            "volume_24h": 809911029.256353,
+            "market_cap": 2090547247938.8687,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "ETH current price",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.522932767868042,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'ETH', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'ETH'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:25.329560",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "ETH",
+              "price": 2518.21,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "ETH",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "ETH",
+              "price": 2518.26184082344,
+              "change_24h": -1.4667151093400912,
+              "volume_24h": 570877755.352814,
+              "market_cap": 304007513394.09076,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "ETH"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "ETH",
+            "price": 2518.21,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "ETH",
+            "price": 2518.26184082344,
+            "change_24h": -1.4667151093400912,
+            "volume_24h": 570877755.352814,
+            "market_cap": 304007513394.09076,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Price of Cardano",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.6868710517883301,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'ADA', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'ADA'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:26.016492",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "ADA",
+              "price": 0.6235,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "ADA",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "ADA",
+              "price": 0.623478255961355,
+              "change_24h": -2.457180033184326,
+              "volume_24h": 16244506.807897,
+              "market_cap": 28056521518.260975,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "ADA"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "ADA",
+            "price": 0.6235,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "ADA",
+            "price": 0.623478255961355,
+            "change_24h": -2.457180033184326,
+            "volume_24h": 16244506.807897,
+            "market_cap": 28056521518.260975,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "What does Polkadot cost?",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 1.0895109176635742,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'DOT', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'DOT'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:27.106059",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "DOT",
+              "price": 3.77,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "DOT",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "DOT",
+              "price": 3.77012571589201,
+              "change_24h": -1.2094834956089877,
+              "volume_24h": 5136930.43852391,
+              "market_cap": 5984989239.569702,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "DOT"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "DOT",
+            "price": 3.77,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "DOT",
+            "price": 3.77012571589201,
+            "change_24h": -1.2094834956089877,
+            "volume_24h": 5136930.43852391,
+            "market_cap": 5984989239.569702,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "BTC worth right now",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.8922305107116699,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'BTC', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'BTC'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:27.998357",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105168.95,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "BTC",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105168.89264206,
+              "change_24h": -0.47311528291302263,
+              "volume_24h": 809911029.256353,
+              "market_cap": 2090547247938.8687,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "BTC"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "BTC",
+            "price": 105168.95,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "BTC",
+            "price": 105168.89264206,
+            "change_24h": -0.47311528291302263,
+            "volume_24h": 809911029.256353,
+            "market_cap": 2090547247938.8687,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Ethereum value today",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.31035876274108887,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'ETH', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'ETH'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:28.308774",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "ETH",
+              "price": 2518.21,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "ETH",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "ETH",
+              "price": 2518.26184082344,
+              "change_24h": -1.4667151093400912,
+              "volume_24h": 570877755.352814,
+              "market_cap": 304007513394.09076,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "ETH"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "ETH",
+            "price": 2518.21,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "ETH",
+            "price": 2518.26184082344,
+            "change_24h": -1.4667151093400912,
+            "volume_24h": 570877755.352814,
+            "market_cap": 304007513394.09076,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Current SOL price",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.30754971504211426,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'SOL', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'SOL'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:28.616393",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "SOL",
+              "price": 143.96,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "SOL",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "SOL",
+              "price": 143.973603723602,
+              "change_24h": -2.16617078294264,
+              "volume_24h": 133763626.544563,
+              "market_cap": 86815578016.75528,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "SOL"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "SOL",
+            "price": 143.96,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "SOL",
+            "price": 143.973603723602,
+            "change_24h": -2.16617078294264,
+            "volume_24h": 133763626.544563,
+            "market_cap": 86815578016.75528,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "How much for one Bitcoin?",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.7859437465667725,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'BTC', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'BTC'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:29.402397",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105168.95,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "BTC",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105168.89264206,
+              "change_24h": -0.47311528291302263,
+              "volume_24h": 809911029.256353,
+              "market_cap": 2090547247938.8687,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "BTC"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "BTC",
+            "price": 105168.95,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "BTC",
+            "price": 105168.89264206,
+            "change_24h": -0.47311528291302263,
+            "volume_24h": 809911029.256353,
+            "market_cap": 2090547247938.8687,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Chainlink price check",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.8793070316314697,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'LINK', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'LINK'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:30.281773",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "LINK",
+              "price": 13.15,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "LINK",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "LINK",
+              "price": 13.1528546594866,
+              "change_24h": -0.8328369752461274,
+              "volume_24h": 14004940.5102939,
+              "market_cap": 13152854659.4866,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "LINK"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "LINK",
+            "price": 13.15,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "LINK",
+            "price": 13.1528546594866,
+            "change_24h": -0.8328369752461274,
+            "volume_24h": 14004940.5102939,
+            "market_cap": 13152854659.4866,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "What's ADA trading at?",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 1.6220293045043945,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'ADA', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'ADA'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:31.903861",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "ADA",
+              "price": 0.6235,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "ADA",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "ADA",
+              "price": 0.623478255961355,
+              "change_24h": -2.457180033184326,
+              "volume_24h": 16244506.807897,
+              "market_cap": 28056521518.260975,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "ADA"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "ADA",
+            "price": 0.6235,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "ADA",
+            "price": 0.623478255961355,
+            "change_24h": -2.457180033184326,
+            "volume_24h": 16244506.807897,
+            "market_cap": 28056521518.260975,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Give me the latest BTC price",
+      "expected_intent": "price",
+      "expected_tools": [
+        "get_crypto_price"
+      ],
+      "expected_output_type": "price_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.3285505771636963,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_crypto_price({'symbol': 'BTC', 'vs_currency': 'usd'})",
+        "get_market_data({'symbol': 'BTC'})"
+      ],
+      "actual_output": {
+        "intent": "get_realtime_price",
+        "timestamp": "2025-06-14T21:38:32.232471",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105168.95,
+              "change_24h": 0.0,
+              "market_cap": 0,
+              "source": "cryptocompare_free"
+            },
+            "function": "get_crypto_price",
+            "parameters": {
+              "symbol": "BTC",
+              "vs_currency": "usd"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105169.530961867,
+              "change_24h": -0.4725112071236182,
+              "volume_24h": 809915928.905282,
+              "market_cap": 2090559936459.9922,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "BTC"
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "symbol": "BTC",
+            "price": 105168.95,
+            "change_24h": 0.0,
+            "market_cap": 0,
+            "source": "cryptocompare_free"
+          },
+          "market_data": {
+            "symbol": "BTC",
+            "price": 105169.530961867,
+            "change_24h": -0.4725112071236182,
+            "volume_24h": 809915928.905282,
+            "market_cap": 2090559936459.9922,
+            "source": "cryptocompare_public"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Show my portfolio",
+      "expected_intent": "portfolio",
+      "expected_tools": [
+        "calculate_portfolio_metrics",
+        "assess_portfolio_risk"
+      ],
+      "expected_output_type": "portfolio_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.19935846328735352,
+      "actual_intent": "portfolio",
+      "actual_tools": [
+        "calculate_portfolio_metrics({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'timeframe': '7d'})",
+        "assess_portfolio_risk({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'risk_model': 'var'})"
+      ],
+      "actual_output": {
+        "intent": "analyze_portfolio",
+        "timestamp": "2025-06-14T21:38:32.431885",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "total_value": 27958.5,
+              "holdings": [
+                {
+                  "symbol": "BTC",
+                  "amount": 0.5,
+                  "price": 43250.0,
+                  "value": 21625.0,
+                  "change_24h": 2.5,
+                  "allocation_percent": 77.3467818373661
+                },
+                {
+                  "symbol": "ETH",
+                  "amount": 2.0,
+                  "price": 2650.0,
+                  "value": 5300.0,
+                  "change_24h": 1.8,
+                  "allocation_percent": 18.956667918522097
+                },
+                {
+                  "symbol": "SOL",
+                  "amount": 10.0,
+                  "price": 98.5,
+                  "value": 985.0,
+                  "change_24h": -0.5,
+                  "allocation_percent": 3.5230788490083516
+                },
+                {
+                  "symbol": "ADA",
+                  "amount": 100.0,
+                  "price": 0.485,
+                  "value": 48.5,
+                  "change_24h": 3.2,
+                  "allocation_percent": 0.1734713951034569
+                }
+              ],
+              "metrics": {
+                "total_assets": 4,
+                "weighted_change_24h": 2.2628252588658193,
+                "largest_holding": "BTC",
+                "diversification_score": 40
+              },
+              "timeframe": "7d",
+              "portfolio_change_percent": 2.2628252588658193,
+              "risk_score": "Medium",
+              "source": "mock_analysis",
+              "risk_analysis": {
+                "risk_model": "var",
+                "individual_risks": {},
+                "portfolio_metrics": {
+                  "volatility": 0,
+                  "risk_score": 0,
+                  "risk_level": "Low"
+                },
+                "recommendations": []
+              }
+            },
+            "function": "calculate_portfolio_metrics",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "timeframe": "7d"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            },
+            "function": "assess_portfolio_risk",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "risk_model": "var"
+            }
+          }
+        ],
+        "summary": {
+          "portfolio_data": {
+            "total_value": 27958.5,
+            "holdings": [
+              {
+                "symbol": "BTC",
+                "amount": 0.5,
+                "price": 43250.0,
+                "value": 21625.0,
+                "change_24h": 2.5,
+                "allocation_percent": 77.3467818373661
+              },
+              {
+                "symbol": "ETH",
+                "amount": 2.0,
+                "price": 2650.0,
+                "value": 5300.0,
+                "change_24h": 1.8,
+                "allocation_percent": 18.956667918522097
+              },
+              {
+                "symbol": "SOL",
+                "amount": 10.0,
+                "price": 98.5,
+                "value": 985.0,
+                "change_24h": -0.5,
+                "allocation_percent": 3.5230788490083516
+              },
+              {
+                "symbol": "ADA",
+                "amount": 100.0,
+                "price": 0.485,
+                "value": 48.5,
+                "change_24h": 3.2,
+                "allocation_percent": 0.1734713951034569
+              }
+            ],
+            "metrics": {
+              "total_assets": 4,
+              "weighted_change_24h": 2.2628252588658193,
+              "largest_holding": "BTC",
+              "diversification_score": 40
+            },
+            "timeframe": "7d",
+            "portfolio_change_percent": 2.2628252588658193,
+            "risk_score": "Medium",
+            "source": "mock_analysis",
+            "risk_analysis": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            }
+          }
+        },
+        "recommendations": [
+          "Review portfolio allocation quarterly",
+          "Consider rebalancing if any asset exceeds 30% allocation",
+          "Diversify across different crypto sectors"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Portfolio performance",
+      "expected_intent": "portfolio",
+      "expected_tools": [
+        "calculate_portfolio_metrics"
+      ],
+      "expected_output_type": "portfolio_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.1887378692626953,
+      "actual_intent": "portfolio",
+      "actual_tools": [
+        "calculate_portfolio_metrics({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'timeframe': '7d'})",
+        "assess_portfolio_risk({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'risk_model': 'var'})"
+      ],
+      "actual_output": {
+        "intent": "analyze_portfolio",
+        "timestamp": "2025-06-14T21:38:32.620670",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "total_value": 27958.5,
+              "holdings": [
+                {
+                  "symbol": "BTC",
+                  "amount": 0.5,
+                  "price": 43250.0,
+                  "value": 21625.0,
+                  "change_24h": 2.5,
+                  "allocation_percent": 77.3467818373661
+                },
+                {
+                  "symbol": "ETH",
+                  "amount": 2.0,
+                  "price": 2650.0,
+                  "value": 5300.0,
+                  "change_24h": 1.8,
+                  "allocation_percent": 18.956667918522097
+                },
+                {
+                  "symbol": "SOL",
+                  "amount": 10.0,
+                  "price": 98.5,
+                  "value": 985.0,
+                  "change_24h": -0.5,
+                  "allocation_percent": 3.5230788490083516
+                },
+                {
+                  "symbol": "ADA",
+                  "amount": 100.0,
+                  "price": 0.485,
+                  "value": 48.5,
+                  "change_24h": 3.2,
+                  "allocation_percent": 0.1734713951034569
+                }
+              ],
+              "metrics": {
+                "total_assets": 4,
+                "weighted_change_24h": 2.2628252588658193,
+                "largest_holding": "BTC",
+                "diversification_score": 40
+              },
+              "timeframe": "7d",
+              "portfolio_change_percent": 2.2628252588658193,
+              "risk_score": "Medium",
+              "source": "mock_analysis",
+              "risk_analysis": {
+                "risk_model": "var",
+                "individual_risks": {},
+                "portfolio_metrics": {
+                  "volatility": 0,
+                  "risk_score": 0,
+                  "risk_level": "Low"
+                },
+                "recommendations": []
+              }
+            },
+            "function": "calculate_portfolio_metrics",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "timeframe": "7d"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            },
+            "function": "assess_portfolio_risk",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "risk_model": "var"
+            }
+          }
+        ],
+        "summary": {
+          "portfolio_data": {
+            "total_value": 27958.5,
+            "holdings": [
+              {
+                "symbol": "BTC",
+                "amount": 0.5,
+                "price": 43250.0,
+                "value": 21625.0,
+                "change_24h": 2.5,
+                "allocation_percent": 77.3467818373661
+              },
+              {
+                "symbol": "ETH",
+                "amount": 2.0,
+                "price": 2650.0,
+                "value": 5300.0,
+                "change_24h": 1.8,
+                "allocation_percent": 18.956667918522097
+              },
+              {
+                "symbol": "SOL",
+                "amount": 10.0,
+                "price": 98.5,
+                "value": 985.0,
+                "change_24h": -0.5,
+                "allocation_percent": 3.5230788490083516
+              },
+              {
+                "symbol": "ADA",
+                "amount": 100.0,
+                "price": 0.485,
+                "value": 48.5,
+                "change_24h": 3.2,
+                "allocation_percent": 0.1734713951034569
+              }
+            ],
+            "metrics": {
+              "total_assets": 4,
+              "weighted_change_24h": 2.2628252588658193,
+              "largest_holding": "BTC",
+              "diversification_score": 40
+            },
+            "timeframe": "7d",
+            "portfolio_change_percent": 2.2628252588658193,
+            "risk_score": "Medium",
+            "source": "mock_analysis",
+            "risk_analysis": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            }
+          }
+        },
+        "recommendations": [
+          "Review portfolio allocation quarterly",
+          "Consider rebalancing if any asset exceeds 30% allocation",
+          "Diversify across different crypto sectors"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Check my holdings",
+      "expected_intent": "portfolio",
+      "expected_tools": [
+        "calculate_portfolio_metrics"
+      ],
+      "expected_output_type": "portfolio_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.19948768615722656,
+      "actual_intent": "portfolio",
+      "actual_tools": [
+        "calculate_portfolio_metrics({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'timeframe': '7d'})",
+        "assess_portfolio_risk({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'risk_model': 'var'})"
+      ],
+      "actual_output": {
+        "intent": "analyze_portfolio",
+        "timestamp": "2025-06-14T21:38:32.820202",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "total_value": 27958.5,
+              "holdings": [
+                {
+                  "symbol": "BTC",
+                  "amount": 0.5,
+                  "price": 43250.0,
+                  "value": 21625.0,
+                  "change_24h": 2.5,
+                  "allocation_percent": 77.3467818373661
+                },
+                {
+                  "symbol": "ETH",
+                  "amount": 2.0,
+                  "price": 2650.0,
+                  "value": 5300.0,
+                  "change_24h": 1.8,
+                  "allocation_percent": 18.956667918522097
+                },
+                {
+                  "symbol": "SOL",
+                  "amount": 10.0,
+                  "price": 98.5,
+                  "value": 985.0,
+                  "change_24h": -0.5,
+                  "allocation_percent": 3.5230788490083516
+                },
+                {
+                  "symbol": "ADA",
+                  "amount": 100.0,
+                  "price": 0.485,
+                  "value": 48.5,
+                  "change_24h": 3.2,
+                  "allocation_percent": 0.1734713951034569
+                }
+              ],
+              "metrics": {
+                "total_assets": 4,
+                "weighted_change_24h": 2.2628252588658193,
+                "largest_holding": "BTC",
+                "diversification_score": 40
+              },
+              "timeframe": "7d",
+              "portfolio_change_percent": 2.2628252588658193,
+              "risk_score": "Medium",
+              "source": "mock_analysis",
+              "risk_analysis": {
+                "risk_model": "var",
+                "individual_risks": {},
+                "portfolio_metrics": {
+                  "volatility": 0,
+                  "risk_score": 0,
+                  "risk_level": "Low"
+                },
+                "recommendations": []
+              }
+            },
+            "function": "calculate_portfolio_metrics",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "timeframe": "7d"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            },
+            "function": "assess_portfolio_risk",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "risk_model": "var"
+            }
+          }
+        ],
+        "summary": {
+          "portfolio_data": {
+            "total_value": 27958.5,
+            "holdings": [
+              {
+                "symbol": "BTC",
+                "amount": 0.5,
+                "price": 43250.0,
+                "value": 21625.0,
+                "change_24h": 2.5,
+                "allocation_percent": 77.3467818373661
+              },
+              {
+                "symbol": "ETH",
+                "amount": 2.0,
+                "price": 2650.0,
+                "value": 5300.0,
+                "change_24h": 1.8,
+                "allocation_percent": 18.956667918522097
+              },
+              {
+                "symbol": "SOL",
+                "amount": 10.0,
+                "price": 98.5,
+                "value": 985.0,
+                "change_24h": -0.5,
+                "allocation_percent": 3.5230788490083516
+              },
+              {
+                "symbol": "ADA",
+                "amount": 100.0,
+                "price": 0.485,
+                "value": 48.5,
+                "change_24h": 3.2,
+                "allocation_percent": 0.1734713951034569
+              }
+            ],
+            "metrics": {
+              "total_assets": 4,
+              "weighted_change_24h": 2.2628252588658193,
+              "largest_holding": "BTC",
+              "diversification_score": 40
+            },
+            "timeframe": "7d",
+            "portfolio_change_percent": 2.2628252588658193,
+            "risk_score": "Medium",
+            "source": "mock_analysis",
+            "risk_analysis": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            }
+          }
+        },
+        "recommendations": [
+          "Review portfolio allocation quarterly",
+          "Consider rebalancing if any asset exceeds 30% allocation",
+          "Diversify across different crypto sectors"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "My crypto investments",
+      "expected_intent": "portfolio",
+      "expected_tools": [
+        "calculate_portfolio_metrics"
+      ],
+      "expected_output_type": "portfolio_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.21544837951660156,
+      "actual_intent": "portfolio",
+      "actual_tools": [
+        "calculate_portfolio_metrics({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'timeframe': '7d'})",
+        "assess_portfolio_risk({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'risk_model': 'var'})"
+      ],
+      "actual_output": {
+        "intent": "analyze_portfolio",
+        "timestamp": "2025-06-14T21:38:33.035678",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "total_value": 27958.5,
+              "holdings": [
+                {
+                  "symbol": "BTC",
+                  "amount": 0.5,
+                  "price": 43250.0,
+                  "value": 21625.0,
+                  "change_24h": 2.5,
+                  "allocation_percent": 77.3467818373661
+                },
+                {
+                  "symbol": "ETH",
+                  "amount": 2.0,
+                  "price": 2650.0,
+                  "value": 5300.0,
+                  "change_24h": 1.8,
+                  "allocation_percent": 18.956667918522097
+                },
+                {
+                  "symbol": "SOL",
+                  "amount": 10.0,
+                  "price": 98.5,
+                  "value": 985.0,
+                  "change_24h": -0.5,
+                  "allocation_percent": 3.5230788490083516
+                },
+                {
+                  "symbol": "ADA",
+                  "amount": 100.0,
+                  "price": 0.485,
+                  "value": 48.5,
+                  "change_24h": 3.2,
+                  "allocation_percent": 0.1734713951034569
+                }
+              ],
+              "metrics": {
+                "total_assets": 4,
+                "weighted_change_24h": 2.2628252588658193,
+                "largest_holding": "BTC",
+                "diversification_score": 40
+              },
+              "timeframe": "7d",
+              "portfolio_change_percent": 2.2628252588658193,
+              "risk_score": "Medium",
+              "source": "mock_analysis",
+              "risk_analysis": {
+                "risk_model": "var",
+                "individual_risks": {},
+                "portfolio_metrics": {
+                  "volatility": 0,
+                  "risk_score": 0,
+                  "risk_level": "Low"
+                },
+                "recommendations": []
+              }
+            },
+            "function": "calculate_portfolio_metrics",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "timeframe": "7d"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            },
+            "function": "assess_portfolio_risk",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "risk_model": "var"
+            }
+          }
+        ],
+        "summary": {
+          "portfolio_data": {
+            "total_value": 27958.5,
+            "holdings": [
+              {
+                "symbol": "BTC",
+                "amount": 0.5,
+                "price": 43250.0,
+                "value": 21625.0,
+                "change_24h": 2.5,
+                "allocation_percent": 77.3467818373661
+              },
+              {
+                "symbol": "ETH",
+                "amount": 2.0,
+                "price": 2650.0,
+                "value": 5300.0,
+                "change_24h": 1.8,
+                "allocation_percent": 18.956667918522097
+              },
+              {
+                "symbol": "SOL",
+                "amount": 10.0,
+                "price": 98.5,
+                "value": 985.0,
+                "change_24h": -0.5,
+                "allocation_percent": 3.5230788490083516
+              },
+              {
+                "symbol": "ADA",
+                "amount": 100.0,
+                "price": 0.485,
+                "value": 48.5,
+                "change_24h": 3.2,
+                "allocation_percent": 0.1734713951034569
+              }
+            ],
+            "metrics": {
+              "total_assets": 4,
+              "weighted_change_24h": 2.2628252588658193,
+              "largest_holding": "BTC",
+              "diversification_score": 40
+            },
+            "timeframe": "7d",
+            "portfolio_change_percent": 2.2628252588658193,
+            "risk_score": "Medium",
+            "source": "mock_analysis",
+            "risk_analysis": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            }
+          }
+        },
+        "recommendations": [
+          "Review portfolio allocation quarterly",
+          "Consider rebalancing if any asset exceeds 30% allocation",
+          "Diversify across different crypto sectors"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Portfolio analysis",
+      "expected_intent": "portfolio",
+      "expected_tools": [
+        "calculate_portfolio_metrics"
+      ],
+      "expected_output_type": "portfolio_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.2051546573638916,
+      "actual_intent": "portfolio",
+      "actual_tools": [
+        "calculate_portfolio_metrics({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'timeframe': '7d'})",
+        "assess_portfolio_risk({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'risk_model': 'var'})"
+      ],
+      "actual_output": {
+        "intent": "analyze_portfolio",
+        "timestamp": "2025-06-14T21:38:33.240887",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "total_value": 27958.5,
+              "holdings": [
+                {
+                  "symbol": "BTC",
+                  "amount": 0.5,
+                  "price": 43250.0,
+                  "value": 21625.0,
+                  "change_24h": 2.5,
+                  "allocation_percent": 77.3467818373661
+                },
+                {
+                  "symbol": "ETH",
+                  "amount": 2.0,
+                  "price": 2650.0,
+                  "value": 5300.0,
+                  "change_24h": 1.8,
+                  "allocation_percent": 18.956667918522097
+                },
+                {
+                  "symbol": "SOL",
+                  "amount": 10.0,
+                  "price": 98.5,
+                  "value": 985.0,
+                  "change_24h": -0.5,
+                  "allocation_percent": 3.5230788490083516
+                },
+                {
+                  "symbol": "ADA",
+                  "amount": 100.0,
+                  "price": 0.485,
+                  "value": 48.5,
+                  "change_24h": 3.2,
+                  "allocation_percent": 0.1734713951034569
+                }
+              ],
+              "metrics": {
+                "total_assets": 4,
+                "weighted_change_24h": 2.2628252588658193,
+                "largest_holding": "BTC",
+                "diversification_score": 40
+              },
+              "timeframe": "7d",
+              "portfolio_change_percent": 2.2628252588658193,
+              "risk_score": "Medium",
+              "source": "mock_analysis",
+              "risk_analysis": {
+                "risk_model": "var",
+                "individual_risks": {},
+                "portfolio_metrics": {
+                  "volatility": 0,
+                  "risk_score": 0,
+                  "risk_level": "Low"
+                },
+                "recommendations": []
+              }
+            },
+            "function": "calculate_portfolio_metrics",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "timeframe": "7d"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            },
+            "function": "assess_portfolio_risk",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "risk_model": "var"
+            }
+          }
+        ],
+        "summary": {
+          "portfolio_data": {
+            "total_value": 27958.5,
+            "holdings": [
+              {
+                "symbol": "BTC",
+                "amount": 0.5,
+                "price": 43250.0,
+                "value": 21625.0,
+                "change_24h": 2.5,
+                "allocation_percent": 77.3467818373661
+              },
+              {
+                "symbol": "ETH",
+                "amount": 2.0,
+                "price": 2650.0,
+                "value": 5300.0,
+                "change_24h": 1.8,
+                "allocation_percent": 18.956667918522097
+              },
+              {
+                "symbol": "SOL",
+                "amount": 10.0,
+                "price": 98.5,
+                "value": 985.0,
+                "change_24h": -0.5,
+                "allocation_percent": 3.5230788490083516
+              },
+              {
+                "symbol": "ADA",
+                "amount": 100.0,
+                "price": 0.485,
+                "value": 48.5,
+                "change_24h": 3.2,
+                "allocation_percent": 0.1734713951034569
+              }
+            ],
+            "metrics": {
+              "total_assets": 4,
+              "weighted_change_24h": 2.2628252588658193,
+              "largest_holding": "BTC",
+              "diversification_score": 40
+            },
+            "timeframe": "7d",
+            "portfolio_change_percent": 2.2628252588658193,
+            "risk_score": "Medium",
+            "source": "mock_analysis",
+            "risk_analysis": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            }
+          }
+        },
+        "recommendations": [
+          "Review portfolio allocation quarterly",
+          "Consider rebalancing if any asset exceeds 30% allocation",
+          "Diversify across different crypto sectors"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "How is my portfolio doing?",
+      "expected_intent": "portfolio",
+      "expected_tools": [
+        "calculate_portfolio_metrics"
+      ],
+      "expected_output_type": "portfolio_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.19826555252075195,
+      "actual_intent": "portfolio",
+      "actual_tools": [
+        "calculate_portfolio_metrics({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'timeframe': '7d'})",
+        "assess_portfolio_risk({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'risk_model': 'var'})"
+      ],
+      "actual_output": {
+        "intent": "analyze_portfolio",
+        "timestamp": "2025-06-14T21:38:33.439213",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "total_value": 27958.5,
+              "holdings": [
+                {
+                  "symbol": "BTC",
+                  "amount": 0.5,
+                  "price": 43250.0,
+                  "value": 21625.0,
+                  "change_24h": 2.5,
+                  "allocation_percent": 77.3467818373661
+                },
+                {
+                  "symbol": "ETH",
+                  "amount": 2.0,
+                  "price": 2650.0,
+                  "value": 5300.0,
+                  "change_24h": 1.8,
+                  "allocation_percent": 18.956667918522097
+                },
+                {
+                  "symbol": "SOL",
+                  "amount": 10.0,
+                  "price": 98.5,
+                  "value": 985.0,
+                  "change_24h": -0.5,
+                  "allocation_percent": 3.5230788490083516
+                },
+                {
+                  "symbol": "ADA",
+                  "amount": 100.0,
+                  "price": 0.485,
+                  "value": 48.5,
+                  "change_24h": 3.2,
+                  "allocation_percent": 0.1734713951034569
+                }
+              ],
+              "metrics": {
+                "total_assets": 4,
+                "weighted_change_24h": 2.2628252588658193,
+                "largest_holding": "BTC",
+                "diversification_score": 40
+              },
+              "timeframe": "7d",
+              "portfolio_change_percent": 2.2628252588658193,
+              "risk_score": "Medium",
+              "source": "mock_analysis",
+              "risk_analysis": {
+                "risk_model": "var",
+                "individual_risks": {},
+                "portfolio_metrics": {
+                  "volatility": 0,
+                  "risk_score": 0,
+                  "risk_level": "Low"
+                },
+                "recommendations": []
+              }
+            },
+            "function": "calculate_portfolio_metrics",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "timeframe": "7d"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            },
+            "function": "assess_portfolio_risk",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "risk_model": "var"
+            }
+          }
+        ],
+        "summary": {
+          "portfolio_data": {
+            "total_value": 27958.5,
+            "holdings": [
+              {
+                "symbol": "BTC",
+                "amount": 0.5,
+                "price": 43250.0,
+                "value": 21625.0,
+                "change_24h": 2.5,
+                "allocation_percent": 77.3467818373661
+              },
+              {
+                "symbol": "ETH",
+                "amount": 2.0,
+                "price": 2650.0,
+                "value": 5300.0,
+                "change_24h": 1.8,
+                "allocation_percent": 18.956667918522097
+              },
+              {
+                "symbol": "SOL",
+                "amount": 10.0,
+                "price": 98.5,
+                "value": 985.0,
+                "change_24h": -0.5,
+                "allocation_percent": 3.5230788490083516
+              },
+              {
+                "symbol": "ADA",
+                "amount": 100.0,
+                "price": 0.485,
+                "value": 48.5,
+                "change_24h": 3.2,
+                "allocation_percent": 0.1734713951034569
+              }
+            ],
+            "metrics": {
+              "total_assets": 4,
+              "weighted_change_24h": 2.2628252588658193,
+              "largest_holding": "BTC",
+              "diversification_score": 40
+            },
+            "timeframe": "7d",
+            "portfolio_change_percent": 2.2628252588658193,
+            "risk_score": "Medium",
+            "source": "mock_analysis",
+            "risk_analysis": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            }
+          }
+        },
+        "recommendations": [
+          "Review portfolio allocation quarterly",
+          "Consider rebalancing if any asset exceeds 30% allocation",
+          "Diversify across different crypto sectors"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Portfolio breakdown",
+      "expected_intent": "portfolio",
+      "expected_tools": [
+        "calculate_portfolio_metrics"
+      ],
+      "expected_output_type": "portfolio_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.2188730239868164,
+      "actual_intent": "portfolio",
+      "actual_tools": [
+        "calculate_portfolio_metrics({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'timeframe': '7d'})",
+        "assess_portfolio_risk({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'risk_model': 'var'})"
+      ],
+      "actual_output": {
+        "intent": "analyze_portfolio",
+        "timestamp": "2025-06-14T21:38:33.658124",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "total_value": 27958.5,
+              "holdings": [
+                {
+                  "symbol": "BTC",
+                  "amount": 0.5,
+                  "price": 43250.0,
+                  "value": 21625.0,
+                  "change_24h": 2.5,
+                  "allocation_percent": 77.3467818373661
+                },
+                {
+                  "symbol": "ETH",
+                  "amount": 2.0,
+                  "price": 2650.0,
+                  "value": 5300.0,
+                  "change_24h": 1.8,
+                  "allocation_percent": 18.956667918522097
+                },
+                {
+                  "symbol": "SOL",
+                  "amount": 10.0,
+                  "price": 98.5,
+                  "value": 985.0,
+                  "change_24h": -0.5,
+                  "allocation_percent": 3.5230788490083516
+                },
+                {
+                  "symbol": "ADA",
+                  "amount": 100.0,
+                  "price": 0.485,
+                  "value": 48.5,
+                  "change_24h": 3.2,
+                  "allocation_percent": 0.1734713951034569
+                }
+              ],
+              "metrics": {
+                "total_assets": 4,
+                "weighted_change_24h": 2.2628252588658193,
+                "largest_holding": "BTC",
+                "diversification_score": 40
+              },
+              "timeframe": "7d",
+              "portfolio_change_percent": 2.2628252588658193,
+              "risk_score": "Medium",
+              "source": "mock_analysis",
+              "risk_analysis": {
+                "risk_model": "var",
+                "individual_risks": {},
+                "portfolio_metrics": {
+                  "volatility": 0,
+                  "risk_score": 0,
+                  "risk_level": "Low"
+                },
+                "recommendations": []
+              }
+            },
+            "function": "calculate_portfolio_metrics",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "timeframe": "7d"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            },
+            "function": "assess_portfolio_risk",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "risk_model": "var"
+            }
+          }
+        ],
+        "summary": {
+          "portfolio_data": {
+            "total_value": 27958.5,
+            "holdings": [
+              {
+                "symbol": "BTC",
+                "amount": 0.5,
+                "price": 43250.0,
+                "value": 21625.0,
+                "change_24h": 2.5,
+                "allocation_percent": 77.3467818373661
+              },
+              {
+                "symbol": "ETH",
+                "amount": 2.0,
+                "price": 2650.0,
+                "value": 5300.0,
+                "change_24h": 1.8,
+                "allocation_percent": 18.956667918522097
+              },
+              {
+                "symbol": "SOL",
+                "amount": 10.0,
+                "price": 98.5,
+                "value": 985.0,
+                "change_24h": -0.5,
+                "allocation_percent": 3.5230788490083516
+              },
+              {
+                "symbol": "ADA",
+                "amount": 100.0,
+                "price": 0.485,
+                "value": 48.5,
+                "change_24h": 3.2,
+                "allocation_percent": 0.1734713951034569
+              }
+            ],
+            "metrics": {
+              "total_assets": 4,
+              "weighted_change_24h": 2.2628252588658193,
+              "largest_holding": "BTC",
+              "diversification_score": 40
+            },
+            "timeframe": "7d",
+            "portfolio_change_percent": 2.2628252588658193,
+            "risk_score": "Medium",
+            "source": "mock_analysis",
+            "risk_analysis": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            }
+          }
+        },
+        "recommendations": [
+          "Review portfolio allocation quarterly",
+          "Consider rebalancing if any asset exceeds 30% allocation",
+          "Diversify across different crypto sectors"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Show my crypto assets",
+      "expected_intent": "portfolio",
+      "expected_tools": [
+        "calculate_portfolio_metrics"
+      ],
+      "expected_output_type": "portfolio_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.2015695571899414,
+      "actual_intent": "portfolio",
+      "actual_tools": [
+        "calculate_portfolio_metrics({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'timeframe': '7d'})",
+        "assess_portfolio_risk({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'risk_model': 'var'})"
+      ],
+      "actual_output": {
+        "intent": "analyze_portfolio",
+        "timestamp": "2025-06-14T21:38:33.859737",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "total_value": 27958.5,
+              "holdings": [
+                {
+                  "symbol": "BTC",
+                  "amount": 0.5,
+                  "price": 43250.0,
+                  "value": 21625.0,
+                  "change_24h": 2.5,
+                  "allocation_percent": 77.3467818373661
+                },
+                {
+                  "symbol": "ETH",
+                  "amount": 2.0,
+                  "price": 2650.0,
+                  "value": 5300.0,
+                  "change_24h": 1.8,
+                  "allocation_percent": 18.956667918522097
+                },
+                {
+                  "symbol": "SOL",
+                  "amount": 10.0,
+                  "price": 98.5,
+                  "value": 985.0,
+                  "change_24h": -0.5,
+                  "allocation_percent": 3.5230788490083516
+                },
+                {
+                  "symbol": "ADA",
+                  "amount": 100.0,
+                  "price": 0.485,
+                  "value": 48.5,
+                  "change_24h": 3.2,
+                  "allocation_percent": 0.1734713951034569
+                }
+              ],
+              "metrics": {
+                "total_assets": 4,
+                "weighted_change_24h": 2.2628252588658193,
+                "largest_holding": "BTC",
+                "diversification_score": 40
+              },
+              "timeframe": "7d",
+              "portfolio_change_percent": 2.2628252588658193,
+              "risk_score": "Medium",
+              "source": "mock_analysis",
+              "risk_analysis": {
+                "risk_model": "var",
+                "individual_risks": {},
+                "portfolio_metrics": {
+                  "volatility": 0,
+                  "risk_score": 0,
+                  "risk_level": "Low"
+                },
+                "recommendations": []
+              }
+            },
+            "function": "calculate_portfolio_metrics",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "timeframe": "7d"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            },
+            "function": "assess_portfolio_risk",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "risk_model": "var"
+            }
+          }
+        ],
+        "summary": {
+          "portfolio_data": {
+            "total_value": 27958.5,
+            "holdings": [
+              {
+                "symbol": "BTC",
+                "amount": 0.5,
+                "price": 43250.0,
+                "value": 21625.0,
+                "change_24h": 2.5,
+                "allocation_percent": 77.3467818373661
+              },
+              {
+                "symbol": "ETH",
+                "amount": 2.0,
+                "price": 2650.0,
+                "value": 5300.0,
+                "change_24h": 1.8,
+                "allocation_percent": 18.956667918522097
+              },
+              {
+                "symbol": "SOL",
+                "amount": 10.0,
+                "price": 98.5,
+                "value": 985.0,
+                "change_24h": -0.5,
+                "allocation_percent": 3.5230788490083516
+              },
+              {
+                "symbol": "ADA",
+                "amount": 100.0,
+                "price": 0.485,
+                "value": 48.5,
+                "change_24h": 3.2,
+                "allocation_percent": 0.1734713951034569
+              }
+            ],
+            "metrics": {
+              "total_assets": 4,
+              "weighted_change_24h": 2.2628252588658193,
+              "largest_holding": "BTC",
+              "diversification_score": 40
+            },
+            "timeframe": "7d",
+            "portfolio_change_percent": 2.2628252588658193,
+            "risk_score": "Medium",
+            "source": "mock_analysis",
+            "risk_analysis": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            }
+          }
+        },
+        "recommendations": [
+          "Review portfolio allocation quarterly",
+          "Consider rebalancing if any asset exceeds 30% allocation",
+          "Diversify across different crypto sectors"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Investment overview",
+      "expected_intent": "portfolio",
+      "expected_tools": [
+        "calculate_portfolio_metrics"
+      ],
+      "expected_output_type": "portfolio_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.20744705200195312,
+      "actual_intent": "portfolio",
+      "actual_tools": [
+        "calculate_portfolio_metrics({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'timeframe': '7d'})",
+        "assess_portfolio_risk({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'risk_model': 'var'})"
+      ],
+      "actual_output": {
+        "intent": "analyze_portfolio",
+        "timestamp": "2025-06-14T21:38:34.067245",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "total_value": 27958.5,
+              "holdings": [
+                {
+                  "symbol": "BTC",
+                  "amount": 0.5,
+                  "price": 43250.0,
+                  "value": 21625.0,
+                  "change_24h": 2.5,
+                  "allocation_percent": 77.3467818373661
+                },
+                {
+                  "symbol": "ETH",
+                  "amount": 2.0,
+                  "price": 2650.0,
+                  "value": 5300.0,
+                  "change_24h": 1.8,
+                  "allocation_percent": 18.956667918522097
+                },
+                {
+                  "symbol": "SOL",
+                  "amount": 10.0,
+                  "price": 98.5,
+                  "value": 985.0,
+                  "change_24h": -0.5,
+                  "allocation_percent": 3.5230788490083516
+                },
+                {
+                  "symbol": "ADA",
+                  "amount": 100.0,
+                  "price": 0.485,
+                  "value": 48.5,
+                  "change_24h": 3.2,
+                  "allocation_percent": 0.1734713951034569
+                }
+              ],
+              "metrics": {
+                "total_assets": 4,
+                "weighted_change_24h": 2.2628252588658193,
+                "largest_holding": "BTC",
+                "diversification_score": 40
+              },
+              "timeframe": "7d",
+              "portfolio_change_percent": 2.2628252588658193,
+              "risk_score": "Medium",
+              "source": "mock_analysis",
+              "risk_analysis": {
+                "risk_model": "var",
+                "individual_risks": {},
+                "portfolio_metrics": {
+                  "volatility": 0,
+                  "risk_score": 0,
+                  "risk_level": "Low"
+                },
+                "recommendations": []
+              }
+            },
+            "function": "calculate_portfolio_metrics",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "timeframe": "7d"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            },
+            "function": "assess_portfolio_risk",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "risk_model": "var"
+            }
+          }
+        ],
+        "summary": {
+          "portfolio_data": {
+            "total_value": 27958.5,
+            "holdings": [
+              {
+                "symbol": "BTC",
+                "amount": 0.5,
+                "price": 43250.0,
+                "value": 21625.0,
+                "change_24h": 2.5,
+                "allocation_percent": 77.3467818373661
+              },
+              {
+                "symbol": "ETH",
+                "amount": 2.0,
+                "price": 2650.0,
+                "value": 5300.0,
+                "change_24h": 1.8,
+                "allocation_percent": 18.956667918522097
+              },
+              {
+                "symbol": "SOL",
+                "amount": 10.0,
+                "price": 98.5,
+                "value": 985.0,
+                "change_24h": -0.5,
+                "allocation_percent": 3.5230788490083516
+              },
+              {
+                "symbol": "ADA",
+                "amount": 100.0,
+                "price": 0.485,
+                "value": 48.5,
+                "change_24h": 3.2,
+                "allocation_percent": 0.1734713951034569
+              }
+            ],
+            "metrics": {
+              "total_assets": 4,
+              "weighted_change_24h": 2.2628252588658193,
+              "largest_holding": "BTC",
+              "diversification_score": 40
+            },
+            "timeframe": "7d",
+            "portfolio_change_percent": 2.2628252588658193,
+            "risk_score": "Medium",
+            "source": "mock_analysis",
+            "risk_analysis": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            }
+          }
+        },
+        "recommendations": [
+          "Review portfolio allocation quarterly",
+          "Consider rebalancing if any asset exceeds 30% allocation",
+          "Diversify across different crypto sectors"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Portfolio status report",
+      "expected_intent": "portfolio",
+      "expected_tools": [
+        "calculate_portfolio_metrics"
+      ],
+      "expected_output_type": "portfolio_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.210097074508667,
+      "actual_intent": "portfolio",
+      "actual_tools": [
+        "calculate_portfolio_metrics({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'timeframe': '7d'})",
+        "assess_portfolio_risk({'holdings': {'BTC': 0.5, 'ETH': 2.0, 'SOL': 10.0, 'ADA': 100.0}, 'risk_model': 'var'})"
+      ],
+      "actual_output": {
+        "intent": "analyze_portfolio",
+        "timestamp": "2025-06-14T21:38:34.277386",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "total_value": 27958.5,
+              "holdings": [
+                {
+                  "symbol": "BTC",
+                  "amount": 0.5,
+                  "price": 43250.0,
+                  "value": 21625.0,
+                  "change_24h": 2.5,
+                  "allocation_percent": 77.3467818373661
+                },
+                {
+                  "symbol": "ETH",
+                  "amount": 2.0,
+                  "price": 2650.0,
+                  "value": 5300.0,
+                  "change_24h": 1.8,
+                  "allocation_percent": 18.956667918522097
+                },
+                {
+                  "symbol": "SOL",
+                  "amount": 10.0,
+                  "price": 98.5,
+                  "value": 985.0,
+                  "change_24h": -0.5,
+                  "allocation_percent": 3.5230788490083516
+                },
+                {
+                  "symbol": "ADA",
+                  "amount": 100.0,
+                  "price": 0.485,
+                  "value": 48.5,
+                  "change_24h": 3.2,
+                  "allocation_percent": 0.1734713951034569
+                }
+              ],
+              "metrics": {
+                "total_assets": 4,
+                "weighted_change_24h": 2.2628252588658193,
+                "largest_holding": "BTC",
+                "diversification_score": 40
+              },
+              "timeframe": "7d",
+              "portfolio_change_percent": 2.2628252588658193,
+              "risk_score": "Medium",
+              "source": "mock_analysis",
+              "risk_analysis": {
+                "risk_model": "var",
+                "individual_risks": {},
+                "portfolio_metrics": {
+                  "volatility": 0,
+                  "risk_score": 0,
+                  "risk_level": "Low"
+                },
+                "recommendations": []
+              }
+            },
+            "function": "calculate_portfolio_metrics",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "timeframe": "7d"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            },
+            "function": "assess_portfolio_risk",
+            "parameters": {
+              "holdings": {
+                "BTC": 0.5,
+                "ETH": 2.0,
+                "SOL": 10.0,
+                "ADA": 100.0
+              },
+              "risk_model": "var"
+            }
+          }
+        ],
+        "summary": {
+          "portfolio_data": {
+            "total_value": 27958.5,
+            "holdings": [
+              {
+                "symbol": "BTC",
+                "amount": 0.5,
+                "price": 43250.0,
+                "value": 21625.0,
+                "change_24h": 2.5,
+                "allocation_percent": 77.3467818373661
+              },
+              {
+                "symbol": "ETH",
+                "amount": 2.0,
+                "price": 2650.0,
+                "value": 5300.0,
+                "change_24h": 1.8,
+                "allocation_percent": 18.956667918522097
+              },
+              {
+                "symbol": "SOL",
+                "amount": 10.0,
+                "price": 98.5,
+                "value": 985.0,
+                "change_24h": -0.5,
+                "allocation_percent": 3.5230788490083516
+              },
+              {
+                "symbol": "ADA",
+                "amount": 100.0,
+                "price": 0.485,
+                "value": 48.5,
+                "change_24h": 3.2,
+                "allocation_percent": 0.1734713951034569
+              }
+            ],
+            "metrics": {
+              "total_assets": 4,
+              "weighted_change_24h": 2.2628252588658193,
+              "largest_holding": "BTC",
+              "diversification_score": 40
+            },
+            "timeframe": "7d",
+            "portfolio_change_percent": 2.2628252588658193,
+            "risk_score": "Medium",
+            "source": "mock_analysis",
+            "risk_analysis": {
+              "risk_model": "var",
+              "individual_risks": {},
+              "portfolio_metrics": {
+                "volatility": 0,
+                "risk_score": 0,
+                "risk_level": "Low"
+              },
+              "recommendations": []
+            }
+          }
+        },
+        "recommendations": [
+          "Review portfolio allocation quarterly",
+          "Consider rebalancing if any asset exceeds 30% allocation",
+          "Diversify across different crypto sectors"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Research Bitcoin",
+      "expected_intent": "research",
+      "expected_tools": [
+        "get_market_data",
+        "get_crypto_news"
+      ],
+      "expected_output_type": "research_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 1.5128488540649414,
+      "actual_intent": "research",
+      "actual_tools": [
+        "get_market_data({'symbol': 'BTC'})",
+        "get_crypto_news({'symbol': 'BTC', 'limit': 10, 'sentiment_filter': 'all'})",
+        "analyze_market_sentiment({'symbol': 'BTC', 'timeframe': '7d'})"
+      ],
+      "actual_output": {
+        "intent": "market_research",
+        "timestamp": "2025-06-14T21:38:35.790304",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105169.530961867,
+              "change_24h": -0.4725112071236182,
+              "volume_24h": 809915928.905282,
+              "market_cap": 2090559936459.9922,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "BTC"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "News fetching not yet implemented",
+              "symbol": "BTC"
+            },
+            "function": "get_crypto_news",
+            "parameters": {
+              "symbol": "BTC",
+              "limit": 10,
+              "sentiment_filter": "all"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "Sentiment analysis not yet implemented",
+              "symbol": "BTC"
+            },
+            "function": "analyze_market_sentiment",
+            "parameters": {
+              "symbol": "BTC",
+              "timeframe": "7d"
+            }
+          }
+        ],
+        "summary": {
+          "market_data": {
+            "message": "Sentiment analysis not yet implemented",
+            "symbol": "BTC"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Tell me about Ethereum",
+      "expected_intent": "research",
+      "expected_tools": [
+        "get_market_data"
+      ],
+      "expected_output_type": "research_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.49973559379577637,
+      "actual_intent": "research",
+      "actual_tools": [
+        "get_market_data({'symbol': 'ETH'})",
+        "get_crypto_news({'symbol': 'ETH', 'limit': 10, 'sentiment_filter': 'all'})",
+        "analyze_market_sentiment({'symbol': 'ETH', 'timeframe': '7d'})"
+      ],
+      "actual_output": {
+        "intent": "market_research",
+        "timestamp": "2025-06-14T21:38:36.290097",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "ETH",
+              "price": 2518.78675591693,
+              "change_24h": -1.446176495121422,
+              "volume_24h": 570882777.712761,
+              "market_cap": 304070881757.82806,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "ETH"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "News fetching not yet implemented",
+              "symbol": "ETH"
+            },
+            "function": "get_crypto_news",
+            "parameters": {
+              "symbol": "ETH",
+              "limit": 10,
+              "sentiment_filter": "all"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "Sentiment analysis not yet implemented",
+              "symbol": "ETH"
+            },
+            "function": "analyze_market_sentiment",
+            "parameters": {
+              "symbol": "ETH",
+              "timeframe": "7d"
+            }
+          }
+        ],
+        "summary": {
+          "market_data": {
+            "message": "Sentiment analysis not yet implemented",
+            "symbol": "ETH"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Analyze Solana",
+      "expected_intent": "research",
+      "expected_tools": [
+        "get_market_data"
+      ],
+      "expected_output_type": "research_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 1.3857810497283936,
+      "actual_intent": "research",
+      "actual_tools": [
+        "get_market_data({'symbol': 'SOL'})",
+        "get_crypto_news({'symbol': 'SOL', 'limit': 10, 'sentiment_filter': 'all'})",
+        "analyze_market_sentiment({'symbol': 'SOL', 'timeframe': '7d'})"
+      ],
+      "actual_output": {
+        "intent": "market_research",
+        "timestamp": "2025-06-14T21:38:37.675933",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "SOL",
+              "price": 143.973810533528,
+              "change_24h": -2.166030250189016,
+              "volume_24h": 133901686.320324,
+              "market_cap": 86815702722.41522,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "SOL"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "News fetching not yet implemented",
+              "symbol": "SOL"
+            },
+            "function": "get_crypto_news",
+            "parameters": {
+              "symbol": "SOL",
+              "limit": 10,
+              "sentiment_filter": "all"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "Sentiment analysis not yet implemented",
+              "symbol": "SOL"
+            },
+            "function": "analyze_market_sentiment",
+            "parameters": {
+              "symbol": "SOL",
+              "timeframe": "7d"
+            }
+          }
+        ],
+        "summary": {
+          "market_data": {
+            "message": "Sentiment analysis not yet implemented",
+            "symbol": "SOL"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Info on Cardano",
+      "expected_intent": "research",
+      "expected_tools": [
+        "get_market_data"
+      ],
+      "expected_output_type": "research_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.3359639644622803,
+      "actual_intent": "research",
+      "actual_tools": [
+        "get_market_data({'symbol': 'ADA'})",
+        "get_crypto_news({'symbol': 'ADA', 'limit': 10, 'sentiment_filter': 'all'})",
+        "analyze_market_sentiment({'symbol': 'ADA', 'timeframe': '7d'})"
+      ],
+      "actual_output": {
+        "intent": "market_research",
+        "timestamp": "2025-06-14T21:38:38.011963",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "ADA",
+              "price": 0.62354820966422,
+              "change_24h": -2.4462358159973907,
+              "volume_24h": 16244507.930557,
+              "market_cap": 28059669434.889904,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "ADA"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "News fetching not yet implemented",
+              "symbol": "ADA"
+            },
+            "function": "get_crypto_news",
+            "parameters": {
+              "symbol": "ADA",
+              "limit": 10,
+              "sentiment_filter": "all"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "Sentiment analysis not yet implemented",
+              "symbol": "ADA"
+            },
+            "function": "analyze_market_sentiment",
+            "parameters": {
+              "symbol": "ADA",
+              "timeframe": "7d"
+            }
+          }
+        ],
+        "summary": {
+          "market_data": {
+            "message": "Sentiment analysis not yet implemented",
+            "symbol": "ADA"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Study Polkadot",
+      "expected_intent": "research",
+      "expected_tools": [
+        "get_market_data"
+      ],
+      "expected_output_type": "research_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.5817160606384277,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_market_data({'symbol': 'DOT'})",
+        "get_crypto_news({'symbol': 'DOT', 'limit': 10, 'sentiment_filter': 'all'})",
+        "analyze_market_sentiment({'symbol': 'DOT', 'timeframe': '7d'})"
+      ],
+      "actual_output": {
+        "intent": "market_research",
+        "timestamp": "2025-06-14T21:38:38.593733",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "DOT",
+              "price": 3.77012571589201,
+              "change_24h": -1.2094834956089877,
+              "volume_24h": 5136930.43852391,
+              "market_cap": 5984989239.569702,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "DOT"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "News fetching not yet implemented",
+              "symbol": "DOT"
+            },
+            "function": "get_crypto_news",
+            "parameters": {
+              "symbol": "DOT",
+              "limit": 10,
+              "sentiment_filter": "all"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "Sentiment analysis not yet implemented",
+              "symbol": "DOT"
+            },
+            "function": "analyze_market_sentiment",
+            "parameters": {
+              "symbol": "DOT",
+              "timeframe": "7d"
+            }
+          }
+        ],
+        "summary": {
+          "market_data": {
+            "message": "Sentiment analysis not yet implemented",
+            "symbol": "DOT"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Research Chainlink fundamentals",
+      "expected_intent": "research",
+      "expected_tools": [
+        "get_market_data"
+      ],
+      "expected_output_type": "research_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.37752652168273926,
+      "actual_intent": "research",
+      "actual_tools": [
+        "get_market_data({'symbol': 'LINK'})",
+        "get_crypto_news({'symbol': 'LINK', 'limit': 10, 'sentiment_filter': 'all'})",
+        "analyze_market_sentiment({'symbol': 'LINK', 'timeframe': '7d'})"
+      ],
+      "actual_output": {
+        "intent": "market_research",
+        "timestamp": "2025-06-14T21:38:38.971314",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "LINK",
+              "price": 13.1528546594866,
+              "change_24h": -0.8328369752461274,
+              "volume_24h": 14004940.5102939,
+              "market_cap": 13152854659.4866,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "LINK"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "News fetching not yet implemented",
+              "symbol": "LINK"
+            },
+            "function": "get_crypto_news",
+            "parameters": {
+              "symbol": "LINK",
+              "limit": 10,
+              "sentiment_filter": "all"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "Sentiment analysis not yet implemented",
+              "symbol": "LINK"
+            },
+            "function": "analyze_market_sentiment",
+            "parameters": {
+              "symbol": "LINK",
+              "timeframe": "7d"
+            }
+          }
+        ],
+        "summary": {
+          "market_data": {
+            "message": "Sentiment analysis not yet implemented",
+            "symbol": "LINK"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Analyze Uniswap protocol",
+      "expected_intent": "research",
+      "expected_tools": [
+        "get_market_data"
+      ],
+      "expected_output_type": "research_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.3980240821838379,
+      "actual_intent": "research",
+      "actual_tools": [
+        "get_market_data({'symbol': 'UNI'})",
+        "get_crypto_news({'symbol': 'UNI', 'limit': 10, 'sentiment_filter': 'all'})",
+        "analyze_market_sentiment({'symbol': 'UNI', 'timeframe': '7d'})"
+      ],
+      "actual_output": {
+        "intent": "market_research",
+        "timestamp": "2025-06-14T21:38:39.369398",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "UNI",
+              "price": 7.241116306846001,
+              "change_24h": -3.4304807101752774,
+              "volume_24h": 96876433.47502278,
+              "market_cap": 7241116306.846001,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "UNI"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "News fetching not yet implemented",
+              "symbol": "UNI"
+            },
+            "function": "get_crypto_news",
+            "parameters": {
+              "symbol": "UNI",
+              "limit": 10,
+              "sentiment_filter": "all"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "Sentiment analysis not yet implemented",
+              "symbol": "UNI"
+            },
+            "function": "analyze_market_sentiment",
+            "parameters": {
+              "symbol": "UNI",
+              "timeframe": "7d"
+            }
+          }
+        ],
+        "summary": {
+          "market_data": {
+            "message": "Sentiment analysis not yet implemented",
+            "symbol": "UNI"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Tell me about Aave",
+      "expected_intent": "research",
+      "expected_tools": [
+        "get_market_data"
+      ],
+      "expected_output_type": "research_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.34378695487976074,
+      "actual_intent": "research",
+      "actual_tools": [
+        "get_market_data({'symbol': 'AAVE'})",
+        "get_crypto_news({'symbol': 'AAVE', 'limit': 10, 'sentiment_filter': 'all'})",
+        "analyze_market_sentiment({'symbol': 'AAVE', 'timeframe': '7d'})"
+      ],
+      "actual_output": {
+        "intent": "market_research",
+        "timestamp": "2025-06-14T21:38:39.713254",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "AAVE",
+              "price": 276.868838469692,
+              "change_24h": -2.326374136106972,
+              "volume_24h": 16892285.0164171,
+              "market_cap": 4429901415.515072,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "AAVE"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "News fetching not yet implemented",
+              "symbol": "AAVE"
+            },
+            "function": "get_crypto_news",
+            "parameters": {
+              "symbol": "AAVE",
+              "limit": 10,
+              "sentiment_filter": "all"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "Sentiment analysis not yet implemented",
+              "symbol": "AAVE"
+            },
+            "function": "analyze_market_sentiment",
+            "parameters": {
+              "symbol": "AAVE",
+              "timeframe": "7d"
+            }
+          }
+        ],
+        "summary": {
+          "market_data": {
+            "message": "Sentiment analysis not yet implemented",
+            "symbol": "AAVE"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Study Compound protocol",
+      "expected_intent": "research",
+      "expected_tools": [
+        "get_market_data"
+      ],
+      "expected_output_type": "research_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.32962465286254883,
+      "actual_intent": "price",
+      "actual_tools": [
+        "get_market_data({'symbol': 'COMP'})",
+        "get_crypto_news({'symbol': 'COMP', 'limit': 10, 'sentiment_filter': 'all'})",
+        "analyze_market_sentiment({'symbol': 'COMP', 'timeframe': '7d'})"
+      ],
+      "actual_output": {
+        "intent": "market_research",
+        "timestamp": "2025-06-14T21:38:40.042939",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "COMP",
+              "price": 52.4660754474403,
+              "change_24h": -0.08164455743545374,
+              "volume_24h": 2237432.10777464,
+              "market_cap": 524660754.474403,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "COMP"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "News fetching not yet implemented",
+              "symbol": "COMP"
+            },
+            "function": "get_crypto_news",
+            "parameters": {
+              "symbol": "COMP",
+              "limit": 10,
+              "sentiment_filter": "all"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "Sentiment analysis not yet implemented",
+              "symbol": "COMP"
+            },
+            "function": "analyze_market_sentiment",
+            "parameters": {
+              "symbol": "COMP",
+              "timeframe": "7d"
+            }
+          }
+        ],
+        "summary": {
+          "market_data": {
+            "message": "Sentiment analysis not yet implemented",
+            "symbol": "COMP"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Research market trends for BTC",
+      "expected_intent": "research",
+      "expected_tools": [
+        "get_market_data"
+      ],
+      "expected_output_type": "research_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.344188928604126,
+      "actual_intent": "research",
+      "actual_tools": [
+        "get_market_data({'symbol': 'BTC'})",
+        "get_crypto_news({'symbol': 'BTC', 'limit': 10, 'sentiment_filter': 'all'})",
+        "analyze_market_sentiment({'symbol': 'BTC', 'timeframe': '7d'})"
+      ],
+      "actual_output": {
+        "intent": "market_research",
+        "timestamp": "2025-06-14T21:38:40.387187",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "symbol": "BTC",
+              "price": 105169.530961867,
+              "change_24h": -0.4725112071236182,
+              "volume_24h": 809915928.905282,
+              "market_cap": 2090559936459.9922,
+              "source": "cryptocompare_public"
+            },
+            "function": "get_market_data",
+            "parameters": {
+              "symbol": "BTC"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "News fetching not yet implemented",
+              "symbol": "BTC"
+            },
+            "function": "get_crypto_news",
+            "parameters": {
+              "symbol": "BTC",
+              "limit": 10,
+              "sentiment_filter": "all"
+            }
+          },
+          {
+            "success": true,
+            "data": {
+              "message": "Sentiment analysis not yet implemented",
+              "symbol": "BTC"
+            },
+            "function": "analyze_market_sentiment",
+            "parameters": {
+              "symbol": "BTC",
+              "timeframe": "7d"
+            }
+          }
+        ],
+        "summary": {
+          "market_data": {
+            "message": "Sentiment analysis not yet implemented",
+            "symbol": "BTC"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Find yield opportunities",
+      "expected_intent": "yield",
+      "expected_tools": [
+        "get_yield_opportunities"
+      ],
+      "expected_output_type": "yield_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.5680441856384277,
+      "actual_intent": "yield",
+      "actual_tools": [
+        "get_yield_opportunities({'min_apy': 5.0, 'risk_level': 'medium'})"
+      ],
+      "actual_output": {
+        "intent": "find_yield_opportunities",
+        "timestamp": "2025-06-14T21:38:40.955279",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "opportunities": [
+                {
+                  "protocol": "jito-liquid-staking",
+                  "token": "JITOSOL",
+                  "apy": 6.87,
+                  "chain": "Solana",
+                  "tvl": 2451892495,
+                  "risk": "Medium"
+                },
+                {
+                  "protocol": "binance-staked-sol",
+                  "token": "BNSOL",
+                  "apy": 6.1,
+                  "chain": "Solana",
+                  "tvl": 1255837563,
+                  "risk": "Medium"
+                }
+              ],
+              "filter_criteria": {
+                "min_apy": 5.0,
+                "risk_level": "medium"
+              },
+              "source": "defillama_free"
+            },
+            "function": "get_yield_opportunities",
+            "parameters": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            }
+          }
+        ],
+        "summary": {
+          "yield_data": {
+            "opportunities": [
+              {
+                "protocol": "jito-liquid-staking",
+                "token": "JITOSOL",
+                "apy": 6.87,
+                "chain": "Solana",
+                "tvl": 2451892495,
+                "risk": "Medium"
+              },
+              {
+                "protocol": "binance-staked-sol",
+                "token": "BNSOL",
+                "apy": 6.1,
+                "chain": "Solana",
+                "tvl": 1255837563,
+                "risk": "Medium"
+              }
+            ],
+            "filter_criteria": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            },
+            "source": "defillama_free"
+          }
+        },
+        "recommendations": [
+          "Research protocol security before depositing funds",
+          "Start with small amounts to test yield strategies",
+          "Monitor impermanent loss risks in liquidity pools"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Best yield farming options",
+      "expected_intent": "yield",
+      "expected_tools": [
+        "get_yield_opportunities"
+      ],
+      "expected_output_type": "yield_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.0001919269561767578,
+      "actual_intent": "yield",
+      "actual_tools": [
+        "get_yield_opportunities({'min_apy': 5.0, 'risk_level': 'medium'})"
+      ],
+      "actual_output": {
+        "intent": "find_yield_opportunities",
+        "timestamp": "2025-06-14T21:38:40.955566",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "opportunities": [
+                {
+                  "protocol": "jito-liquid-staking",
+                  "token": "JITOSOL",
+                  "apy": 6.87,
+                  "chain": "Solana",
+                  "tvl": 2451892495,
+                  "risk": "Medium"
+                },
+                {
+                  "protocol": "binance-staked-sol",
+                  "token": "BNSOL",
+                  "apy": 6.1,
+                  "chain": "Solana",
+                  "tvl": 1255837563,
+                  "risk": "Medium"
+                }
+              ],
+              "filter_criteria": {
+                "min_apy": 5.0,
+                "risk_level": "medium"
+              },
+              "source": "defillama_free"
+            },
+            "function": "get_yield_opportunities",
+            "parameters": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            }
+          }
+        ],
+        "summary": {
+          "yield_data": {
+            "opportunities": [
+              {
+                "protocol": "jito-liquid-staking",
+                "token": "JITOSOL",
+                "apy": 6.87,
+                "chain": "Solana",
+                "tvl": 2451892495,
+                "risk": "Medium"
+              },
+              {
+                "protocol": "binance-staked-sol",
+                "token": "BNSOL",
+                "apy": 6.1,
+                "chain": "Solana",
+                "tvl": 1255837563,
+                "risk": "Medium"
+              }
+            ],
+            "filter_criteria": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            },
+            "source": "defillama_free"
+          }
+        },
+        "recommendations": [
+          "Research protocol security before depositing funds",
+          "Start with small amounts to test yield strategies",
+          "Monitor impermanent loss risks in liquidity pools"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "High APY staking",
+      "expected_intent": "yield",
+      "expected_tools": [
+        "get_yield_opportunities"
+      ],
+      "expected_output_type": "yield_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.00011277198791503906,
+      "actual_intent": "yield",
+      "actual_tools": [
+        "get_yield_opportunities({'min_apy': 5.0, 'risk_level': 'medium'})"
+      ],
+      "actual_output": {
+        "intent": "find_yield_opportunities",
+        "timestamp": "2025-06-14T21:38:40.955717",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "opportunities": [
+                {
+                  "protocol": "jito-liquid-staking",
+                  "token": "JITOSOL",
+                  "apy": 6.87,
+                  "chain": "Solana",
+                  "tvl": 2451892495,
+                  "risk": "Medium"
+                },
+                {
+                  "protocol": "binance-staked-sol",
+                  "token": "BNSOL",
+                  "apy": 6.1,
+                  "chain": "Solana",
+                  "tvl": 1255837563,
+                  "risk": "Medium"
+                }
+              ],
+              "filter_criteria": {
+                "min_apy": 5.0,
+                "risk_level": "medium"
+              },
+              "source": "defillama_free"
+            },
+            "function": "get_yield_opportunities",
+            "parameters": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            }
+          }
+        ],
+        "summary": {
+          "yield_data": {
+            "opportunities": [
+              {
+                "protocol": "jito-liquid-staking",
+                "token": "JITOSOL",
+                "apy": 6.87,
+                "chain": "Solana",
+                "tvl": 2451892495,
+                "risk": "Medium"
+              },
+              {
+                "protocol": "binance-staked-sol",
+                "token": "BNSOL",
+                "apy": 6.1,
+                "chain": "Solana",
+                "tvl": 1255837563,
+                "risk": "Medium"
+              }
+            ],
+            "filter_criteria": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            },
+            "source": "defillama_free"
+          }
+        },
+        "recommendations": [
+          "Research protocol security before depositing funds",
+          "Start with small amounts to test yield strategies",
+          "Monitor impermanent loss risks in liquidity pools"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "DeFi yield opportunities",
+      "expected_intent": "yield",
+      "expected_tools": [
+        "get_yield_opportunities"
+      ],
+      "expected_output_type": "yield_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.00011539459228515625,
+      "actual_intent": "yield",
+      "actual_tools": [
+        "get_yield_opportunities({'min_apy': 5.0, 'risk_level': 'medium'})"
+      ],
+      "actual_output": {
+        "intent": "find_yield_opportunities",
+        "timestamp": "2025-06-14T21:38:40.955866",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "opportunities": [
+                {
+                  "protocol": "jito-liquid-staking",
+                  "token": "JITOSOL",
+                  "apy": 6.87,
+                  "chain": "Solana",
+                  "tvl": 2451892495,
+                  "risk": "Medium"
+                },
+                {
+                  "protocol": "binance-staked-sol",
+                  "token": "BNSOL",
+                  "apy": 6.1,
+                  "chain": "Solana",
+                  "tvl": 1255837563,
+                  "risk": "Medium"
+                }
+              ],
+              "filter_criteria": {
+                "min_apy": 5.0,
+                "risk_level": "medium"
+              },
+              "source": "defillama_free"
+            },
+            "function": "get_yield_opportunities",
+            "parameters": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            }
+          }
+        ],
+        "summary": {
+          "yield_data": {
+            "opportunities": [
+              {
+                "protocol": "jito-liquid-staking",
+                "token": "JITOSOL",
+                "apy": 6.87,
+                "chain": "Solana",
+                "tvl": 2451892495,
+                "risk": "Medium"
+              },
+              {
+                "protocol": "binance-staked-sol",
+                "token": "BNSOL",
+                "apy": 6.1,
+                "chain": "Solana",
+                "tvl": 1255837563,
+                "risk": "Medium"
+              }
+            ],
+            "filter_criteria": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            },
+            "source": "defillama_free"
+          }
+        },
+        "recommendations": [
+          "Research protocol security before depositing funds",
+          "Start with small amounts to test yield strategies",
+          "Monitor impermanent loss risks in liquidity pools"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Where can I earn yield?",
+      "expected_intent": "yield",
+      "expected_tools": [
+        "get_yield_opportunities"
+      ],
+      "expected_output_type": "yield_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.00011038780212402344,
+      "actual_intent": "yield",
+      "actual_tools": [
+        "get_yield_opportunities({'min_apy': 5.0, 'risk_level': 'medium'})"
+      ],
+      "actual_output": {
+        "intent": "find_yield_opportunities",
+        "timestamp": "2025-06-14T21:38:40.956003",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "opportunities": [
+                {
+                  "protocol": "jito-liquid-staking",
+                  "token": "JITOSOL",
+                  "apy": 6.87,
+                  "chain": "Solana",
+                  "tvl": 2451892495,
+                  "risk": "Medium"
+                },
+                {
+                  "protocol": "binance-staked-sol",
+                  "token": "BNSOL",
+                  "apy": 6.1,
+                  "chain": "Solana",
+                  "tvl": 1255837563,
+                  "risk": "Medium"
+                }
+              ],
+              "filter_criteria": {
+                "min_apy": 5.0,
+                "risk_level": "medium"
+              },
+              "source": "defillama_free"
+            },
+            "function": "get_yield_opportunities",
+            "parameters": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            }
+          }
+        ],
+        "summary": {
+          "yield_data": {
+            "opportunities": [
+              {
+                "protocol": "jito-liquid-staking",
+                "token": "JITOSOL",
+                "apy": 6.87,
+                "chain": "Solana",
+                "tvl": 2451892495,
+                "risk": "Medium"
+              },
+              {
+                "protocol": "binance-staked-sol",
+                "token": "BNSOL",
+                "apy": 6.1,
+                "chain": "Solana",
+                "tvl": 1255837563,
+                "risk": "Medium"
+              }
+            ],
+            "filter_criteria": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            },
+            "source": "defillama_free"
+          }
+        },
+        "recommendations": [
+          "Research protocol security before depositing funds",
+          "Start with small amounts to test yield strategies",
+          "Monitor impermanent loss risks in liquidity pools"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Show me farming opportunities",
+      "expected_intent": "yield",
+      "expected_tools": [
+        "get_yield_opportunities"
+      ],
+      "expected_output_type": "yield_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.0001385211944580078,
+      "actual_intent": "yield",
+      "actual_tools": [
+        "get_yield_opportunities({'min_apy': 5.0, 'risk_level': 'medium'})"
+      ],
+      "actual_output": {
+        "intent": "find_yield_opportunities",
+        "timestamp": "2025-06-14T21:38:40.956173",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "opportunities": [
+                {
+                  "protocol": "jito-liquid-staking",
+                  "token": "JITOSOL",
+                  "apy": 6.87,
+                  "chain": "Solana",
+                  "tvl": 2451892495,
+                  "risk": "Medium"
+                },
+                {
+                  "protocol": "binance-staked-sol",
+                  "token": "BNSOL",
+                  "apy": 6.1,
+                  "chain": "Solana",
+                  "tvl": 1255837563,
+                  "risk": "Medium"
+                }
+              ],
+              "filter_criteria": {
+                "min_apy": 5.0,
+                "risk_level": "medium"
+              },
+              "source": "defillama_free"
+            },
+            "function": "get_yield_opportunities",
+            "parameters": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            }
+          }
+        ],
+        "summary": {
+          "yield_data": {
+            "opportunities": [
+              {
+                "protocol": "jito-liquid-staking",
+                "token": "JITOSOL",
+                "apy": 6.87,
+                "chain": "Solana",
+                "tvl": 2451892495,
+                "risk": "Medium"
+              },
+              {
+                "protocol": "binance-staked-sol",
+                "token": "BNSOL",
+                "apy": 6.1,
+                "chain": "Solana",
+                "tvl": 1255837563,
+                "risk": "Medium"
+              }
+            ],
+            "filter_criteria": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            },
+            "source": "defillama_free"
+          }
+        },
+        "recommendations": [
+          "Research protocol security before depositing funds",
+          "Start with small amounts to test yield strategies",
+          "Monitor impermanent loss risks in liquidity pools"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Best staking rewards",
+      "expected_intent": "yield",
+      "expected_tools": [
+        "get_yield_opportunities"
+      ],
+      "expected_output_type": "yield_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.00010824203491210938,
+      "actual_intent": "yield",
+      "actual_tools": [
+        "get_yield_opportunities({'min_apy': 5.0, 'risk_level': 'medium'})"
+      ],
+      "actual_output": {
+        "intent": "find_yield_opportunities",
+        "timestamp": "2025-06-14T21:38:40.956313",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "opportunities": [
+                {
+                  "protocol": "jito-liquid-staking",
+                  "token": "JITOSOL",
+                  "apy": 6.87,
+                  "chain": "Solana",
+                  "tvl": 2451892495,
+                  "risk": "Medium"
+                },
+                {
+                  "protocol": "binance-staked-sol",
+                  "token": "BNSOL",
+                  "apy": 6.1,
+                  "chain": "Solana",
+                  "tvl": 1255837563,
+                  "risk": "Medium"
+                }
+              ],
+              "filter_criteria": {
+                "min_apy": 5.0,
+                "risk_level": "medium"
+              },
+              "source": "defillama_free"
+            },
+            "function": "get_yield_opportunities",
+            "parameters": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            }
+          }
+        ],
+        "summary": {
+          "yield_data": {
+            "opportunities": [
+              {
+                "protocol": "jito-liquid-staking",
+                "token": "JITOSOL",
+                "apy": 6.87,
+                "chain": "Solana",
+                "tvl": 2451892495,
+                "risk": "Medium"
+              },
+              {
+                "protocol": "binance-staked-sol",
+                "token": "BNSOL",
+                "apy": 6.1,
+                "chain": "Solana",
+                "tvl": 1255837563,
+                "risk": "Medium"
+              }
+            ],
+            "filter_criteria": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            },
+            "source": "defillama_free"
+          }
+        },
+        "recommendations": [
+          "Research protocol security before depositing funds",
+          "Start with small amounts to test yield strategies",
+          "Monitor impermanent loss risks in liquidity pools"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Liquidity mining options",
+      "expected_intent": "yield",
+      "expected_tools": [
+        "get_yield_opportunities"
+      ],
+      "expected_output_type": "yield_data",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.00011873245239257812,
+      "actual_intent": "yield",
+      "actual_tools": [
+        "get_yield_opportunities({'min_apy': 5.0, 'risk_level': 'medium'})"
+      ],
+      "actual_output": {
+        "intent": "find_yield_opportunities",
+        "timestamp": "2025-06-14T21:38:40.956462",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "opportunities": [
+                {
+                  "protocol": "jito-liquid-staking",
+                  "token": "JITOSOL",
+                  "apy": 6.87,
+                  "chain": "Solana",
+                  "tvl": 2451892495,
+                  "risk": "Medium"
+                },
+                {
+                  "protocol": "binance-staked-sol",
+                  "token": "BNSOL",
+                  "apy": 6.1,
+                  "chain": "Solana",
+                  "tvl": 1255837563,
+                  "risk": "Medium"
+                }
+              ],
+              "filter_criteria": {
+                "min_apy": 5.0,
+                "risk_level": "medium"
+              },
+              "source": "defillama_free"
+            },
+            "function": "get_yield_opportunities",
+            "parameters": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            }
+          }
+        ],
+        "summary": {
+          "yield_data": {
+            "opportunities": [
+              {
+                "protocol": "jito-liquid-staking",
+                "token": "JITOSOL",
+                "apy": 6.87,
+                "chain": "Solana",
+                "tvl": 2451892495,
+                "risk": "Medium"
+              },
+              {
+                "protocol": "binance-staked-sol",
+                "token": "BNSOL",
+                "apy": 6.1,
+                "chain": "Solana",
+                "tvl": 1255837563,
+                "risk": "Medium"
+              }
+            ],
+            "filter_criteria": {
+              "min_apy": 5.0,
+              "risk_level": "medium"
+            },
+            "source": "defillama_free"
+          }
+        },
+        "recommendations": [
+          "Research protocol security before depositing funds",
+          "Start with small amounts to test yield strategies",
+          "Monitor impermanent loss risks in liquidity pools"
+        ]
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Set alert for BTC at $50000",
+      "expected_intent": "alert",
+      "expected_tools": [
+        "create_price_alert"
+      ],
+      "expected_output_type": "alert_confirmation",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.0002906322479248047,
+      "actual_intent": "alerts",
+      "actual_tools": [
+        "create_price_alert({'symbol': 'BTC', 'target_price': '500.0', 'condition': 'above', 'user_id': 12345})"
+      ],
+      "actual_output": {
+        "intent": "create_price_alert",
+        "timestamp": "2025-06-14T21:38:40.956781",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "message": "Alert created",
+              "symbol": "BTC",
+              "target_price": "500.0"
+            },
+            "function": "create_price_alert",
+            "parameters": {
+              "symbol": "BTC",
+              "target_price": "500.0",
+              "condition": "above",
+              "user_id": 12345
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "message": "Alert created",
+            "symbol": "BTC",
+            "target_price": "500.0"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Alert me when ETH hits $3000",
+      "expected_intent": "alert",
+      "expected_tools": [
+        "create_price_alert"
+      ],
+      "expected_output_type": "alert_confirmation",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.0001399517059326172,
+      "actual_intent": "price",
+      "actual_tools": [
+        "create_price_alert({'symbol': 'ETH', 'target_price': '300000000.0', 'condition': 'above', 'user_id': 12345})"
+      ],
+      "actual_output": {
+        "intent": "create_price_alert",
+        "timestamp": "2025-06-14T21:38:40.956960",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "message": "Alert created",
+              "symbol": "ETH",
+              "target_price": "300000000.0"
+            },
+            "function": "create_price_alert",
+            "parameters": {
+              "symbol": "ETH",
+              "target_price": "300000000.0",
+              "condition": "above",
+              "user_id": 12345
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "message": "Alert created",
+            "symbol": "ETH",
+            "target_price": "300000000.0"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Create alert for SOL at $100",
+      "expected_intent": "alert",
+      "expected_tools": [
+        "create_price_alert"
+      ],
+      "expected_output_type": "alert_confirmation",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.000110626220703125,
+      "actual_intent": "alerts",
+      "actual_tools": [
+        "create_price_alert({'symbol': 'SOL', 'target_price': '100.0', 'condition': 'above', 'user_id': 12345})"
+      ],
+      "actual_output": {
+        "intent": "create_price_alert",
+        "timestamp": "2025-06-14T21:38:40.957106",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "message": "Alert created",
+              "symbol": "SOL",
+              "target_price": "100.0"
+            },
+            "function": "create_price_alert",
+            "parameters": {
+              "symbol": "SOL",
+              "target_price": "100.0",
+              "condition": "above",
+              "user_id": 12345
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "message": "Alert created",
+            "symbol": "SOL",
+            "target_price": "100.0"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Notify when ADA reaches $2",
+      "expected_intent": "alert",
+      "expected_tools": [
+        "create_price_alert"
+      ],
+      "expected_output_type": "alert_confirmation",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.00013184547424316406,
+      "actual_intent": "price",
+      "actual_tools": [
+        "create_price_alert({'symbol': 'ADA', 'target_price': '2.0', 'condition': 'above', 'user_id': 12345})"
+      ],
+      "actual_output": {
+        "intent": "create_price_alert",
+        "timestamp": "2025-06-14T21:38:40.957271",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "message": "Alert created",
+              "symbol": "ADA",
+              "target_price": "2.0"
+            },
+            "function": "create_price_alert",
+            "parameters": {
+              "symbol": "ADA",
+              "target_price": "2.0",
+              "condition": "above",
+              "user_id": 12345
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "message": "Alert created",
+            "symbol": "ADA",
+            "target_price": "2.0"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Set price alert BTC $60000",
+      "expected_intent": "alert",
+      "expected_tools": [
+        "create_price_alert"
+      ],
+      "expected_output_type": "alert_confirmation",
+      "success": true,
+      "errors": [],
+      "execution_time": 5.7697296142578125e-05,
+      "actual_intent": "price",
+      "actual_tools": [
+        "create_price_alert({'symbol': 'BTC', 'target_price': '600.0', 'condition': 'above', 'user_id': 12345})"
+      ],
+      "actual_output": {
+        "intent": "create_price_alert",
+        "timestamp": "2025-06-14T21:38:40.957358",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "message": "Alert created",
+              "symbol": "BTC",
+              "target_price": "600.0"
+            },
+            "function": "create_price_alert",
+            "parameters": {
+              "symbol": "BTC",
+              "target_price": "600.0",
+              "condition": "above",
+              "user_id": 12345
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "message": "Alert created",
+            "symbol": "BTC",
+            "target_price": "600.0"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Alert ETH $4000",
+      "expected_intent": "alert",
+      "expected_tools": [
+        "create_price_alert"
+      ],
+      "expected_output_type": "alert_confirmation",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.00010919570922851562,
+      "actual_intent": "price",
+      "actual_tools": [
+        "create_price_alert({'symbol': 'ETH', 'target_price': '400.0', 'condition': 'above', 'user_id': 12345})"
+      ],
+      "actual_output": {
+        "intent": "create_price_alert",
+        "timestamp": "2025-06-14T21:38:40.957501",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "message": "Alert created",
+              "symbol": "ETH",
+              "target_price": "400.0"
+            },
+            "function": "create_price_alert",
+            "parameters": {
+              "symbol": "ETH",
+              "target_price": "400.0",
+              "condition": "above",
+              "user_id": 12345
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "message": "Alert created",
+            "symbol": "ETH",
+            "target_price": "400.0"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    },
+    {
+      "input": "Create notification for Bitcoin at 55k",
+      "expected_intent": "alert",
+      "expected_tools": [
+        "create_price_alert"
+      ],
+      "expected_output_type": "alert_confirmation",
+      "success": true,
+      "errors": [],
+      "execution_time": 0.00021982192993164062,
+      "actual_intent": "price",
+      "actual_tools": [
+        "create_price_alert({'symbol': 'BTC', 'target_price': '55000.0', 'condition': 'above', 'user_id': 12345})"
+      ],
+      "actual_output": {
+        "intent": "create_price_alert",
+        "timestamp": "2025-06-14T21:38:40.957752",
+        "results": [
+          {
+            "success": true,
+            "data": {
+              "message": "Alert created",
+              "symbol": "BTC",
+              "target_price": "55000.0"
+            },
+            "function": "create_price_alert",
+            "parameters": {
+              "symbol": "BTC",
+              "target_price": "55000.0",
+              "condition": "above",
+              "user_id": 12345
+            }
+          }
+        ],
+        "summary": {
+          "price_data": {
+            "message": "Alert created",
+            "symbol": "BTC",
+            "target_price": "55000.0"
+          }
+        },
+        "recommendations": []
+      },
+      "validation_passed": true
+    }
+  ],
+  "status": "\ud83c\udf89 EXCELLENT",
+  "recommendation": "System executes commands correctly and reliably"
+}

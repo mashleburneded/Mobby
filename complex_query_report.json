@@ -1,0 +1,62 @@
+{
+  "timestamp": 1749775980.9046783,
+  "test_type": "complex_queries",
+  "total_tests": 5,
+  "passed": 5,
+  "failed": 0,
+  "success_rate": 100.0,
+  "intent_accuracy": 1.0,
+  "confidence_rate": 1.0,
+  "detailed_results": [
+    {
+      "name": "DeFiLlama TVL Query",
+      "status": "PASS",
+      "result": {
+        "intent_correct": true,
+        "confidence_high": true,
+        "api_working": true,
+        "protocol_found": true
+      }
+    },
+    {
+      "name": "Trading Volume Query",
+      "status": "PASS",
+      "result": {
+        "intent_correct": true,
+        "confidence_high": true,
+        "response_generated": true,
+        "relevant_content": true
+      }
+    },
+    {
+      "name": "DeFi Explanation",
+      "status": "PASS",
+      "result": {
+        "intent_correct": true,
+        "confidence_high": true,
+        "response_comprehensive": true,
+        "concepts_covered": true
+      }
+    },
+    {
+      "name": "Yield Farming Query",
+      "status": "PASS",
+      "result": {
+        "intent_correct": true,
+        "confidence_high": true,
+        "response_informative": true,
+        "terms_covered": true
+      }
+    },
+    {
+      "name": "Crypto Comparison",
+      "status": "PASS",
+      "result": {
+        "intent_correct": true,
+        "confidence_high": true,
+        "response_analytical": true,
+        "comparison_elements": true
+      }
+    }
+  ]
+}
