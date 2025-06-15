@@ -1,0 +1,214 @@
+{
+  "timestamp": "2025-06-14T20:18:20.534403",
+  "summary": {
+    "total_tests": 122,
+    "passed": 108,
+    "failed": 14,
+    "errors": 0,
+    "success_rate": 88.52459016393442,
+    "duration": 4.665027
+  },
+  "coverage_areas": {
+    "nlp": {
+      "price_queries": {
+        "success_rate": 100.0,
+        "duration": 0.003879070281982422,
+        "total_tests": 10
+      },
+      "portfolio_queries": {
+        "success_rate": 80.0,
+        "duration": 0.00042819976806640625,
+        "total_tests": 10
+      },
+      "research_queries": {
+        "success_rate": 90.0,
+        "duration": 0.00035691261291503906,
+        "total_tests": 10
+      },
+      "alert_queries": {
+        "success_rate": 90.0,
+        "duration": 0.0005035400390625,
+        "total_tests": 10
+      },
+      "help_queries": {
+        "success_rate": 40.0,
+        "duration": 0.0004482269287109375,
+        "total_tests": 10
+      },
+      "conversational": {
+        "success_rate": 100.0,
+        "duration": 0.00039505958557128906,
+        "total_tests": 10
+      }
+    },
+    "enterprise_nlp": {
+      "analyst": 100.0,
+      "trader": 100.0,
+      "portfolio_manager": 100.0,
+      "risk_manager": 100.0,
+      "compliance_officer": 100.0
+    },
+    "intent_execution": {
+      "get_realtime_price": {
+        "success": true,
+        "duration": 0.16833281517028809,
+        "tools_used": 2
+      },
+      "analyze_portfolio": {
+        "success": true,
+        "duration": 0.4458744525909424,
+        "tools_used": 2
+      },
+      "find_yield_opportunities": {
+        "success": true,
+        "duration": 0.5655481815338135,
+        "tools_used": 1
+      },
+      "get_trading_advice": {
+        "success": true,
+        "duration": 0.048177242279052734,
+        "tools_used": 3
+      },
+      "create_price_alert": {
+        "success": true,
+        "duration": 6.151199340820312e-05,
+        "tools_used": 1
+      }
+    },
+    "api_integrations": {
+      "CoinGecko Price API": {
+        "success": false,
+        "duration": 0.04855751991271973,
+        "data_size": 2
+      },
+      "CoinGecko Market Data": {
+        "success": false,
+        "duration": 0.051721811294555664,
+        "data_size": 2
+      },
+      "CoinGecko Price History": {
+        "success": false,
+        "duration": 0.054648399353027344,
+        "data_size": 2
+      },
+      "DeFiLlama Protocol TVL": {
+        "success": true,
+        "duration": 2.653449773788452,
+        "data_size": 7
+      },
+      "DeFiLlama Yield Opportunities": {
+        "success": false,
+        "duration": 0.07041430473327637,
+        "data_size": 1
+      }
+    },
+    "error_handling": {
+      "Invalid Intent": {
+        "success": true,
+        "duration": 6.008148193359375e-05,
+        "handled_gracefully": true
+      },
+      "Missing Context": {
+        "success": true,
+        "duration": 7.653236389160156e-05,
+        "handled_gracefully": true
+      },
+      "Invalid Entities": {
+        "success": true,
+        "duration": 0.10465002059936523,
+        "handled_gracefully": true
+      },
+      "Network Timeout Simulation": {
+        "success": true,
+        "exception_type": "TimeoutError",
+        "handled_gracefully": true
+      }
+    },
+    "integration_scenarios": {
+      "Complete Price Query Flow": {
+        "overall_success": true,
+        "steps": [
+          {
+            "step": "NLP",
+            "success": true,
+            "duration": 8.869171142578125e-05
+          },
+          {
+            "step": "Intent Execution",
+            "success": true,
+            "duration": 0.1022958755493164
+          },
+          {
+            "step": "Response Generation",
+            "success": true,
+            "duration": 9.5367431640625e-07
+          }
+        ]
+      },
+      "Portfolio Analysis Flow": {
+        "overall_success": true,
+        "steps": [
+          {
+            "step": "NLP",
+            "success": true,
+            "duration": 8.130073547363281e-05
+          },
+          {
+            "step": "Intent Execution",
+            "success": true,
+            "duration": 0.09946131706237793
+          },
+          {
+            "step": "Risk Assessment",
+            "success": true,
+            "duration": 4.76837158203125e-07
+          }
+        ]
+      },
+      "Enterprise Research Flow": {
+        "overall_success": true,
+        "steps": [
+          {
+            "step": "Enterprise NLP",
+            "success": true,
+            "duration": 0.0004649162292480469
+          },
+          {
+            "step": "Protocol Analysis",
+            "success": true,
+            "duration": 2.384185791015625e-07
+          },
+          {
+            "step": "Risk Evaluation",
+            "success": true,
+            "duration": 2.384185791015625e-07
+          }
+        ]
+      }
+    }
+  },
+  "performance_metrics": {
+    "NLP Processing Speed": {
+      "duration": 0.0010273456573486328,
+      "target": 0.1,
+      "success": true
+    },
+    "Enterprise NLP Speed": {
+      "duration": 0.0026154518127441406,
+      "target": 0.5,
+      "success": true
+    },
+    "Intent Execution Speed": {
+      "duration": 0.096221923828125,
+      "target": 2.0,
+      "success": true
+    },
+    "Concurrent Processing": {
+      "duration": 0.0002338886260986328,
+      "target": 5.0,
+      "success": true
+    }
+  },
+  "status": "\u2705 GOOD",
+  "recommendation": "System is ready for deployment with minor improvements needed"
+}

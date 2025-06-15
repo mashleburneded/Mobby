@@ -1,0 +1,275 @@
+{
+  "timestamp": 1749774837.186754,
+  "total_scenarios": 10,
+  "passed": 10,
+  "failed": 0,
+  "success_rate": 100.0,
+  "detailed_results": [
+    {
+      "scenario": "Basic Price Query",
+      "user_input": "What's the price of Bitcoin?",
+      "expected_behavior": "Should provide current BTC price information",
+      "intent": "get_crypto_price",
+      "confidence": 0.9,
+      "response": "Hello there! As a crypto trading assistant, I'm happy to help you stay on top of the market.\n\nAs of my last update (which was just a moment ago!), the current price of Bitcoin (BTC) is:\n\n**$23,451.21 USD**\n\nPlease keep in mind that cryptocurrency prices are known to fluctuate rapidly, so this information might change in the blink of an eye! If you'd like to stay updated, I can help you set up price alerts or provide real-time market insights.\n\nWould you like to know more about Bitcoin's recent performance or explore other market-related topics?",
+      "response_time": 0.8288168907165527,
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 5,
+        "helpfulness": 0,
+        "tone": 2,
+        "completeness": 0,
+        "issues": [],
+        "strengths": [
+          "Addresses user's topic",
+          "Uses appropriate crypto terminology",
+          "Positive and confident tone"
+        ],
+        "overall_score": 10
+      },
+      "provider": "groq"
+    },
+    {
+      "scenario": "Portfolio Request",
+      "user_input": "Show me my crypto portfolio",
+      "expected_behavior": "Should explain how to view portfolio or ask for more info",
+      "intent": "analyze_portfolio",
+      "confidence": 0.9000000000000001,
+      "response": "Hello!\n\nI'm M\u00f6bius, your crypto trading assistant. I'm happy to help you manage your portfolio.\n\nTo display your portfolio, I'll need to access your account information. Please authenticate with your crypto exchange or wallet provider using one of the following options:\n\n1. **API Key**: Enter your exchange's API key and secret key. This will allow me to securely access your account data.\n2. **Wallet Connection**: Connect your wallet (e.g., MetaMask, Ledger Live) to authenticate.\n3. **Manual Entry**: Manually enter your current holdings, including the cryptocurrency, quantity, and purchase price.\n\nPlease select one of the options above by typing '1', '2', or '3'.\n\nOnce authenticated, I'll display your current portfolio, including the assets, quantities, and their current values.",
+      "response_time": 0.8637378215789795,
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 5,
+        "helpfulness": 3,
+        "tone": 2,
+        "completeness": 0,
+        "issues": [],
+        "strengths": [
+          "Addresses user's topic",
+          "Uses appropriate crypto terminology",
+          "Provides actionable advice",
+          "Positive and confident tone"
+        ],
+        "overall_score": 10
+      },
+      "provider": "groq"
+    },
+    {
+      "scenario": "Price Alert Setup",
+      "user_input": "Set an alert when ETH reaches $4000",
+      "expected_behavior": "Should guide user through alert setup process",
+      "intent": "create_price_alert",
+      "confidence": 1.05,
+      "response": "Okay, I can set an alert for you. I will notify you when the price of ETH (Ethereum) reaches $4000.\n\n**Important Considerations:**\n\n*   **Exchange/Data Source:** To make this alert most effective, I need to know where you get your ETH price data. Different exchanges can have slightly different prices. Please specify the exchange you want me to track (e.g., \"ETH on Coinbase,\" \"ETH on Binance,\" \"ETH on Kraken,\" or \"ETH using CoinGecko average\"). If you don't specify, I will use a common and reliable data source like CoinGecko or Coinbase, but it's best to be specific.\n*   **Notification Method:** How would you like to be notified? I can simulate sending you a message here, but in a real-world application, this would involve:\n    *   **Email:** I could send you an email.\n    *   **Mobile Push Notification:** I could send a notification to your phone (requires integration with a notification service).\n    *   **In-App Notification:** If this was part of a trading platform, I could display an in-app notification.\n*   **One-Time or Recurring:** Do you want this to be a one-time alert, or do you want me to keep alerting you every time ETH hits $4000?\n\n**Example Response (Assuming CoinGecko and a Simulated Notification):**\n\n\"Okay, I've set an alert for ETH (Ethereum) on CoinGecko. I will notify you when the price reaches $4000. (Simulating sending you a message here in our chat.)\"\n\n**Please provide the exchange/data source you prefer so I can set up the alert more accurately.**\n\n**Disclaimer:** I am an AI and cannot guarantee the accuracy of market data or the delivery of notifications. Always verify information with a reliable source before making trading decisions. Trading cryptocurrencies involves significant risk.\n",
+      "response_time": 3.4581832885742188,
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 5,
+        "helpfulness": 0,
+        "tone": 0,
+        "completeness": 0,
+        "issues": [
+          "Response too long"
+        ],
+        "strengths": [
+          "Addresses user's topic",
+          "Uses appropriate crypto terminology"
+        ],
+        "overall_score": 10
+      },
+      "provider": "gemini"
+    },
+    {
+      "scenario": "DeFi Explanation",
+      "user_input": "What is DeFi and how does it work?",
+      "expected_behavior": "Should provide clear explanation of decentralized finance",
+      "intent": "unknown",
+      "confidence": 0.0,
+      "response": "Hello! I'm M\u00f6bius, your crypto trading assistant. Let's explore the world of DeFi.\n\n**DeFi: Decentralized Finance - A Layman's Explanation**\n\nImagine a traditional bank. It controls your money, sets interest rates, approves loans, and generally acts as the middleman for all financial transactions. DeFi, or Decentralized Finance, aims to replace that bank (and other traditional financial institutions) with open-source software and blockchain technology.\n\n**Think of it as building a financial system on the internet where:**\n\n*   **No single entity controls everything.** Instead, code and algorithms (smart contracts) dictate the rules.\n*   **Anyone with an internet connection can participate.** There are generally no gatekeepers or credit checks.\n*   **It's transparent and auditable.** All transactions are recorded on the blockchain, making them publicly viewable.\n*   **It's (potentially) more efficient.** By automating processes, DeFi can reduce costs and speed up transactions.\n\n**How Does It Work? Key Components:**\n\nDeFi relies on several core technologies and concepts:\n\n1.  **Blockchain Technology:** This is the foundation.  Most DeFi applications are built on blockchains like Ethereum, Solana, Avalanche, and others.  The blockchain provides the secure, transparent, and immutable ledger for recording transactions.\n\n2.  **Smart Contracts:** These are self-executing contracts written in code and stored on the blockchain.  They automatically enforce the terms of an agreement when certain conditions are met.  Think of them as programmable money and the engine that drives DeFi applications.  For example, a smart contract can automatically lend out your cryptocurrency and collect interest based on pre-defined rules.\n\n3.  **Decentralized Applications (dApps):** These are applications built on top of blockchains that interact with smart contracts. They provide a user-friendly interface for accessing DeFi services.\n\n4.  **Cryptocurrencies and Tokens:** DeFi uses cryptocurrencies like ETH (Ethereum) and stablecoins like USDC and DAI as the primary medium of exchange and collateral.  Tokens also represent various assets or governance rights within DeFi protocols.\n\n**Common DeFi Applications:**\n\n*   **Decentralized Exchanges (DEXs):**  Platforms that allow users to trade cryptocurrencies directly with each other without intermediaries like centralized exchanges (e.g., Coinbase, Binance). Examples include Uniswap, SushiSwap, and PancakeSwap.  They use automated market makers (AMMs) instead of traditional order books.\n\n*   **Lending and Borrowing Platforms:**  Protocols that allow users to lend out their cryptocurrencies to earn interest or borrow cryptocurrencies by providing collateral. Examples include Aave, Compound, and MakerDAO.\n\n*   **Yield Farming:**  A strategy where users earn rewards (usually in the form of additional tokens) by providing liquidity to DeFi protocols or staking their tokens.  It's like earning interest in a bank account, but potentially with higher returns (and higher risks).\n\n*   **Stablecoins:**  Cryptocurrencies designed to maintain a stable value, often pegged to a fiat currency like the US dollar.  They are crucial for DeFi as they provide a stable unit of account and reduce volatility. Examples include USDC, USDT, and DAI.\n\n*   **Wrapped Tokens:**  Tokens that represent another cryptocurrency on a different blockchain. For example, Wrapped Bitcoin (WBTC) allows users to use Bitcoin in the Ethereum DeFi ecosystem.\n\n*   **Decentralized Insurance:**  Protocols that offer insurance against smart contract failures, hacks, or other risks.\n\n**Example: Lending on Aave**\n\n1.  You deposit USDC (a stablecoin) onto the Aave platform.\n2.  Aave's smart contracts pool your USDC with other lenders.\n3.  Borrowers can borrow USDC from the pool by providing collateral (e.g., ETH) and paying interest.\n4.  You, as a lender, earn interest on your deposited USDC, paid by the borrowers.\n5.  All of this happens automatically through smart contracts, without a traditional bank involved.\n\n**Pros of DeFi:**\n\n*   **Accessibility:** Open to anyone with an internet connection.\n*   **Transparency:** Transactions are publicly auditable on the blockchain.\n*   **Efficiency:** Automation reduces costs and speeds up transactions.\n*   **Control:** Users have more control over their assets.\n*   **Innovation:** Rapid development and experimentation with new financial products.\n\n**Cons of DeFi:**\n\n*   **Complexity:** Can be difficult to understand for beginners.\n*   **Risk:** Smart contract vulnerabilities, impermanent loss, and rug pulls are potential risks.\n*   **Volatility:** Cryptocurrency prices can be highly volatile.\n*   **Scalability:** Some blockchains struggle to handle high transaction volumes.\n*   **Regulation:** The regulatory landscape is still evolving.\n*   **Impermanent Loss:**  A risk associated with providing liquidity to DEXs where the value of your deposited assets can change relative to each other, resulting in a loss compared to simply holding the assets.\n\n**In Conclusion:**\n\nDeFi is a rapidly evolving and potentially revolutionary space.  It offers the potential to create a more open, accessible, and efficient financial system. However, it's important to understand the risks involved and do your own research before participating.\n\n**Disclaimer:** This is for informational purposes only and not financial advice. Always do your own research before investing in cryptocurrencies or DeFi projects.\n\nDo you have any other questions about DeFi or specific aspects of it that you'd like me to explain further?  For example, we could dive deeper into DEXs, lending protocols, or specific DeFi projects.  Just let me know!\n",
+      "response_time": 7.786511182785034,
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 3,
+        "helpfulness": 0,
+        "tone": 2,
+        "completeness": 0,
+        "issues": [
+          "Response too long"
+        ],
+        "strengths": [
+          "Addresses user's topic",
+          "Uses appropriate crypto terminology",
+          "Positive and confident tone"
+        ],
+        "overall_score": 10
+      },
+      "provider": "gemini"
+    },
+    {
+      "scenario": "Trading Advice",
+      "user_input": "Should I buy Bitcoin now or wait?",
+      "expected_behavior": "Should provide balanced analysis without financial advice",
+      "intent": "unknown",
+      "confidence": 0.0,
+      "response": "As M\u00f6bius, I'll provide you with a balanced analysis to help you make an informed decision.\n\n**Current Market Situation:**\nBitcoin (BTC) has been experiencing significant volatility, with prices fluctuating between $30,000 and $40,000 over the past few weeks. The cryptocurrency market is known for its unpredictability, and it's essential to stay up-to-date with market trends and news.\n\n**Reasons to Buy Bitcoin Now:**\n\n1. **Historical Patterns:** Bitcoin has a history of rebounding after significant price drops. If you believe in the long-term potential of Bitcoin, buying during a dip might be a good strategy.\n2. **Institutional Investment:** Many institutional investors, such as hedge funds and family offices, are increasingly investing in Bitcoin, which could lead to increased demand and higher prices.\n3. **Adoption and Infrastructure:** The development of decentralized finance (DeFi) and improvements in cryptocurrency infrastructure could lead to increased adoption and higher prices.\n\n**Reasons to Wait:**\n\n1. **Market Volatility:** The cryptocurrency market is known for its unpredictability, and prices can drop rapidly. If you're not comfortable with the possibility of a further price drop, it might be wise to wait.\n2. **Regulatory Uncertainty:** Governments and regulatory bodies are still figuring out how to regulate them. Uncertainty around regulations could negatively impact prices.\n3. **Technical Analysis:** Some technical indicators, such as the Relative Strength Index (RSI), might suggest that Bitcoin is currently overbought or due for a correction.\n\n**What to Do:**\n\n1. **Set a Budget:** Decide how much you're willing to invest and stick to it.\n2. **Diversify:** Consider diversifying your portfolio by investing in other cryptocurrencies or asset classes.\n3. **Keep an Eye on News and Trends:** Stay informed about market developments and adjust your strategy accordingly.\n4. **Consider Dollar-Cost Averaging:** Invest a fixed amount of money at regular intervals, regardless of the price, to reduce the impact of market volatility.\n\nAs M\u00f6bius, I'm not a financial advisor, and it's essential to consult with a financial expert or conduct your own research and make an informed decision based on your individual circumstances and risk tolerance.\n\nRemember, investing in cryptocurrencies carries inherent risks, and you could lose some or all of your investment.\n\nWhat would you like to do next?",
+      "response_time": 1.6637423038482666,
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 3,
+        "helpfulness": 3,
+        "tone": 2,
+        "completeness": 0,
+        "issues": [
+          "Response too long"
+        ],
+        "strengths": [
+          "Addresses user's topic",
+          "Uses appropriate crypto terminology",
+          "Provides actionable advice",
+          "Positive and confident tone"
+        ],
+        "overall_score": 10
+      },
+      "provider": "groq"
+    },
+    {
+      "scenario": "Technical Analysis",
+      "user_input": "Analyze the current market trend for Ethereum",
+      "expected_behavior": "Should provide market analysis or explain how to get it",
+      "intent": "unknown",
+      "confidence": 0.0,
+      "response": "Okay, I can help with that! Let's analyze the current market trend for Ethereum (ETH). Please remember that this is just an analysis based on available data and should not be taken as financial advice. The cryptocurrency market is highly volatile, and things can change rapidly.\n\nTo give you the best possible analysis, I need to consider a few key factors:\n\n**1. Price Action & Technical Indicators:**\n\n*   **Current Price:** What is the current price of ETH? (I need you to provide this, as I don't have real-time access to live data)\n*   **Recent Price Movement:** Has ETH been trending upwards, downwards, or sideways recently? What has the percentage change been over the last week, month, and year?\n*   **Key Support and Resistance Levels:** What are the significant support and resistance levels that ETH is currently interacting with? (These levels can act as potential price floors and ceilings.)\n*   **Moving Averages:** How is ETH performing relative to its key moving averages (e.g., 50-day, 200-day)?  Is it above or below these averages? A move above the 200-day moving average is often seen as a bullish signal.\n*   **Relative Strength Index (RSI):** What is the RSI reading? Is it overbought (above 70), oversold (below 30), or neutral?\n*   **MACD (Moving Average Convergence Divergence):** Is the MACD line above or below the signal line? Are there any bullish or bearish crossovers?\n*   **Trading Volume:** Is the trading volume increasing or decreasing?  Increasing volume during a price move can add conviction to the trend.\n\n**2. Fundamental Analysis:**\n\n*   **Ethereum Network Activity:** How is the Ethereum network performing?  Look at metrics like:\n    *   **Transaction Volume:** Is the number of transactions on the Ethereum network increasing or decreasing?\n    *   **Gas Fees:** Are gas fees high or low? High gas fees can discourage users.\n    *   **Active Addresses:** How many active addresses are interacting with the Ethereum network?\n*   **Ethereum Ecosystem Development:** What's happening in the Ethereum ecosystem?\n    *   **DeFi (Decentralized Finance):** How is the DeFi sector performing on Ethereum?\n    *   **NFTs (Non-Fungible Tokens):** What is the current sentiment and activity in the NFT space on Ethereum?\n    *   **Layer-2 Scaling Solutions:** How are layer-2 scaling solutions like Optimism and Arbitrum performing in terms of adoption and transaction volume?\n*   **Ethereum Upgrades & Developments:** Are there any upcoming or recent Ethereum upgrades (e.g., Shapella, Dencun)?  These upgrades can have a significant impact on the network.\n*   **Staking:** How much ETH is currently staked? A higher staking rate can reduce the circulating supply.\n\n**3. Market Sentiment & News:**\n\n*   **Overall Crypto Market Sentiment:** How is the overall cryptocurrency market performing? Bitcoin's price often influences Ethereum's price.\n*   **News & Events:** Are there any recent news events (e.g., regulatory announcements, exchange listings, partnerships) that could be affecting Ethereum's price?\n*   **Social Media Sentiment:** What is the general sentiment towards Ethereum on social media platforms like Twitter and Reddit?\n\n**How I will analyze once you provide the current price:**\n\nOnce you provide the current price of ETH, I will use the factors above to create a comprehensive analysis. Here's an example of how I would structure my response:\n\n**Example (Hypothetical - Please provide the current price for a real analysis):**\n\n\"Okay, let's analyze the current Ethereum market trend.\n\n**Assumptions:**\n\n*   **Current Price:** $3,000 (You need to provide this!)\n\n**Technical Analysis:**\n\n*   **Recent Price Action:** ETH has been in a consolidation phase for the past week, trading between $2,900 and $3,100.\n*   **Key Levels:** Key support is around $2,800, and resistance is at $3,200.\n*   **Moving Averages:** ETH is currently trading above its 50-day moving average but below its 200-day moving average, suggesting a mixed trend.\n*   **RSI:** The RSI is currently at 55, indicating a neutral condition.\n*   **MACD:** The MACD line is slightly above the signal line, suggesting a potential bullish crossover.\n*   **Volume:** Trading volume has been moderate.\n\n**Fundamental Analysis:**\n\n*   **Network Activity:** Transaction volume on Ethereum has been relatively stable. Gas fees are moderate.\n*   **Ecosystem:** DeFi activity is showing signs of renewed interest. NFT trading volume is down slightly.\n*   **Upgrades:** The upcoming Dencun upgrade is anticipated to improve scalability.\n*   **Staking:** The ETH staking rate is currently at 25%, which is a positive sign.\n\n**Market Sentiment:**\n\n*   **Overall Market:** Bitcoin is showing positive momentum, which is helping to support ETH.\n*   **News:** Recent news about institutional adoption of Ethereum ETFs is positive.\n*   **Social Media:** Social media sentiment is generally positive.\n\n**Overall Trend & Potential Outlook:**\n\nBased on this analysis, the current market trend for Ethereum appears to be cautiously optimistic. While ETH is in a consolidation phase, the positive fundamental factors and the potential bullish crossover on the MACD suggest that a breakout above the $3,200 resistance level is possible. However, a break below the $2,800 support level could lead to further downside.\n\n**Important Considerations:**\n\n*   **Volatility:** The cryptocurrency market is highly volatile, and this analysis is subject to change.\n*   **Risk Management:** Always use proper risk management techniques when trading.\n*   **Further Research:** Conduct your own research and consult with a financial advisor before making any investment decisions.\n\n**In summary, please provide the current price of ETH, and I will provide a more tailored and accurate analysis for you.**\n",
+      "response_time": 8.033942699432373,
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 3,
+        "helpfulness": 3,
+        "tone": 2,
+        "completeness": 0,
+        "issues": [
+          "Response too long"
+        ],
+        "strengths": [
+          "Addresses user's topic",
+          "Uses appropriate crypto terminology",
+          "Provides actionable advice",
+          "Positive and confident tone"
+        ],
+        "overall_score": 10
+      },
+      "provider": "gemini"
+    },
+    {
+      "scenario": "Wallet Help",
+      "user_input": "How do I create a secure crypto wallet?",
+      "expected_behavior": "Should provide wallet creation guidance and security tips",
+      "intent": "unknown",
+      "confidence": 0.0,
+      "response": "Creating a secure crypto wallet is a crucial step in protecting your digital assets. Here's a step-by-step guide to help you create a secure crypto wallet:\n\n**Choose a Wallet Type**\n\nThere are several types of crypto wallets, each with its own strengths and weaknesses. Here are the most popular ones:\n\n1. **Hardware Wallets** (e.g., Ledger, Trezor): These are physical devices that store your private keys offline**, providing maximum security.\n2. **Software Wallets** (e.g., MetaMask, Electrum): These are installed on your computer or mobile device, offering a balance between security and convenience.\n3. **Paper Wallets**: These are physical documents containing your public and private keys, which can be stored securely.\n\n**Create a Secure Wallet**\n\nRegardless of the wallet type, follow these best practices to ensure maximum security:\n\n1. **Use a Strong Password**: Create a unique, complex password for your wallet.\n2. **Enable 2-Factor Authentication (2FA): Add an extra layer of protection using Google Authenticator, Authy, or another 2FA app.\n3. **Generate a Seed Phrase**: This is a series of words that can be used to restore your wallet in case you lose access. **Store it safely!**\n4. **Set up a PIN or Biometric Authentication)**: Add an extra layer of protection when accessing your wallet.\n5. **Keep Your Wallet Up-to-Date**: Regularly update your wallet software to ensure you have the latest security features.\n\n**Additional Security Tips**\n\n1. **Never Share Your Private Keys**: Keep them confidential and secure.\n2. **Use a Secure Internet Connection**: Avoid public Wi-Fi or unsecured networks when accessing your wallet.\n3. **Monitor Your Wallet Activity**: Regularly check your transaction history for suspicious activity.\n4. **Diversify Your Wallets**: Consider using multiple wallets for different purposes or assets.\n5. **Backup Your Wallet**: Regularly back up your wallet data to prevent losses in case of a failure or loss.\n\nBy following these guidelines, you'll be well on your way to creating a secure crypto wallet. Remember to always stay vigilant and keep your wallet software up-to-date to ensure the highest level of protection for your digital assets.\n\nDo you have any specific wallet-related questions or concerns?",
+      "response_time": 1.6164815425872803,
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 3,
+        "helpfulness": 0,
+        "tone": 2,
+        "completeness": 0,
+        "issues": [
+          "Response too long"
+        ],
+        "strengths": [
+          "Addresses user's topic",
+          "Uses appropriate crypto terminology",
+          "Positive and confident tone"
+        ],
+        "overall_score": 10
+      },
+      "provider": "groq"
+    },
+    {
+      "scenario": "Complex Query",
+      "user_input": "Compare the performance of Bitcoin vs Ethereum over the last month and suggest which one has better potential",
+      "expected_behavior": "Should provide comparative analysis or explain how to get this data",
+      "intent": "unknown",
+      "confidence": 0.0,
+      "response": "Okay, here's a comparison of Bitcoin (BTC) and Ethereum (ETH) performance over the last month (as of today, October 26, 2023), along with a discussion of their potential:\n\n**Performance Comparison (Last Month - approximate)**\n\n*   **Bitcoin (BTC):** Bitcoin has seen a significant upswing in the last month. It has moved from around $26,500 to $34,500, representing a growth of nearly 30%.\n*   **Ethereum (ETH):** Ethereum has also seen a significant upswing in the last month. It has moved from around $1,600 to $1,800, representing a growth of nearly 12%.\n\n**Important Considerations:**\n\n*   **Data Accuracy:** Cryptocurrency prices are highly volatile and change rapidly. The figures above are approximate based on available data, but you should always consult real-time charts from reputable sources (CoinGecko, CoinMarketCap, exchanges themselves) for the most up-to-date information.\n*   **Past Performance is Not Predictive:**  Just because one performed better in the last month doesn't guarantee it will continue to do so. Crypto markets are influenced by many factors.\n\n**Potential Discussion:**\n\nTo assess potential, let's consider some key factors for both Bitcoin and Ethereum:\n\n**Bitcoin (BTC):**\n\n*   **Strengths:**\n    *   **First-Mover Advantage:**  Bitcoin is the original cryptocurrency and has the strongest brand recognition.\n    *   **Store of Value Narrative:**  Increasingly seen as \"digital gold,\" a hedge against inflation and economic uncertainty.  This narrative drives institutional investment.\n    *   **Limited Supply:**  The hard cap of 21 million BTC is a key feature supporting its store-of-value proposition.\n    *   **Growing Adoption:**  More companies and countries are starting to integrate Bitcoin into their financial systems.\n    *   **ETF Hype:** The potential approval of a Bitcoin ETF in the US is driving significant interest and investment.\n*   **Weaknesses:**\n    *   **Scalability Issues:**  Bitcoin's transaction speed and fees can be a problem during periods of high network activity (although the Lightning Network is a scaling solution).\n    *   **Energy Consumption:**  Bitcoin mining has been criticized for its high energy consumption (although there's a growing shift towards renewable energy sources).\n    *   **Limited Functionality:**  Bitcoin's primary use case is as a store of value and medium of exchange; it's not designed for complex smart contracts.\n\n**Ethereum (ETH):**\n\n*   **Strengths:**\n    *   **Smart Contract Platform:**  Ethereum is the leading platform for decentralized applications (dApps), decentralized finance (DeFi), and NFTs.\n    *   **Ecosystem Growth:**  Has a massive and active developer community constantly building new applications and protocols.\n    *   **The Merge:** The successful transition to Proof-of-Stake (PoS) significantly reduced Ethereum's energy consumption and paved the way for future scalability improvements.\n    *   **Layer-2 Scaling Solutions:**  Layer-2 solutions like Polygon, Optimism, and Arbitrum are improving Ethereum's scalability and reducing transaction fees.\n*   **Weaknesses:**\n    *   **Competition:**  Faces increasing competition from other smart contract platforms (Solana, Cardano, Avalanche, etc.).\n    *   **High Gas Fees:**  While Layer-2 solutions are helping, gas fees (transaction fees) on the Ethereum mainnet can still be high, especially during periods of high demand.\n    *   **Complexity:**  The Ethereum ecosystem is complex, which can be a barrier to entry for new users.\n    *   **Regulatory Uncertainty:** DeFi and NFTs are facing increasing regulatory scrutiny.\n\n**Which Has Better Potential?**\n\nThis is a subjective question, and the answer depends on your investment goals and risk tolerance:\n\n*   **If you believe in the \"digital gold\" narrative and want a relatively \"safer\" (though still volatile) investment:** Bitcoin might be a better choice.  The potential ETF approval could drive significant price appreciation.\n*   **If you are more interested in the growth potential of decentralized applications and are willing to accept higher risk:** Ethereum might be more appealing.  The Ethereum ecosystem is constantly evolving, and the growth of DeFi, NFTs, and other dApps could drive significant demand for ETH.\n\n**Important Considerations Before Investing:**\n\n*   **Do Your Own Research (DYOR):**  This is crucial. Don't rely solely on my information or anyone else's. Read whitepapers, analyze market trends, and understand the technology behind each cryptocurrency.\n*   **Risk Tolerance:**  Cryptocurrencies are highly volatile.  Only invest what you can afford to lose.\n*   **Diversification:**  Don't put all your eggs in one basket. Diversify your portfolio across different cryptocurrencies and other asset classes.\n*   **Security:**  Use strong passwords, enable two-factor authentication, and store your cryptocurrencies in a secure wallet.\n*   **Tax Implications:**  Be aware of the tax implications of buying, selling, and holding cryptocurrencies in your jurisdiction.\n\n**In conclusion:** Both Bitcoin and Ethereum have the potential for future growth, but they cater to different investment strategies and risk profiles. Bitcoin is seen as a store of value, while Ethereum is a platform for decentralized applications. Carefully consider your own investment goals and risk tolerance before making any decisions. Always do your own research!\n",
+      "response_time": 7.633049488067627,
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 3,
+        "helpfulness": 3,
+        "tone": 2,
+        "completeness": 0,
+        "issues": [
+          "Response too long"
+        ],
+        "strengths": [
+          "Addresses user's topic",
+          "Uses appropriate crypto terminology",
+          "Provides actionable advice",
+          "Positive and confident tone"
+        ],
+        "overall_score": 10
+      },
+      "provider": "gemini"
+    },
+    {
+      "scenario": "Casual Conversation",
+      "user_input": "Hey, what's up? How's the crypto market today?",
+      "expected_behavior": "Should respond naturally and provide market overview",
+      "intent": "unknown",
+      "confidence": 0.0,
+      "response": "Hello! I'm M\u00f6bius, your friendly crypto trading assistant. As for the market, it's always exciting!\n\nCurrently, the crypto market is showing some mixed signals. Bitcoin (BTC) is trading around $23,400, which is roughly 2.5% up from yesterday. Ethereum (ETH) is trading around $1,630, with a 3.5% increase in the past 24 hours.\n\nSome top gainers in the last 24 hours include:\n\n1. Solana (SOL) - up around 12.5%\n2. Cardano (ADA) - up around 8.5%\n3. Polkadot (DOT) - up around 7.5%\n\nOn the other hand, some top losers in the last 24 hours include:\n\n1. Cosmos (ATOM) - down around 6.5%\n2. NEAR Protocol (NEAR) - down around 5.5%\n3. Hedera Hashgraph (HBAR) - down around 5%\n\nKeep in mind that crypto markets can be highly volatile, and prices can change rapidly. Always make sure to do your research and set stop-losses to minimize potential losses. If you have any specific questions or want more information about a particular coin, feel free to ask me!\n\nHow can I assist you further?",
+      "response_time": 1.1085357666015625,
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 3,
+        "helpfulness": 0,
+        "tone": 2,
+        "completeness": 0,
+        "issues": [],
+        "strengths": [
+          "Addresses user's topic",
+          "Uses appropriate crypto terminology",
+          "Positive and confident tone"
+        ],
+        "overall_score": 10
+      },
+      "provider": "groq"
+    },
+    {
+      "scenario": "Error Handling",
+      "user_input": "Show me the price of INVALIDCOIN123",
+      "expected_behavior": "Should handle unknown token gracefully and suggest alternatives",
+      "intent": "get_crypto_price",
+      "confidence": 0.9,
+      "response": "I am sorry, but I am unable to find any information on a cryptocurrency called \"INVALIDCOIN123\". It may be a very new coin, a joke coin, or possibly a coin that uses a different ticker symbol than I'm familiar with.\n\nTo help me find the price, could you please provide me with more information, such as:\n\n*   **The correct ticker symbol:** Cryptocurrency ticker symbols are usually 3-4 letters long (e.g., BTC for Bitcoin, ETH for Ethereum).\n*   **The exchange where it's traded:** Knowing the exchange (e.g., Binance, Coinbase, Kraken) can help me narrow down the search.\n*   **A link to the coin's website or CoinMarketCap/CoinGecko page:** This would be the most helpful way to identify the coin.\n\nOnce you provide me with more accurate information, I'll be happy to get you the price!\n",
+      "response_time": 1.6104199886322021,
+      "evaluation": {
+        "relevance": 5,
+        "accuracy": 3,
+        "helpfulness": 0,
+        "tone": 0,
+        "completeness": 0,
+        "issues": [],
+        "strengths": [
+          "Addresses user's topic",
+          "Uses appropriate crypto terminology"
+        ],
+        "overall_score": 8
+      },
+      "provider": "gemini"
+    }
+  ],
+  "summary": {
+    "groq_performance": {
+      "avg_score": 10.0,
+      "avg_time": 1.2162628650665284,
+      "test_count": 5
+    },
+    "gemini_performance": {
+      "avg_score": 9.6,
+      "avg_time": 5.704421329498291,
+      "test_count": 5
+    }
+  }
+}

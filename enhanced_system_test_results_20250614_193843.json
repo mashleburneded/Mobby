@@ -1,0 +1,209 @@
+{
+  "intent_system": [
+    {
+      "text": "BTC price",
+      "expected_intent": "crypto_price",
+      "actual_intent": "crypto_price",
+      "expected_strategy": "live_data",
+      "actual_strategy": "live_data",
+      "confidence": 1.0,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    },
+    {
+      "text": "What's the price of ethereum?",
+      "expected_intent": "crypto_price",
+      "actual_intent": "crypto_price",
+      "expected_strategy": "live_data",
+      "actual_strategy": "live_data",
+      "confidence": 0.9,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    },
+    {
+      "text": "How much is SOL worth?",
+      "expected_intent": "crypto_price",
+      "actual_intent": "crypto_price",
+      "expected_strategy": "live_data",
+      "actual_strategy": "live_data",
+      "confidence": 0.9,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    },
+    {
+      "text": "Show my portfolio",
+      "expected_intent": "portfolio_check",
+      "actual_intent": "portfolio_check",
+      "expected_strategy": "built_in",
+      "actual_strategy": "built_in",
+      "confidence": 0.8,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    },
+    {
+      "text": "Check my balance",
+      "expected_intent": "portfolio_check",
+      "actual_intent": "portfolio_check",
+      "expected_strategy": "built_in",
+      "actual_strategy": "built_in",
+      "confidence": 0.8,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    },
+    {
+      "text": "Tell me about Uniswap protocol",
+      "expected_intent": "defi_protocol",
+      "actual_intent": "defi_protocol",
+      "expected_strategy": "live_data",
+      "actual_strategy": "live_data",
+      "confidence": 1.0,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    },
+    {
+      "text": "Aave stats",
+      "expected_intent": "defi_protocol",
+      "actual_intent": "defi_protocol",
+      "expected_strategy": "live_data",
+      "actual_strategy": "live_data",
+      "confidence": 1.0,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    },
+    {
+      "text": "Best yield opportunities",
+      "expected_intent": "yield_farming",
+      "actual_intent": "yield_farming",
+      "expected_strategy": "live_data",
+      "actual_strategy": "live_data",
+      "confidence": 0.8,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    },
+    {
+      "text": "High APY pools",
+      "expected_intent": "yield_farming",
+      "actual_intent": "yield_farming",
+      "expected_strategy": "live_data",
+      "actual_strategy": "live_data",
+      "confidence": 0.8,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    },
+    {
+      "text": "Hello",
+      "expected_intent": "greeting",
+      "actual_intent": "greeting",
+      "expected_strategy": "template",
+      "actual_strategy": "template",
+      "confidence": 0.9500000000000001,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    },
+    {
+      "text": "Hi there",
+      "expected_intent": "greeting",
+      "actual_intent": "general_query",
+      "expected_strategy": "template",
+      "actual_strategy": "simple_ai",
+      "confidence": 0.3,
+      "intent_match": false,
+      "strategy_match": false,
+      "overall_match": false
+    },
+    {
+      "text": "Help",
+      "expected_intent": "help_request",
+      "actual_intent": "help_request",
+      "expected_strategy": "built_in",
+      "actual_strategy": "built_in",
+      "confidence": 0.9500000000000001,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    },
+    {
+      "text": "What can you do?",
+      "expected_intent": "help_request",
+      "actual_intent": "help_request",
+      "expected_strategy": "built_in",
+      "actual_strategy": "built_in",
+      "confidence": 0.8,
+      "intent_match": true,
+      "strategy_match": true,
+      "overall_match": true
+    }
+  ],
+  "response_handler": [
+    {
+      "query": "BTC price",
+      "intent": "crypto_price",
+      "strategy": "live_data",
+      "confidence": 1.0,
+      "response_type": "price_data",
+      "has_message": true,
+      "success": true
+    },
+    {
+      "query": "Tell me about Uniswap",
+      "intent": "general_query",
+      "strategy": "simple_ai",
+      "confidence": 0.3,
+      "response_type": "error",
+      "has_message": true,
+      "success": false
+    },
+    {
+      "query": "Best yield opportunities",
+      "intent": "yield_farming",
+      "strategy": "live_data",
+      "confidence": 0.8,
+      "response_type": "error",
+      "has_message": true,
+      "success": false
+    },
+    {
+      "query": "Hello",
+      "intent": "greeting",
+      "strategy": "template",
+      "confidence": 0.9500000000000001,
+      "response_type": "template",
+      "has_message": true,
+      "success": true
+    },
+    {
+      "query": "Help",
+      "intent": "help_request",
+      "strategy": "built_in",
+      "confidence": 0.9500000000000001,
+      "response_type": "help",
+      "has_message": true,
+      "success": true
+    },
+    {
+      "query": "What's the price of ethereum?",
+      "intent": "crypto_price",
+      "strategy": "live_data",
+      "confidence": 0.9,
+      "response_type": "price_data",
+      "has_message": true,
+      "success": true
+    }
+  ],
+  "live_data": {
+    "price_test": true,
+    "defi_test": false,
+    "yield_test": true
+  },
+  "defillama_api": {}
+}

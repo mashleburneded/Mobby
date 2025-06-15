@@ -1,0 +1,536 @@
+{
+  "timestamp": "2025-06-15T02:00:19.528347",
+  "total_tests": 70,
+  "passed_tests": 58,
+  "failed_tests": 12,
+  "critical_bugs": [
+    {
+      "title": "No AI Provider Keys",
+      "description": "No AI provider API keys found",
+      "traceback": "",
+      "timestamp": "2025-06-15T02:00:20.803300"
+    }
+  ],
+  "major_bugs": [
+    {
+      "title": "Missing Environment Variable",
+      "description": "Required variable TELEGRAM_BOT_TOKEN is not set",
+      "impact": "",
+      "timestamp": "2025-06-15T02:00:20.803258"
+    },
+    {
+      "title": "Missing Environment Variable",
+      "description": "Required variable TELEGRAM_CHAT_ID is not set",
+      "impact": "",
+      "timestamp": "2025-06-15T02:00:20.803273"
+    },
+    {
+      "title": "Group Chat Function Error",
+      "description": "Error in group chat functions: This event loop is already running",
+      "impact": "",
+      "timestamp": "2025-06-15T02:00:20.875836"
+    }
+  ],
+  "minor_bugs": [],
+  "warnings": [],
+  "test_details": [
+    {
+      "test_name": "Import config",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:19.535491"
+    },
+    {
+      "test_name": "Import user_db",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:19.542769"
+    },
+    {
+      "test_name": "Import encryption_manager",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:19.542906"
+    },
+    {
+      "test_name": "Import telegram_handler",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.791683"
+    },
+    {
+      "test_name": "Import enhanced_summarizer",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.792410"
+    },
+    {
+      "test_name": "Import persistent_storage",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.792553"
+    },
+    {
+      "test_name": "Import message_intelligence",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.793775"
+    },
+    {
+      "test_name": "Import crypto_research",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.794060"
+    },
+    {
+      "test_name": "Import scheduling",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.794178"
+    },
+    {
+      "test_name": "Import natural_language_processor",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.802822"
+    },
+    {
+      "test_name": "Import persistent_user_context",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.802828"
+    },
+    {
+      "test_name": "Import intelligent_error_handler",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.802830"
+    },
+    {
+      "test_name": "Import MCP mcp_integration",
+      "passed": true,
+      "details": "MCP module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.803143"
+    },
+    {
+      "test_name": "Import MCP mcp_client",
+      "passed": true,
+      "details": "MCP module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.803147"
+    },
+    {
+      "test_name": "Import MCP mcp_ai_orchestrator",
+      "passed": true,
+      "details": "MCP module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.803149"
+    },
+    {
+      "test_name": "Import MCP mcp_streaming",
+      "passed": true,
+      "details": "MCP module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.803151"
+    },
+    {
+      "test_name": "Import MCP mcp_background_processor",
+      "passed": true,
+      "details": "MCP module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.803153"
+    },
+    {
+      "test_name": "Config TELEGRAM_BOT_TOKEN",
+      "passed": false,
+      "details": "",
+      "error": "TELEGRAM_BOT_TOKEN not set",
+      "timestamp": "2025-06-15T02:00:20.803266"
+    },
+    {
+      "test_name": "Config TELEGRAM_CHAT_ID",
+      "passed": false,
+      "details": "",
+      "error": "TELEGRAM_CHAT_ID not set",
+      "timestamp": "2025-06-15T02:00:20.803277"
+    },
+    {
+      "test_name": "AI Key GROQ_API_KEY",
+      "passed": false,
+      "details": "GROQ_API_KEY not set",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.803284"
+    },
+    {
+      "test_name": "AI Key GEMINI_API_KEY",
+      "passed": false,
+      "details": "GEMINI_API_KEY not set",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.803289"
+    },
+    {
+      "test_name": "AI Key OPENAI_API_KEY",
+      "passed": false,
+      "details": "OPENAI_API_KEY not set",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.803293"
+    },
+    {
+      "test_name": "AI Key ANTHROPIC_API_KEY",
+      "passed": false,
+      "details": "ANTHROPIC_API_KEY not set",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.803297"
+    },
+    {
+      "test_name": "Database Init",
+      "passed": true,
+      "details": "Database initialized successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.803751"
+    },
+    {
+      "test_name": "Database Operations",
+      "passed": true,
+      "details": "User property set/get works",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.814392"
+    },
+    {
+      "test_name": "Message Text Immutability",
+      "passed": true,
+      "details": "Text attribute is properly read-only",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.814645"
+    },
+    {
+      "test_name": "Conversation Intelligence Init",
+      "passed": true,
+      "details": "CI initialized successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.818121"
+    },
+    {
+      "test_name": "Message Streaming",
+      "passed": true,
+      "details": "Message streamed successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.825795"
+    },
+    {
+      "test_name": "NLP Query: What's the price of ...",
+      "passed": true,
+      "details": "Processed successfully: price_check",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.833014"
+    },
+    {
+      "test_name": "NLP Query: Show me my portfolio...",
+      "passed": true,
+      "details": "Processed successfully: portfolio_check",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.833136"
+    },
+    {
+      "test_name": "NLP Query: Create a summary of ...",
+      "passed": true,
+      "details": "Processed successfully: research_request",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.835699"
+    },
+    {
+      "test_name": "NLP Query: Set an alert for ETH...",
+      "passed": true,
+      "details": "Processed successfully: alert_management",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.838077"
+    },
+    {
+      "test_name": "NLP Query: Help me with trading...",
+      "passed": true,
+      "details": "Processed successfully: help_request",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.839397"
+    },
+    {
+      "test_name": "AI Provider Listing",
+      "passed": true,
+      "details": "Found 5 providers",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.841055"
+    },
+    {
+      "test_name": "AI Provider Availability: groq",
+      "passed": false,
+      "details": "Provider not available (missing API key)",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.841060"
+    },
+    {
+      "test_name": "AI Provider Availability: gemini",
+      "passed": false,
+      "details": "Provider not available (missing API key)",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.841063"
+    },
+    {
+      "test_name": "AI Provider Availability: openai",
+      "passed": false,
+      "details": "Provider not available (missing API key)",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.841064"
+    },
+    {
+      "test_name": "AI Provider Availability: anthropic",
+      "passed": false,
+      "details": "Provider not available (missing API key)",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.841066"
+    },
+    {
+      "test_name": "AI Provider Availability: openrouter",
+      "passed": false,
+      "details": "Provider not available (missing API key)",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.841067"
+    },
+    {
+      "test_name": "MCP Status Check",
+      "passed": true,
+      "details": "MCP status: {'financial': {'name': 'Financial Data Server', 'port': 8001, 'tools': ['get_price_feeds', 'get_defi_protocols', 'get_yield_farming_opportunities', 'get_market_overview'], 'process_running': False, 'health_check': False, 'status': 'error'}, 'web_research': {'name': 'Web Research Server', 'port': 8002, 'tools': ['web_search', 'fetch_page_content', 'get_crypto_news', 'research_defi_protocol', 'monitor_social_sentiment'], 'process_running': False, 'health_check': False, 'status': 'error'}, 'blockchain': {'name': 'Blockchain Analytics Server', 'port': 8003, 'tools': ['analyze_wallet_cross_chain', 'get_wallet_balance', 'get_wallet_transactions', 'get_chain_analytics', 'compare_chains'], 'process_running': False, 'health_check': False, 'status': 'error'}}",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.841138"
+    },
+    {
+      "test_name": "MCP Integration Available",
+      "passed": true,
+      "details": "MCP modules can be imported",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.841140"
+    },
+    {
+      "test_name": "Command Handler: help_command",
+      "passed": true,
+      "details": "Handler is callable",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.875724"
+    },
+    {
+      "test_name": "Command Handler: status_command",
+      "passed": true,
+      "details": "Handler is callable",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.875731"
+    },
+    {
+      "test_name": "Command Handler: portfolio_command",
+      "passed": true,
+      "details": "Handler is callable",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.875734"
+    },
+    {
+      "test_name": "Command Handler: research_command",
+      "passed": true,
+      "details": "Handler is callable",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.875736"
+    },
+    {
+      "test_name": "Command Handler: alerts_command",
+      "passed": true,
+      "details": "Handler is callable",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.875738"
+    },
+    {
+      "test_name": "Command Handler: summarynow_command",
+      "passed": true,
+      "details": "Handler is callable",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.875740"
+    },
+    {
+      "test_name": "Group Chat Functions",
+      "passed": false,
+      "details": "",
+      "error": "This event loop is already running",
+      "timestamp": "2025-06-15T02:00:20.875840"
+    },
+    {
+      "test_name": "Mention Detection: Hello @mobius...",
+      "passed": true,
+      "details": "Correctly detected: True",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.876735"
+    },
+    {
+      "test_name": "Mention Detection: Hey mobius, what's u...",
+      "passed": true,
+      "details": "Correctly detected: True",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.876746"
+    },
+    {
+      "test_name": "Mention Detection: @m\u00f6bius can you help...",
+      "passed": true,
+      "details": "Correctly detected: True",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.876756"
+    },
+    {
+      "test_name": "Mention Detection: m\u00f6bius please respon...",
+      "passed": true,
+      "details": "Correctly detected: True",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.876763"
+    },
+    {
+      "test_name": "Mention Detection: Regular message with...",
+      "passed": true,
+      "details": "Correctly detected: False",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.876768"
+    },
+    {
+      "test_name": "Summary Generation",
+      "passed": true,
+      "details": "Summary generated successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.876916"
+    },
+    {
+      "test_name": "Error Handler",
+      "passed": true,
+      "details": "Error handled successfully",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.876970"
+    },
+    {
+      "test_name": "Event Loop Detection",
+      "passed": true,
+      "details": "Running in event loop (as expected)",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.877017"
+    },
+    {
+      "test_name": "Event Loop Conflict Detection",
+      "passed": true,
+      "details": "Can detect event loop conflicts",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.877019"
+    },
+    {
+      "test_name": "Memory Management",
+      "passed": true,
+      "details": "Initial: 143.6MB, After GC: 143.6MB",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.945817"
+    },
+    {
+      "test_name": "Encryption/Decryption",
+      "passed": true,
+      "details": "Encryption works correctly",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.947394"
+    },
+    {
+      "test_name": "Performance Test",
+      "passed": true,
+      "details": "Basic operations completed in 0.000s",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.947528"
+    },
+    {
+      "test_name": "Real-world Command: What's the price of ...",
+      "passed": true,
+      "details": "Intent: price_check",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.947905"
+    },
+    {
+      "test_name": "Real-world Command: Show me my portfolio...",
+      "passed": true,
+      "details": "Intent: portfolio_check",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.948016"
+    },
+    {
+      "test_name": "Real-world Command: Create a summary...",
+      "passed": true,
+      "details": "Intent: summary_request",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.948255"
+    },
+    {
+      "test_name": "Real-world Command: Set an alert for ETH...",
+      "passed": true,
+      "details": "Intent: alert_management",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.948654"
+    },
+    {
+      "test_name": "Real-world Command: Help me with trading...",
+      "passed": true,
+      "details": "Intent: help_request",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.949115"
+    },
+    {
+      "test_name": "Real-world Command: What are the latest ...",
+      "passed": true,
+      "details": "Intent: news_request",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.955565"
+    },
+    {
+      "test_name": "Real-world Command: Analyze the market t...",
+      "passed": true,
+      "details": "Intent: research_request",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.955861"
+    },
+    {
+      "test_name": "Real-world Command: Show me DeFi protoco...",
+      "passed": true,
+      "details": "Intent: defi_protocols",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.956706"
+    },
+    {
+      "test_name": "Real-world Command: What's happening in ...",
+      "passed": true,
+      "details": "Intent: news_request",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.959485"
+    },
+    {
+      "test_name": "Real-world Command: Give me investment a...",
+      "passed": true,
+      "details": "Intent: general_query",
+      "error": "",
+      "timestamp": "2025-06-15T02:00:20.962987"
+    }
+  ],
+  "success_rate": 82.85714285714286,
+  "summary": {
+    "total_issues": 4,
+    "critical_issues": 1,
+    "major_issues": 3,
+    "minor_issues": 0,
+    "warnings": 0
+  }
+}

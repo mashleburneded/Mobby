@@ -1,0 +1,240 @@
+{
+  "timestamp": 1749937636.1200051,
+  "summary": {
+    "overall_success_rate": 100.0,
+    "total_tests": 26,
+    "passed_tests": 26,
+    "categories": {
+      "Enhanced NLP": {
+        "total": 16,
+        "passed": 16,
+        "failed": 0
+      },
+      "Intelligent Caching": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0
+      },
+      "Async Pipeline": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "category": "Enhanced NLP",
+      "test": "long BTC at $45000",
+      "expected": "trading",
+      "actual": "trading",
+      "confidence": 1.0,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "short ETH when $3000",
+      "expected": "trading",
+      "actual": "trading",
+      "confidence": 1.0,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "scalp trade SOL",
+      "expected": "trading",
+      "actual": "trading",
+      "confidence": 0.9500000000000001,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "DCA into Bitcoin",
+      "expected": "trading",
+      "actual": "trading",
+      "confidence": 0.9700000000000001,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "take profit at $50000",
+      "expected": "trading",
+      "actual": "trading",
+      "confidence": 0.93,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "stake ETH on Lido",
+      "expected": "staking",
+      "actual": "staking",
+      "confidence": 0.9800000000000001,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "provide liquidity to ETH/USDC",
+      "expected": "liquidity",
+      "actual": "liquidity",
+      "confidence": 0.9600000000000001,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "farm rewards on Compound",
+      "expected": "yield",
+      "actual": "yield",
+      "confidence": 0.9400000000000001,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "bridge USDC to Polygon",
+      "expected": "bridge",
+      "actual": "bridge",
+      "confidence": 0.92,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "RSI for BTC",
+      "expected": "indicators",
+      "actual": "indicators",
+      "confidence": 0.9700000000000001,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "MACD for Ethereum",
+      "expected": "indicators",
+      "actual": "indicators",
+      "confidence": 0.9700000000000001,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "support levels for SOL",
+      "expected": "technical",
+      "actual": "technical",
+      "confidence": 0.93,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "social sentiment for Bitcoin",
+      "expected": "social",
+      "actual": "social",
+      "confidence": 0.92,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "fear index for crypto",
+      "expected": "sentiment",
+      "actual": "sentiment",
+      "confidence": 0.9400000000000001,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "compliance check for BTC",
+      "expected": "compliance",
+      "actual": "compliance",
+      "confidence": 1.01,
+      "passed": true
+    },
+    {
+      "category": "Enhanced NLP",
+      "test": "risk assessment for portfolio",
+      "expected": "risk",
+      "actual": "risk",
+      "confidence": 0.9500000000000001,
+      "passed": true
+    },
+    {
+      "category": "Intelligent Caching",
+      "test": "Price Data Caching",
+      "passed": true,
+      "details": {
+        "success": true,
+        "message": "Cache hit: True, calls: 1, times: 0.100s vs 0.000s"
+      }
+    },
+    {
+      "category": "Intelligent Caching",
+      "test": "Market Data Caching",
+      "passed": true,
+      "details": {
+        "success": true,
+        "message": "Market data caching: 2 calls for 3 requests"
+      }
+    },
+    {
+      "category": "Intelligent Caching",
+      "test": "Analysis Caching",
+      "passed": true,
+      "details": {
+        "success": true,
+        "message": "Analysis caching: 2 calls for 3 requests"
+      }
+    },
+    {
+      "category": "Intelligent Caching",
+      "test": "Cache Invalidation",
+      "passed": true,
+      "details": {
+        "success": true,
+        "message": "Cache invalidation: 2 calls, different results: value_1 vs value_2"
+      }
+    },
+    {
+      "category": "Intelligent Caching",
+      "test": "Cache Statistics",
+      "passed": true,
+      "details": {
+        "success": true,
+        "message": "Cache stats: {'size': 5, 'max_size': 10000, 'hit_rate': '30.0%', 'hits': 3, 'misses': 7, 'evictions': 0, 'invalidations': 2, 'memory_usage': '920 B'}"
+      }
+    },
+    {
+      "category": "Async Pipeline",
+      "test": "What's the price of Bitcoin?",
+      "passed": true,
+      "execution_time": 0.146284818649292,
+      "parallel_efficiency": 0.9990055088289622,
+      "success_rate": 1.0
+    },
+    {
+      "category": "Async Pipeline",
+      "test": "Show my portfolio performance",
+      "passed": true,
+      "execution_time": 0.00032067298889160156,
+      "parallel_efficiency": 0.5879967558799676,
+      "success_rate": 1.0
+    },
+    {
+      "category": "Async Pipeline",
+      "test": "Find yield opportunities",
+      "passed": true,
+      "execution_time": 0.00022530555725097656,
+      "parallel_efficiency": 0.627906976744186,
+      "success_rate": 1.0
+    },
+    {
+      "category": "Async Pipeline",
+      "test": "Research Ethereum fundamentals",
+      "passed": true,
+      "execution_time": 0.00021576881408691406,
+      "parallel_efficiency": 0.6545893719806763,
+      "success_rate": 1.0
+    },
+    {
+      "category": "Async Pipeline",
+      "test": "Set alert for BTC at $50000",
+      "passed": true,
+      "execution_time": 0.00021767616271972656,
+      "parallel_efficiency": 0.6614645858343338,
+      "success_rate": 1.0
+    }
+  ]
+}

@@ -1,0 +1,692 @@
+{
+  "timestamp": "2025-06-15T01:55:32.561263",
+  "total_tests": 70,
+  "passed_tests": 32,
+  "failed_tests": 38,
+  "critical_bugs": [
+    {
+      "title": "Import Error: telegram_handler",
+      "description": "Cannot import telegram_handler: No module named 'telegram'",
+      "traceback": "",
+      "timestamp": "2025-06-15T01:55:32.588535"
+    },
+    {
+      "title": "No AI Provider Keys",
+      "description": "No AI provider API keys found",
+      "traceback": "",
+      "timestamp": "2025-06-15T01:55:34.369262"
+    },
+    {
+      "title": "Message Processing Import Error",
+      "description": "Cannot import message processing modules: No module named 'telegram'",
+      "traceback": "",
+      "timestamp": "2025-06-15T01:55:34.447221"
+    }
+  ],
+  "major_bugs": [
+    {
+      "title": "MCP Import Error: mcp_ai_orchestrator",
+      "description": "Cannot import MCP module mcp_ai_orchestrator: No module named 'groq'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.362026"
+    },
+    {
+      "title": "MCP Import Error: mcp_background_processor",
+      "description": "Cannot import MCP module mcp_background_processor: No module named 'groq'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.369104"
+    },
+    {
+      "title": "Missing Environment Variable",
+      "description": "Required variable TELEGRAM_BOT_TOKEN is not set",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.369237"
+    },
+    {
+      "title": "Missing Environment Variable",
+      "description": "Required variable TELEGRAM_CHAT_ID is not set",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.369245"
+    },
+    {
+      "title": "NLP Processing Error",
+      "description": "Error processing query 'What's the price of Bitcoin?': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.461772"
+    },
+    {
+      "title": "NLP Processing Error",
+      "description": "Error processing query 'Show me my portfolio': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.461779"
+    },
+    {
+      "title": "NLP Processing Error",
+      "description": "Error processing query 'Create a summary of today's conversations': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.461784"
+    },
+    {
+      "title": "NLP Processing Error",
+      "description": "Error processing query 'Set an alert for ETH price above $3000': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.461787"
+    },
+    {
+      "title": "NLP Processing Error",
+      "description": "Error processing query 'Help me with trading': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.461791"
+    },
+    {
+      "title": "Command Handler Import Error: help_command",
+      "description": "Error importing help_command: No module named 'telegram'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.482004"
+    },
+    {
+      "title": "Command Handler Import Error: status_command",
+      "description": "Error importing status_command: No module named 'telegram'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.482732"
+    },
+    {
+      "title": "Command Handler Import Error: portfolio_command",
+      "description": "Error importing portfolio_command: No module named 'telegram'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.483276"
+    },
+    {
+      "title": "Command Handler Import Error: research_command",
+      "description": "Error importing research_command: No module named 'telegram'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.483765"
+    },
+    {
+      "title": "Command Handler Import Error: alerts_command",
+      "description": "Error importing alerts_command: No module named 'telegram'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.484238"
+    },
+    {
+      "title": "Command Handler Import Error: summarynow_command",
+      "description": "Error importing summarynow_command: No module named 'telegram'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.484696"
+    },
+    {
+      "title": "Group Chat Import Error",
+      "description": "Cannot import group chat modules: No module named 'telegram'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.486386"
+    },
+    {
+      "title": "Error Handler Error",
+      "description": "Error in error handler: 'IntelligentErrorHandler' object has no attribute 'handle_error'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.486713"
+    },
+    {
+      "title": "Real-world Command Error",
+      "description": "Error processing 'What's the price of Bitcoin?': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.556237"
+    },
+    {
+      "title": "Real-world Command Error",
+      "description": "Error processing 'Show me my portfolio': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.556246"
+    },
+    {
+      "title": "Real-world Command Error",
+      "description": "Error processing 'Create a summary': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.556252"
+    },
+    {
+      "title": "Real-world Command Error",
+      "description": "Error processing 'Set an alert for ETH': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.556259"
+    },
+    {
+      "title": "Real-world Command Error",
+      "description": "Error processing 'Help me with trading': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.556263"
+    },
+    {
+      "title": "Real-world Command Error",
+      "description": "Error processing 'What are the latest crypto news?': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.556267"
+    },
+    {
+      "title": "Real-world Command Error",
+      "description": "Error processing 'Analyze the market trends': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.556271"
+    },
+    {
+      "title": "Real-world Command Error",
+      "description": "Error processing 'Show me DeFi protocols': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.556275"
+    },
+    {
+      "title": "Real-world Command Error",
+      "description": "Error processing 'What's happening in the crypto space?': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.556279"
+    },
+    {
+      "title": "Real-world Command Error",
+      "description": "Error processing 'Give me investment advice': 'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "impact": "",
+      "timestamp": "2025-06-15T01:55:34.556283"
+    }
+  ],
+  "minor_bugs": [],
+  "warnings": [],
+  "test_details": [
+    {
+      "test_name": "Import config",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:32.569856"
+    },
+    {
+      "test_name": "Import user_db",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:32.580590"
+    },
+    {
+      "test_name": "Import encryption_manager",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:32.581058"
+    },
+    {
+      "test_name": "Import telegram_handler",
+      "passed": false,
+      "details": "",
+      "error": "No module named 'telegram'",
+      "timestamp": "2025-06-15T01:55:32.588542"
+    },
+    {
+      "test_name": "Import enhanced_summarizer",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.333413"
+    },
+    {
+      "test_name": "Import persistent_storage",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.333984"
+    },
+    {
+      "test_name": "Import message_intelligence",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.336919"
+    },
+    {
+      "test_name": "Import crypto_research",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.341584"
+    },
+    {
+      "test_name": "Import scheduling",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.342038"
+    },
+    {
+      "test_name": "Import natural_language_processor",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.353067"
+    },
+    {
+      "test_name": "Import persistent_user_context",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.353073"
+    },
+    {
+      "test_name": "Import intelligent_error_handler",
+      "passed": true,
+      "details": "Module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.353075"
+    },
+    {
+      "test_name": "Import MCP mcp_integration",
+      "passed": true,
+      "details": "MCP module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.355697"
+    },
+    {
+      "test_name": "Import MCP mcp_client",
+      "passed": true,
+      "details": "MCP module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.359521"
+    },
+    {
+      "test_name": "Import MCP mcp_ai_orchestrator",
+      "passed": false,
+      "details": "",
+      "error": "No module named 'groq'",
+      "timestamp": "2025-06-15T01:55:34.362033"
+    },
+    {
+      "test_name": "Import MCP mcp_streaming",
+      "passed": true,
+      "details": "MCP module imported successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.366116"
+    },
+    {
+      "test_name": "Import MCP mcp_background_processor",
+      "passed": false,
+      "details": "",
+      "error": "No module named 'groq'",
+      "timestamp": "2025-06-15T01:55:34.369110"
+    },
+    {
+      "test_name": "Config TELEGRAM_BOT_TOKEN",
+      "passed": false,
+      "details": "",
+      "error": "TELEGRAM_BOT_TOKEN not set",
+      "timestamp": "2025-06-15T01:55:34.369241"
+    },
+    {
+      "test_name": "Config TELEGRAM_CHAT_ID",
+      "passed": false,
+      "details": "",
+      "error": "TELEGRAM_CHAT_ID not set",
+      "timestamp": "2025-06-15T01:55:34.369246"
+    },
+    {
+      "test_name": "AI Key GROQ_API_KEY",
+      "passed": false,
+      "details": "GROQ_API_KEY not set",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.369250"
+    },
+    {
+      "test_name": "AI Key GEMINI_API_KEY",
+      "passed": false,
+      "details": "GEMINI_API_KEY not set",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.369253"
+    },
+    {
+      "test_name": "AI Key OPENAI_API_KEY",
+      "passed": false,
+      "details": "OPENAI_API_KEY not set",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.369257"
+    },
+    {
+      "test_name": "AI Key ANTHROPIC_API_KEY",
+      "passed": false,
+      "details": "ANTHROPIC_API_KEY not set",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.369260"
+    },
+    {
+      "test_name": "Database Init",
+      "passed": true,
+      "details": "Database initialized successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.437202"
+    },
+    {
+      "test_name": "Database Operations",
+      "passed": true,
+      "details": "User property set/get works",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.446992"
+    },
+    {
+      "test_name": "Message Processing Import",
+      "passed": false,
+      "details": "",
+      "error": "No module named 'telegram'",
+      "timestamp": "2025-06-15T01:55:34.447225"
+    },
+    {
+      "test_name": "Conversation Intelligence Init",
+      "passed": true,
+      "details": "CI initialized successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.453981"
+    },
+    {
+      "test_name": "Message Streaming",
+      "passed": true,
+      "details": "Message streamed successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.461672"
+    },
+    {
+      "test_name": "NLP Query: What's the price of ...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.461775"
+    },
+    {
+      "test_name": "NLP Query: Show me my portfolio...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.461781"
+    },
+    {
+      "test_name": "NLP Query: Create a summary of ...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.461785"
+    },
+    {
+      "test_name": "NLP Query: Set an alert for ETH...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.461789"
+    },
+    {
+      "test_name": "NLP Query: Help me with trading...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.461794"
+    },
+    {
+      "test_name": "AI Provider Listing",
+      "passed": true,
+      "details": "Found 5 providers",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.466338"
+    },
+    {
+      "test_name": "AI Provider Availability: groq",
+      "passed": false,
+      "details": "Provider not available (missing API key)",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.466343"
+    },
+    {
+      "test_name": "AI Provider Availability: gemini",
+      "passed": false,
+      "details": "Provider not available (missing API key)",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.466346"
+    },
+    {
+      "test_name": "AI Provider Availability: openai",
+      "passed": false,
+      "details": "Provider not available (missing API key)",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.466347"
+    },
+    {
+      "test_name": "AI Provider Availability: anthropic",
+      "passed": false,
+      "details": "Provider not available (missing API key)",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.466349"
+    },
+    {
+      "test_name": "AI Provider Availability: openrouter",
+      "passed": false,
+      "details": "Provider not available (missing API key)",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.466350"
+    },
+    {
+      "test_name": "MCP Status Check",
+      "passed": true,
+      "details": "MCP status: <coroutine object get_mcp_status at 0x7f2900099fc0>",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.466410"
+    },
+    {
+      "test_name": "MCP Integration Available",
+      "passed": true,
+      "details": "MCP modules can be imported",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.466412"
+    },
+    {
+      "test_name": "Command Handler: help_command",
+      "passed": false,
+      "details": "",
+      "error": "No module named 'telegram'",
+      "timestamp": "2025-06-15T01:55:34.482013"
+    },
+    {
+      "test_name": "Command Handler: status_command",
+      "passed": false,
+      "details": "",
+      "error": "No module named 'telegram'",
+      "timestamp": "2025-06-15T01:55:34.482738"
+    },
+    {
+      "test_name": "Command Handler: portfolio_command",
+      "passed": false,
+      "details": "",
+      "error": "No module named 'telegram'",
+      "timestamp": "2025-06-15T01:55:34.483280"
+    },
+    {
+      "test_name": "Command Handler: research_command",
+      "passed": false,
+      "details": "",
+      "error": "No module named 'telegram'",
+      "timestamp": "2025-06-15T01:55:34.483769"
+    },
+    {
+      "test_name": "Command Handler: alerts_command",
+      "passed": false,
+      "details": "",
+      "error": "No module named 'telegram'",
+      "timestamp": "2025-06-15T01:55:34.484241"
+    },
+    {
+      "test_name": "Command Handler: summarynow_command",
+      "passed": false,
+      "details": "",
+      "error": "No module named 'telegram'",
+      "timestamp": "2025-06-15T01:55:34.484699"
+    },
+    {
+      "test_name": "Group Chat Import",
+      "passed": false,
+      "details": "",
+      "error": "No module named 'telegram'",
+      "timestamp": "2025-06-15T01:55:34.486392"
+    },
+    {
+      "test_name": "Mention Detection: Hello @mobius...",
+      "passed": true,
+      "details": "Correctly detected: True",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.486506"
+    },
+    {
+      "test_name": "Mention Detection: Hey mobius, what's u...",
+      "passed": true,
+      "details": "Correctly detected: True",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.486515"
+    },
+    {
+      "test_name": "Mention Detection: @m\u00f6bius can you help...",
+      "passed": true,
+      "details": "Correctly detected: True",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.486523"
+    },
+    {
+      "test_name": "Mention Detection: m\u00f6bius please respon...",
+      "passed": true,
+      "details": "Correctly detected: True",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.486528"
+    },
+    {
+      "test_name": "Mention Detection: Regular message with...",
+      "passed": true,
+      "details": "Correctly detected: False",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.486532"
+    },
+    {
+      "test_name": "Summary Generation",
+      "passed": true,
+      "details": "Summary generated successfully",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.486648"
+    },
+    {
+      "test_name": "Error Handler",
+      "passed": false,
+      "details": "",
+      "error": "'IntelligentErrorHandler' object has no attribute 'handle_error'",
+      "timestamp": "2025-06-15T01:55:34.486716"
+    },
+    {
+      "test_name": "Event Loop Detection",
+      "passed": true,
+      "details": "Running in event loop (as expected)",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.486771"
+    },
+    {
+      "test_name": "Event Loop Conflict Detection",
+      "passed": true,
+      "details": "Can detect event loop conflicts",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.486775"
+    },
+    {
+      "test_name": "Memory Management",
+      "passed": true,
+      "details": "Initial: 134.2MB, After GC: 134.2MB",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.543886"
+    },
+    {
+      "test_name": "Encryption/Decryption",
+      "passed": true,
+      "details": "Encryption works correctly",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.556008"
+    },
+    {
+      "test_name": "Performance Test",
+      "passed": true,
+      "details": "Basic operations completed in 0.000s",
+      "error": "",
+      "timestamp": "2025-06-15T01:55:34.556162"
+    },
+    {
+      "test_name": "Real-world Command: What's the price of ...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.556241"
+    },
+    {
+      "test_name": "Real-world Command: Show me my portfolio...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.556249"
+    },
+    {
+      "test_name": "Real-world Command: Create a summary...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.556255"
+    },
+    {
+      "test_name": "Real-world Command: Set an alert for ETH...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.556260"
+    },
+    {
+      "test_name": "Real-world Command: Help me with trading...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.556265"
+    },
+    {
+      "test_name": "Real-world Command: What are the latest ...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.556269"
+    },
+    {
+      "test_name": "Real-world Command: Analyze the market t...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.556273"
+    },
+    {
+      "test_name": "Real-world Command: Show me DeFi protoco...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.556277"
+    },
+    {
+      "test_name": "Real-world Command: What's happening in ...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.556280"
+    },
+    {
+      "test_name": "Real-world Command: Give me investment a...",
+      "passed": false,
+      "details": "",
+      "error": "'NaturalLanguageProcessor' object has no attribute 'process_query'",
+      "timestamp": "2025-06-15T01:55:34.556284"
+    }
+  ],
+  "success_rate": 45.714285714285715,
+  "summary": {
+    "total_issues": 30,
+    "critical_issues": 3,
+    "major_issues": 27,
+    "minor_issues": 0,
+    "warnings": 0
+  }
+}

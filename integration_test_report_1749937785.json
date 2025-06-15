@@ -1,0 +1,944 @@
+{
+  "timestamp": 1749937785.387624,
+  "final_score": 79.16666666666667,
+  "categories": {
+    "Enhanced vs Original NLP": 10,
+    "Complex Workflows": 3,
+    "Error Handling": 7,
+    "Real-World Scenarios": 4
+  },
+  "performance_metrics": [
+    {
+      "query": "BTC price",
+      "uncached_time": 0.0007529258728027344,
+      "cached_time": 0.0002281665802001953,
+      "speedup": 3.2998955067920583
+    },
+    {
+      "query": "ETH market data",
+      "uncached_time": 0.00023102760314941406,
+      "cached_time": 0.0001938343048095703,
+      "speedup": 1.1918819188191883
+    },
+    {
+      "query": "SOL analysis",
+      "uncached_time": 0.0001995563507080078,
+      "cached_time": 0.00017833709716796875,
+      "speedup": 1.1189839572192513
+    },
+    {
+      "query": "Portfolio performance",
+      "uncached_time": 0.00019931793212890625,
+      "cached_time": 0.00018548965454101562,
+      "speedup": 1.0745501285347043
+    },
+    {
+      "query": "Yield opportunities",
+      "uncached_time": 0.00019693374633789062,
+      "cached_time": 0.0001766681671142578,
+      "speedup": 1.114709851551957
+    }
+  ],
+  "detailed_results": [
+    {
+      "category": "Enhanced vs Original NLP",
+      "test": "What's the current price of Bitcoin?",
+      "original_success": true,
+      "original_time": 0.00027489662170410156,
+      "enhanced_success": false,
+      "enhanced_confidence": 0.7,
+      "enhanced_time": 0.003627300262451172,
+      "improvement": "\u274c WORSE"
+    },
+    {
+      "category": "Enhanced vs Original NLP",
+      "test": "Show me my portfolio performance",
+      "original_success": true,
+      "original_time": 0.0011854171752929688,
+      "enhanced_success": false,
+      "enhanced_confidence": 0.7,
+      "enhanced_time": 4.315376281738281e-05,
+      "improvement": "\u274c WORSE"
+    },
+    {
+      "category": "Enhanced vs Original NLP",
+      "test": "Find the best yield farming opportunities",
+      "original_success": true,
+      "original_time": 0.003421306610107422,
+      "enhanced_success": false,
+      "enhanced_confidence": 0.7,
+      "enhanced_time": 4.696846008300781e-05,
+      "improvement": "\u274c WORSE"
+    },
+    {
+      "category": "Enhanced vs Original NLP",
+      "test": "I want to stake ETH on Lido",
+      "original_success": true,
+      "original_time": 0.0005476474761962891,
+      "enhanced_success": true,
+      "enhanced_confidence": 0.93,
+      "enhanced_time": 3.4809112548828125e-05,
+      "improvement": "\u2705 BETTER"
+    },
+    {
+      "category": "Enhanced vs Original NLP",
+      "test": "Set an alert for BTC when it hits $50000",
+      "original_success": true,
+      "original_time": 0.00010347366333007812,
+      "enhanced_success": false,
+      "enhanced_confidence": 0.5,
+      "enhanced_time": 4.7206878662109375e-05,
+      "improvement": "\u274c WORSE"
+    },
+    {
+      "category": "Enhanced vs Original NLP",
+      "test": "Analyze the RSI for Ethereum",
+      "original_success": true,
+      "original_time": 4.220008850097656e-05,
+      "enhanced_success": true,
+      "enhanced_confidence": 0.92,
+      "enhanced_time": 3.337860107421875e-05,
+      "improvement": "\u2705 BETTER"
+    },
+    {
+      "category": "Enhanced vs Original NLP",
+      "test": "Bridge USDC to Polygon network",
+      "original_success": true,
+      "original_time": 9.1552734375e-05,
+      "enhanced_success": true,
+      "enhanced_confidence": 0.92,
+      "enhanced_time": 3.552436828613281e-05,
+      "improvement": "\u2705 BETTER"
+    },
+    {
+      "category": "Enhanced vs Original NLP",
+      "test": "What's the social sentiment for Bitcoin?",
+      "original_success": false,
+      "original_time": 0.00011396408081054688,
+      "enhanced_success": true,
+      "enhanced_confidence": 0.87,
+      "enhanced_time": 3.886222839355469e-05,
+      "improvement": "\u2705 BETTER"
+    },
+    {
+      "category": "Enhanced vs Original NLP",
+      "test": "DCA into Solana weekly",
+      "original_success": true,
+      "original_time": 8.058547973632812e-05,
+      "enhanced_success": true,
+      "enhanced_confidence": 0.92,
+      "enhanced_time": 2.6941299438476562e-05,
+      "improvement": "\u2705 BETTER"
+    },
+    {
+      "category": "Enhanced vs Original NLP",
+      "test": "Check compliance for my DeFi positions",
+      "original_success": false,
+      "original_time": 0.00010180473327636719,
+      "enhanced_success": false,
+      "enhanced_confidence": 0.5,
+      "enhanced_time": 3.910064697265625e-05,
+      "improvement": "\u274c WORSE"
+    },
+    {
+      "category": "Complex Workflows",
+      "workflow": "Portfolio Analysis & Optimization",
+      "total_time": 0.0009007453918457031,
+      "success_rate": 1.0,
+      "steps": [
+        {
+          "step": "Show my current portfolio",
+          "success": true,
+          "time": 0.00020313262939453125,
+          "parallel_efficiency": 0.6373056994818653
+        },
+        {
+          "step": "Analyze risk for my holdings",
+          "success": true,
+          "time": 0.00021839141845703125,
+          "parallel_efficiency": 0.635280095351609
+        },
+        {
+          "step": "Find yield opportunities",
+          "success": true,
+          "time": 0.00021982192993164062,
+          "parallel_efficiency": 0.6717827626918536
+        },
+        {
+          "step": "Suggest rebalancing strategy",
+          "success": true,
+          "time": 0.00019025802612304688,
+          "parallel_efficiency": 0.6534246575342466
+        }
+      ]
+    },
+    {
+      "category": "Complex Workflows",
+      "workflow": "DeFi Strategy Planning",
+      "total_time": 0.000978708267211914,
+      "success_rate": 1.0,
+      "steps": [
+        {
+          "step": "What's the best staking APY for ETH?",
+          "success": true,
+          "time": 0.00027942657470703125,
+          "parallel_efficiency": 0.6440520446096655
+        },
+        {
+          "step": "Compare liquidity pools on Uniswap",
+          "success": true,
+          "time": 0.00022864341735839844,
+          "parallel_efficiency": 0.6309662398137369
+        },
+        {
+          "step": "Check bridge costs to Polygon",
+          "success": true,
+          "time": 0.00020122528076171875,
+          "parallel_efficiency": 0.6356589147286822
+        },
+        {
+          "step": "Set alerts for optimal entry points",
+          "success": true,
+          "time": 0.000202178955078125,
+          "parallel_efficiency": 0.6666666666666666
+        }
+      ]
+    },
+    {
+      "category": "Complex Workflows",
+      "workflow": "Technical Analysis Deep Dive",
+      "total_time": 0.0008699893951416016,
+      "success_rate": 1.0,
+      "steps": [
+        {
+          "step": "Show BTC price chart",
+          "success": true,
+          "time": 0.00020456314086914062,
+          "parallel_efficiency": 0.6192307692307693
+        },
+        {
+          "step": "Calculate RSI and MACD",
+          "success": true,
+          "time": 0.00020241737365722656,
+          "parallel_efficiency": 0.6283870967741936
+        },
+        {
+          "step": "Identify support and resistance",
+          "success": true,
+          "time": 0.0002067089080810547,
+          "parallel_efficiency": 0.6477272727272727
+        },
+        {
+          "step": "Analyze social sentiment",
+          "success": true,
+          "time": 0.0001964569091796875,
+          "parallel_efficiency": 0.632
+        }
+      ]
+    },
+    {
+      "category": "Error Handling",
+      "scenario": "Invalid cryptocurrency",
+      "input": "Show price of INVALIDCOIN",
+      "graceful": true,
+      "execution_time": 0.0002009868621826172,
+      "result": {
+        "success": true,
+        "timestamp": 1749937785.3812816,
+        "processing_stages": {
+          "intent_analysis": {
+            "success": true,
+            "execution_time": 4.100799560546875e-05,
+            "error": null
+          },
+          "entity_extraction": {
+            "success": true,
+            "execution_time": 1.5974044799804688e-05,
+            "error": null
+          },
+          "sentiment_analysis": {
+            "success": true,
+            "execution_time": 9.5367431640625e-06,
+            "error": null
+          },
+          "context_retrieval": {
+            "success": true,
+            "execution_time": 7.3909759521484375e-06,
+            "error": null
+          },
+          "rate_limit_check": {
+            "success": true,
+            "execution_time": 7.152557373046875e-06,
+            "error": null
+          },
+          "tool_execution": {
+            "success": true,
+            "execution_time": 2.47955322265625e-05,
+            "error": null
+          },
+          "response_generation": {
+            "success": true,
+            "execution_time": 7.867813110351562e-06,
+            "error": null
+          }
+        },
+        "intent": {
+          "intent": "price",
+          "confidence": 0.7,
+          "entities": []
+        },
+        "sentiment": {
+          "sentiment": "neutral",
+          "score": 0.5,
+          "positive_indicators": 0,
+          "negative_indicators": 0
+        },
+        "context": {
+          "user_id": 12345,
+          "preferences": {
+            "risk_tolerance": "medium",
+            "preferred_assets": [
+              "BTC",
+              "ETH"
+            ],
+            "notification_settings": {
+              "price_alerts": true
+            }
+          },
+          "portfolio": {
+            "BTC": 0.5,
+            "ETH": 2.0,
+            "SOL": 10.0,
+            "ADA": 100.0
+          },
+          "recent_activity": []
+        },
+        "tool_results": {
+          "success": false,
+          "data": null,
+          "execution_time": 0.0,
+          "tools_used": []
+        },
+        "response": {
+          "type": "success",
+          "message": "Request processed successfully",
+          "data": null,
+          "sentiment": {
+            "sentiment": "neutral",
+            "score": 0.5,
+            "positive_indicators": 0,
+            "negative_indicators": 0
+          }
+        }
+      }
+    },
+    {
+      "category": "Error Handling",
+      "scenario": "Malformed query",
+      "input": "asdf qwerty invalid input",
+      "graceful": true,
+      "execution_time": 0.00019979476928710938,
+      "result": {
+        "success": true,
+        "timestamp": 1749937785.3815095,
+        "processing_stages": {
+          "intent_analysis": {
+            "success": true,
+            "execution_time": 4.124641418457031e-05,
+            "error": null
+          },
+          "entity_extraction": {
+            "success": true,
+            "execution_time": 1.5974044799804688e-05,
+            "error": null
+          },
+          "sentiment_analysis": {
+            "success": true,
+            "execution_time": 9.5367431640625e-06,
+            "error": null
+          },
+          "context_retrieval": {
+            "success": true,
+            "execution_time": 7.3909759521484375e-06,
+            "error": null
+          },
+          "rate_limit_check": {
+            "success": true,
+            "execution_time": 7.152557373046875e-06,
+            "error": null
+          },
+          "tool_execution": {
+            "success": true,
+            "execution_time": 2.5033950805664062e-05,
+            "error": null
+          },
+          "response_generation": {
+            "success": true,
+            "execution_time": 7.867813110351562e-06,
+            "error": null
+          }
+        },
+        "intent": {
+          "intent": "research",
+          "confidence": 0.5,
+          "entities": []
+        },
+        "sentiment": {
+          "sentiment": "neutral",
+          "score": 0.5,
+          "positive_indicators": 0,
+          "negative_indicators": 0
+        },
+        "context": {
+          "user_id": 12345,
+          "preferences": {
+            "risk_tolerance": "medium",
+            "preferred_assets": [
+              "BTC",
+              "ETH"
+            ],
+            "notification_settings": {
+              "price_alerts": true
+            }
+          },
+          "portfolio": {
+            "BTC": 0.5,
+            "ETH": 2.0,
+            "SOL": 10.0,
+            "ADA": 100.0
+          },
+          "recent_activity": []
+        },
+        "tool_results": {
+          "success": false,
+          "data": null,
+          "execution_time": 0.0,
+          "tools_used": []
+        },
+        "response": {
+          "type": "success",
+          "message": "Request processed successfully",
+          "data": null,
+          "sentiment": {
+            "sentiment": "neutral",
+            "score": 0.5,
+            "positive_indicators": 0,
+            "negative_indicators": 0
+          }
+        }
+      }
+    },
+    {
+      "category": "Error Handling",
+      "scenario": "Empty query",
+      "input": "",
+      "graceful": true,
+      "execution_time": 0.0001842975616455078,
+      "result": {
+        "success": true,
+        "timestamp": 1749937785.3817205,
+        "processing_stages": {
+          "intent_analysis": {
+            "success": true,
+            "execution_time": 3.0279159545898438e-05,
+            "error": null
+          },
+          "entity_extraction": {
+            "success": true,
+            "execution_time": 1.2159347534179688e-05,
+            "error": null
+          },
+          "sentiment_analysis": {
+            "success": true,
+            "execution_time": 9.059906005859375e-06,
+            "error": null
+          },
+          "context_retrieval": {
+            "success": true,
+            "execution_time": 7.62939453125e-06,
+            "error": null
+          },
+          "rate_limit_check": {
+            "success": true,
+            "execution_time": 7.152557373046875e-06,
+            "error": null
+          },
+          "tool_execution": {
+            "success": true,
+            "execution_time": 2.9802322387695312e-05,
+            "error": null
+          },
+          "response_generation": {
+            "success": true,
+            "execution_time": 9.059906005859375e-06,
+            "error": null
+          }
+        },
+        "intent": {
+          "intent": "research",
+          "confidence": 0.5,
+          "entities": []
+        },
+        "sentiment": {
+          "sentiment": "neutral",
+          "score": 0.5,
+          "positive_indicators": 0,
+          "negative_indicators": 0
+        },
+        "context": {
+          "user_id": 12345,
+          "preferences": {
+            "risk_tolerance": "medium",
+            "preferred_assets": [
+              "BTC",
+              "ETH"
+            ],
+            "notification_settings": {
+              "price_alerts": true
+            }
+          },
+          "portfolio": {
+            "BTC": 0.5,
+            "ETH": 2.0,
+            "SOL": 10.0,
+            "ADA": 100.0
+          },
+          "recent_activity": []
+        },
+        "tool_results": {
+          "success": false,
+          "data": null,
+          "execution_time": 0.0,
+          "tools_used": []
+        },
+        "response": {
+          "type": "success",
+          "message": "Request processed successfully",
+          "data": null,
+          "sentiment": {
+            "sentiment": "neutral",
+            "score": 0.5,
+            "positive_indicators": 0,
+            "negative_indicators": 0
+          }
+        }
+      }
+    },
+    {
+      "category": "Error Handling",
+      "scenario": "Very long query",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "graceful": true,
+      "execution_time": 0.0007977485656738281,
+      "result": {
+        "success": true,
+        "timestamp": 1749937785.382543,
+        "processing_stages": {
+          "intent_analysis": {
+            "success": true,
+            "execution_time": 0.0005528926849365234,
+            "error": null
+          },
+          "entity_extraction": {
+            "success": true,
+            "execution_time": 8.392333984375e-05,
+            "error": null
+          },
+          "sentiment_analysis": {
+            "success": true,
+            "execution_time": 1.71661376953125e-05,
+            "error": null
+          },
+          "context_retrieval": {
+            "success": true,
+            "execution_time": 7.62939453125e-06,
+            "error": null
+          },
+          "rate_limit_check": {
+            "success": true,
+            "execution_time": 7.3909759521484375e-06,
+            "error": null
+          },
+          "tool_execution": {
+            "success": true,
+            "execution_time": 3.123283386230469e-05,
+            "error": null
+          },
+          "response_generation": {
+            "success": true,
+            "execution_time": 8.344650268554688e-06,
+            "error": null
+          }
+        },
+        "intent": {
+          "intent": "research",
+          "confidence": 0.5,
+          "entities": []
+        },
+        "sentiment": {
+          "sentiment": "neutral",
+          "score": 0.5,
+          "positive_indicators": 0,
+          "negative_indicators": 0
+        },
+        "context": {
+          "user_id": 12345,
+          "preferences": {
+            "risk_tolerance": "medium",
+            "preferred_assets": [
+              "BTC",
+              "ETH"
+            ],
+            "notification_settings": {
+              "price_alerts": true
+            }
+          },
+          "portfolio": {
+            "BTC": 0.5,
+            "ETH": 2.0,
+            "SOL": 10.0,
+            "ADA": 100.0
+          },
+          "recent_activity": []
+        },
+        "tool_results": {
+          "success": false,
+          "data": null,
+          "execution_time": 0.0,
+          "tools_used": []
+        },
+        "response": {
+          "type": "success",
+          "message": "Request processed successfully",
+          "data": null,
+          "sentiment": {
+            "sentiment": "neutral",
+            "score": 0.5,
+            "positive_indicators": 0,
+            "negative_indicators": 0
+          }
+        }
+      }
+    },
+    {
+      "category": "Error Handling",
+      "scenario": "Special characters",
+      "input": "!@#$%^&*()_+{}|:<>?",
+      "graceful": true,
+      "execution_time": 0.0002129077911376953,
+      "result": {
+        "success": true,
+        "timestamp": 1749937785.382781,
+        "processing_stages": {
+          "intent_analysis": {
+            "success": true,
+            "execution_time": 3.743171691894531e-05,
+            "error": null
+          },
+          "entity_extraction": {
+            "success": true,
+            "execution_time": 1.52587890625e-05,
+            "error": null
+          },
+          "sentiment_analysis": {
+            "success": true,
+            "execution_time": 1.0013580322265625e-05,
+            "error": null
+          },
+          "context_retrieval": {
+            "success": true,
+            "execution_time": 7.152557373046875e-06,
+            "error": null
+          },
+          "rate_limit_check": {
+            "success": true,
+            "execution_time": 7.152557373046875e-06,
+            "error": null
+          },
+          "tool_execution": {
+            "success": true,
+            "execution_time": 2.574920654296875e-05,
+            "error": null
+          },
+          "response_generation": {
+            "success": true,
+            "execution_time": 7.867813110351562e-06,
+            "error": null
+          }
+        },
+        "intent": {
+          "intent": "research",
+          "confidence": 0.5,
+          "entities": []
+        },
+        "sentiment": {
+          "sentiment": "neutral",
+          "score": 0.5,
+          "positive_indicators": 0,
+          "negative_indicators": 0
+        },
+        "context": {
+          "user_id": 12345,
+          "preferences": {
+            "risk_tolerance": "medium",
+            "preferred_assets": [
+              "BTC",
+              "ETH"
+            ],
+            "notification_settings": {
+              "price_alerts": true
+            }
+          },
+          "portfolio": {
+            "BTC": 0.5,
+            "ETH": 2.0,
+            "SOL": 10.0,
+            "ADA": 100.0
+          },
+          "recent_activity": []
+        },
+        "tool_results": {
+          "success": false,
+          "data": null,
+          "execution_time": 0.0,
+          "tools_used": []
+        },
+        "response": {
+          "type": "success",
+          "message": "Request processed successfully",
+          "data": null,
+          "sentiment": {
+            "sentiment": "neutral",
+            "score": 0.5,
+            "positive_indicators": 0,
+            "negative_indicators": 0
+          }
+        }
+      }
+    },
+    {
+      "category": "Error Handling",
+      "scenario": "SQL injection attempt",
+      "input": "'; DROP TABLE users; --",
+      "graceful": true,
+      "execution_time": 0.00020170211791992188,
+      "result": {
+        "success": true,
+        "timestamp": 1749937785.3830073,
+        "processing_stages": {
+          "intent_analysis": {
+            "success": true,
+            "execution_time": 3.9577484130859375e-05,
+            "error": null
+          },
+          "entity_extraction": {
+            "success": true,
+            "execution_time": 1.5497207641601562e-05,
+            "error": null
+          },
+          "sentiment_analysis": {
+            "success": true,
+            "execution_time": 9.298324584960938e-06,
+            "error": null
+          },
+          "context_retrieval": {
+            "success": true,
+            "execution_time": 7.152557373046875e-06,
+            "error": null
+          },
+          "rate_limit_check": {
+            "success": true,
+            "execution_time": 6.9141387939453125e-06,
+            "error": null
+          },
+          "tool_execution": {
+            "success": true,
+            "execution_time": 3.337860107421875e-05,
+            "error": null
+          },
+          "response_generation": {
+            "success": true,
+            "execution_time": 7.62939453125e-06,
+            "error": null
+          }
+        },
+        "intent": {
+          "intent": "research",
+          "confidence": 0.5,
+          "entities": []
+        },
+        "sentiment": {
+          "sentiment": "neutral",
+          "score": 0.5,
+          "positive_indicators": 0,
+          "negative_indicators": 0
+        },
+        "context": {
+          "user_id": 12345,
+          "preferences": {
+            "risk_tolerance": "medium",
+            "preferred_assets": [
+              "BTC",
+              "ETH"
+            ],
+            "notification_settings": {
+              "price_alerts": true
+            }
+          },
+          "portfolio": {
+            "BTC": 0.5,
+            "ETH": 2.0,
+            "SOL": 10.0,
+            "ADA": 100.0
+          },
+          "recent_activity": []
+        },
+        "tool_results": {
+          "success": false,
+          "data": null,
+          "execution_time": 0.0,
+          "tools_used": []
+        },
+        "response": {
+          "type": "success",
+          "message": "Request processed successfully",
+          "data": null,
+          "sentiment": {
+            "sentiment": "neutral",
+            "score": 0.5,
+            "positive_indicators": 0,
+            "negative_indicators": 0
+          }
+        }
+      }
+    },
+    {
+      "category": "Error Handling",
+      "scenario": "XSS attempt",
+      "input": "<script>alert('xss')</script>",
+      "graceful": true,
+      "execution_time": 0.0002040863037109375,
+      "result": {
+        "success": true,
+        "timestamp": 1749937785.3832297,
+        "processing_stages": {
+          "intent_analysis": {
+            "success": true,
+            "execution_time": 4.4345855712890625e-05,
+            "error": null
+          },
+          "entity_extraction": {
+            "success": true,
+            "execution_time": 1.6450881958007812e-05,
+            "error": null
+          },
+          "sentiment_analysis": {
+            "success": true,
+            "execution_time": 9.775161743164062e-06,
+            "error": null
+          },
+          "context_retrieval": {
+            "success": true,
+            "execution_time": 6.9141387939453125e-06,
+            "error": null
+          },
+          "rate_limit_check": {
+            "success": true,
+            "execution_time": 6.9141387939453125e-06,
+            "error": null
+          },
+          "tool_execution": {
+            "success": true,
+            "execution_time": 2.5510787963867188e-05,
+            "error": null
+          },
+          "response_generation": {
+            "success": true,
+            "execution_time": 7.62939453125e-06,
+            "error": null
+          }
+        },
+        "intent": {
+          "intent": "research",
+          "confidence": 0.5,
+          "entities": []
+        },
+        "sentiment": {
+          "sentiment": "neutral",
+          "score": 0.5,
+          "positive_indicators": 0,
+          "negative_indicators": 0
+        },
+        "context": {
+          "user_id": 12345,
+          "preferences": {
+            "risk_tolerance": "medium",
+            "preferred_assets": [
+              "BTC",
+              "ETH"
+            ],
+            "notification_settings": {
+              "price_alerts": true
+            }
+          },
+          "portfolio": {
+            "BTC": 0.5,
+            "ETH": 2.0,
+            "SOL": 10.0,
+            "ADA": 100.0
+          },
+          "recent_activity": []
+        },
+        "tool_results": {
+          "success": false,
+          "data": null,
+          "execution_time": 0.0,
+          "tools_used": []
+        },
+        "response": {
+          "type": "success",
+          "message": "Request processed successfully",
+          "data": null,
+          "sentiment": {
+            "sentiment": "neutral",
+            "score": 0.5,
+            "positive_indicators": 0,
+            "negative_indicators": 0
+          }
+        }
+      }
+    },
+    {
+      "category": "Real-World Scenarios",
+      "scenario": "New User Onboarding",
+      "success_rate": 100.0,
+      "total_time": 0.0009014606475830078,
+      "successful_queries": 4,
+      "total_queries": 4
+    },
+    {
+      "category": "Real-World Scenarios",
+      "scenario": "Active Trader Session",
+      "success_rate": 100.0,
+      "total_time": 0.0009326934814453125,
+      "successful_queries": 5,
+      "total_queries": 5
+    },
+    {
+      "category": "Real-World Scenarios",
+      "scenario": "DeFi Yield Farmer",
+      "success_rate": 100.0,
+      "total_time": 0.0009839534759521484,
+      "successful_queries": 5,
+      "total_queries": 5
+    },
+    {
+      "category": "Real-World Scenarios",
+      "scenario": "Institutional Investor",
+      "success_rate": 100.0,
+      "total_time": 0.0010814666748046875,
+      "successful_queries": 5,
+      "total_queries": 5
+    }
+  ]
+}
